@@ -21,7 +21,13 @@ const Navbar = ({ tabs }) => {
               <div className="vr-line"></div>
               <ul className="navbar-nav">
                 {tabs.map((tab) => {
-                  return (
+                  return tab.title === "Live News" ? (
+                    <li className="nav-item">
+                      <Link to={`/live`} className="nav-link links">
+                        {tab.title}
+                      </Link>
+                    </li>
+                  ) : (
                     <li className="nav-item">
                       <Link
                         to={`/category/${tab.title}`}

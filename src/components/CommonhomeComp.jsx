@@ -3,13 +3,13 @@ import React from "react";
 const CommonhomeComp = ({ title, logo }) => {
   return (
     <>
-      <section className="sec2 my-3 py-3">
-        <h1>
-          <img src={`${logo}`} alt={title} width="60px" />
-          {title}
-        </h1>
-        <hr />
+      <section className="sec2 my-3 py-3 ">
         <div className="container">
+          <h1>
+            <img src={`${logo}`} alt={title} width="60px" />
+            {title}
+          </h1>
+          <hr />
           <h6 className="text-dark ps-2 pt-2 fw-bold">Spotlight</h6>
           <div className="row">
             <div className="col-md-6">

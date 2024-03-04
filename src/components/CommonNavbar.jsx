@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 
 const CommonNavbar = ({ subTabs }) => {
-
   const { title } = useParams();
 
   const tabs = useTabContext();
@@ -31,7 +30,7 @@ const CommonNavbar = ({ subTabs }) => {
                 <img
                   src={`${name[0].logo}`}
                   alt=""
-                  width="40px"
+                  width="30px"
                   className="pe-1"
                 />
                 {name[0].name}
@@ -39,28 +38,24 @@ const CommonNavbar = ({ subTabs }) => {
               <div className="vr-line"></div>
               <ul className="navbar-nav">
                 {subTabs.map((tab) => {
-                  return (
-                    tab === "Home" ?
-                      <li className="nav-item">
-                        <Link
-
-                          to={`/category/${title}`}
-                          className="nav-link links"
-                        >
-                          {tab}
-                        </Link>
-                      </li>
-
-                      :
-                      <li className="nav-item">
-                        <Link
-
-                          to={`/category/sub/${tab}/${title}`}
-                          className="nav-link links"
-                        >
-                          {tab}
-                        </Link>
-                      </li>
+                  return tab === "Home" ? (
+                    <li className="nav-item">
+                      <Link
+                        to={`/category/${title}`}
+                        className="nav-link links"
+                      >
+                        {tab}
+                      </Link>
+                    </li>
+                  ) : (
+                    <li className="nav-item">
+                      <Link
+                        to={`/category/sub/${tab}/${title}`}
+                        className="nav-link links"
+                      >
+                        {tab}
+                      </Link>
+                    </li>
                   );
                 })}
               </ul>
