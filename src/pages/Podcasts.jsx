@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import CommonNavbar from "../components/CommonNavbar";
 import PodcastsComp from "../components/PodcastsComp";
-import "../componentscss/Podcasts.css";
+import "../css/PagesCss/Podcasts.css";
 
 function Podcasts() {
   const { title } = useParams();

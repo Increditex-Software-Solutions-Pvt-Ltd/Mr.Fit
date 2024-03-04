@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import CommonNavbar from "../components/CommonNavbar";
 import TeamsComponent from "../components/TeamsComponent";
-import "../componentscss/Teams.css";
+import "../css/PagesCss/Teams.css";
 
 function Team() {
   const { title } = useParams();

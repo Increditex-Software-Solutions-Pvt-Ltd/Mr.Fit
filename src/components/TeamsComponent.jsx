@@ -1,5 +1,5 @@
 import React from "react";
-import "../componentscss/TeamComp.css";
+import "../css/ComponentsCSS/TeamComp.css";
 
 function TeamsComponent() {
   const teams = [

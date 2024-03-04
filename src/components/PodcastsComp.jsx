@@ -1,5 +1,5 @@
 import React from "react";
-import "../componentscss/PodcastsComp.css";
+import "../css/ComponentsCSS/PodcastsComp.css";
 
 function PodcastsComp() {
   const podcasts = [
