@@ -1,0 +1,241 @@
+import React from "react";
+
+function StandingsComp() {
+  const standingsData = [
+    {
+      name: "Bournemouth",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-673-50x50.png",
+      GP: 10,
+      W: 7,
+      DL: 2,
+      GF: 20,
+      GA: 10,
+      GD: 10,
+      PTS: 23,
+      form: "WWLWD",
+    },
+    {
+      name: "Arsenal",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-651-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Aston Villa",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-672-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Brentford",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-689-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Brighton",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-674-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    {
+      name: "Burnley",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-675-50x50.png",
+      GP: 10,
+      W: 7,
+      DL: 2,
+      GF: 20,
+      GA: 10,
+      GD: 10,
+      PTS: 23,
+      form: "WWLWD",
+    },
+    {
+      name: "Chelsea",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-652-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Crystal Palace",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-676-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Everton",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-677-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Fulham",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-694-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    {
+      name: "Liverpool",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-653-50x50.png",
+      GP: 10,
+      W: 7,
+      DL: 2,
+      GF: 20,
+      GA: 10,
+      GD: 10,
+      PTS: 23,
+      form: "WWLWD",
+    },
+    {
+      name: "Luton Town",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-698-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Manchester City",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-654-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Manchester United",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-655-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+    ,
+    {
+      name: "Newcastle United",
+      logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-679-50x50.png",
+      GP: 10,
+      W: 6,
+      DL: 3,
+      GF: 15,
+      GA: 12,
+      GD: 3,
+      PTS: 21,
+      form: "WLDWW",
+    },
+  ];
+
+  return (
+    <div className="standings-table">
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>GP</th>
+            <th>W</th>
+            <th>DL</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
+            <th>PTS</th>
+            <th>Form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {standingsData.map((team, index) => (
+            <tr key={index}>
+              <td>
+                {index + 1}
+                <img
+                  src={team.logo}
+                  alt={team.name}
+                  width="30px"
+                  style={{ marginRight: "5px", marginLeft: "5px" }}
+                />
+                {team.name}
+              </td>
+              <td>{team.GP}</td>
+              <td>{team.W}</td>
+              <td>{team.DL}</td>
+              <td>{team.GF}</td>
+              <td>{team.GA}</td>
+              <td>{team.GD}</td>
+              <td>{team.PTS}</td>
+              <td>{team.form}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default StandingsComp;

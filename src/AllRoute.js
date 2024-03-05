@@ -5,6 +5,7 @@ import Commonhome from './pages/Commonhome'
 import Teams from './pages/Teams'
 import Podcasts from './pages/Podcasts'
 import LiveNews from './pages/LiveNews'
+import Standings from './pages/Standings'
 
 const AllRoute = () => {
   return (
@@ -14,7 +15,7 @@ const AllRoute = () => {
       <Route path='/category/:title' element={<Commonhome />} />
       <Route path='/category/sub/Teams/:title' element={<Teams />} />
       <Route path='/category/sub/Podcasts/:title' element={<Podcasts />} />
-
+      <Route path='/category/sub/Standings/:title' element={<Standings />} />
     </Routes>
   )
 }

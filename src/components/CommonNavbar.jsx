@@ -1,11 +1,14 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
+import { useWindowWidth } from "../contexts/WindowWidth";
 
 const CommonNavbar = ({ subTabs }) => {
   const { title } = useParams();
 
   const tabs = useTabContext();
+
+  const windowWidth = useWindowWidth();
 
   const name = tabs.filter((tab) => {
     if (tab.title.split(" ").join("") === title.split(" ").join("")) {
@@ -37,9 +40,9 @@ const CommonNavbar = ({ subTabs }) => {
               </Link>
               <div className="vr-line"></div>
               <ul className="navbar-nav">
-                {subTabs.map((tab) => {
+                {subTabs.map((tab, i) => {
                   return tab === "Home" ? (
-                    <li className="nav-item">
+                    <li className="nav-item" key={i}>
                       <Link
                         to={`/category/${title}`}
                         className="nav-link links"
@@ -48,7 +51,7 @@ const CommonNavbar = ({ subTabs }) => {
                       </Link>
                     </li>
                   ) : (
-                    <li className="nav-item">
+                    <li className="nav-item" key={i}>
                       <Link
                         to={`/category/sub/${tab}/${title}`}
                         className="nav-link links"

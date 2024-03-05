@@ -15,7 +15,7 @@ const Commonhome = () => {
     } else return 0;
   });
 
-  console.log(tabs, subs[0].subTitles);
+  // console.log(tabs, subs[0].subTitles);
 
   return (
     <>

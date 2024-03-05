@@ -46,12 +46,20 @@ function PodcastsComp() {
   ];
   return (
     <div className="podcasts-container">
-      {podcasts.map((podcast) => {
+      {podcasts.map((podcast, i) => {
         return (
-          <div class="card background-dark" style={{ width: "18rem" }}>
-            <img src={podcast.img} class="card-img-top" alt={podcast.title} />
-            <div class="card-body">
-              <h5 class="card-title text-center">{podcast.title}</h5>
+          <div
+            className="card background-dark"
+            style={{ width: "18rem" }}
+            key={i}
+          >
+            <img
+              src={podcast.img}
+              className="card-img-top"
+              alt={podcast.title}
+            />
+            <div className="card-body">
+              <h5 className="card-title text-center">{podcast.title}</h5>
             </div>
           </div>
         );

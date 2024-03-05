@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useWindowWidth } from "../contexts/WindowWidth";
 // import SideNavbar from "./SideNavbar";
+import "../css/ComponentsCSS/Navbar.css";
 
 const Navbar = ({ tabs }) => {
-  tabs.length = 7;
+  // tabs.length = 7;
+
+  const windowWidth = useWindowWidth();
+  const [showRemainingTabs, setShowRemainingTabs] = useState(false);
+
+  // Define breakpoints for tab display
+  const breakpoints = [
+    { width: 400, tabs: 0 },
+    { width: 450, tabs: 1 },
+    { width: 650, tabs: 2 },
+    { width: 800, tabs: 3 },
+    { width: 1000, tabs: 4 },
+    { width: 1200, tabs: 5 },
+    { width: 1400, tabs: 6 },
+  ];
+
+  let tabsToDisplay = 7; // default value
+  for (let i = 0; i < breakpoints.length; i++) {
+    if (windowWidth < breakpoints[i].width) {
+      tabsToDisplay = breakpoints[i].tabs;
+      break;
+    }
+  }
+
+  const displayedTabs = tabs.slice(0, tabsToDisplay);
+  const remainingTabs = tabs.slice(tabsToDisplay);
+
   return (
     <>
-      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top position-relative">
         <div className="container">
-          <div className="d-flex justify-content-center align-items-center">
+          <div className="d-flex justify-content-center align-items-center ">
             <div className="menu pt-1">
               <i className="fas fa-bars" style={{ color: "white" }}></i>
               {/* <SideNavbar /> */}
@@ -20,15 +48,15 @@ const Navbar = ({ tabs }) => {
               </Link>
               <div className="vr-line"></div>
               <ul className="navbar-nav">
-                {tabs.map((tab) => {
+                {displayedTabs.map((tab, i) => {
                   return tab.title === "Live News" ? (
-                    <li className="nav-item">
+                    <li className="nav-item" key={i}>
                       <Link to={`/live`} className="nav-link links">
                         {tab.title}
                       </Link>
                     </li>
                   ) : (
-                    <li className="nav-item">
+                    <li className="nav-item" key={i}>
                       <Link
                         to={`/category/${tab.title}`}
                         className="nav-link links"
@@ -38,6 +66,15 @@ const Navbar = ({ tabs }) => {
                     </li>
                   );
                 })}
+                <li>
+                  <button
+                    className="nav-link links py-2 px-2 ms-1"
+                    onMouseEnter={() => setShowRemainingTabs(true)}
+                    onMouseLeave={() => setShowRemainingTabs(false)}
+                  >
+                    <i className="bi bi-three-dots nav-item"></i>
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
@@ -55,6 +92,28 @@ const Navbar = ({ tabs }) => {
             </a>
           </div>
         </div>
+        {showRemainingTabs && (
+          <div
+            className="dropdown-content"
+            onMouseEnter={() => setShowRemainingTabs(true)}
+            onMouseLeave={() => setShowRemainingTabs(false)}
+          >
+            <div className="triangle"></div>
+            {remainingTabs.map((tab, i) => (
+              <li className="nav-item" key={i}>
+                <Link to={`/category/${tab.title}`} className="nav-link links">
+                  <img
+                    src={tab.logo}
+                    alt={tab.title}
+                    width="30px"
+                    style={{ marginRight: "5px" }}
+                  />
+                  {tab.title}
+                </Link>
+              </li>
+            ))}
+          </div>
+        )}
       </header>
       <nav className="bg-darkstone">
         <div className="container">
@@ -66,9 +125,9 @@ const Navbar = ({ tabs }) => {
                   className="subnav-logo"
                   alt=""
                 />
-                <span className="text-xs text-semilight ms-2">
+                <button className="text-xs text-semilight ms-2">
                   Footballs biggest talking points
-                </span>
+                </button>
               </a>
             </li>
             <li className="nav-item ms-5">
@@ -78,9 +137,9 @@ const Navbar = ({ tabs }) => {
                   className="subnav-logo"
                   alt=""
                 />
-                <span className="text-xs text-semilight ms-2">
+                <button className="text-xs text-semilight ms-2">
                   World-cup schedule
-                </span>
+                </button>
               </a>
             </li>
             <li className="nav-item ms-5">
@@ -90,9 +149,9 @@ const Navbar = ({ tabs }) => {
                   className="subnav-logo"
                   alt=""
                 />
-                <span className="text-xs text-semilight ms-2">
+                <button className="text-xs text-semilight ms-2">
                   Football matches
-                </span>
+                </button>
               </a>
             </li>
           </ul>
