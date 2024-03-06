@@ -33,7 +33,7 @@ const Navbar = ({ tabs }) => {
 
   return (
     <>
-      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top position-relative align-items-center">
+      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top  align-items-center">
         <div className="container">
           <div className="d-flex justify-content-center align-items-center ">
             <div className="menu pt-1">
@@ -69,7 +69,7 @@ const Navbar = ({ tabs }) => {
                     </li>
                   );
                 })}
-                <li>
+                <li className="position-relative">
                   <button
                     className="nav-link links py-2 px-2 ms-1"
                     onMouseEnter={() => setShowRemainingTabs(true)}
@@ -77,6 +77,9 @@ const Navbar = ({ tabs }) => {
                   >
                     <i className="bi bi-three-dots nav-item"></i>
                   </button>
+                  {showRemainingTabs && (<div className="triangle" onMouseEnter={() => setShowRemainingTabs(true)}
+                    onMouseLeave={() => setShowRemainingTabs(false)}></div>)}
+
                 </li>
               </ul>
             </div>
@@ -101,7 +104,8 @@ const Navbar = ({ tabs }) => {
             onMouseEnter={() => setShowRemainingTabs(true)}
             onMouseLeave={() => setShowRemainingTabs(false)}
           >
-            <div className="triangle"></div>
+
+
             {remainingTabs.map((tab, i) => (
               <li className="nav-item" key={i}>
                 <Link to={`/category/${tab.title}`} className="nav-link links">
