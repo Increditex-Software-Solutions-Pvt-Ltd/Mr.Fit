@@ -5,18 +5,17 @@ import { useWindowWidth } from "../contexts/WindowWidth";
 import "../css/ComponentsCSS/Navbar.css";
 
 const Navbar = ({ tabs }) => {
-  // tabs.length = 7;
-
   const windowWidth = useWindowWidth();
   const [showRemainingTabs, setShowRemainingTabs] = useState(false);
+  const [showSideNavbar, setShowSideNavbar] = useState(false);
 
   // Define breakpoints for tab display
   const breakpoints = [
     { width: 400, tabs: 0 },
     { width: 450, tabs: 1 },
-    { width: 650, tabs: 2 },
-    { width: 800, tabs: 3 },
-    { width: 1000, tabs: 4 },
+    { width: 650, tabs: 1 },
+    { width: 750, tabs: 2 },
+    { width: 1050, tabs: 3 },
     { width: 1200, tabs: 5 },
     { width: 1400, tabs: 6 },
   ];
@@ -34,12 +33,16 @@ const Navbar = ({ tabs }) => {
 
   return (
     <>
-      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top position-relative">
+      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top position-relative align-items-center">
         <div className="container">
           <div className="d-flex justify-content-center align-items-center ">
             <div className="menu pt-1">
-              <i className="fas fa-bars" style={{ color: "white" }}></i>
-              {/* <SideNavbar /> */}
+              <button
+                onMouseEnter={() => setShowSideNavbar(true)}
+                onMouseLeave={() => setShowSideNavbar(false)}
+              >
+                <i className="fas fa-bars" style={{ color: "white" }}></i>
+              </button>
             </div>
 
             <div className="d-flex justify-content-center align-items-center ms-3">
@@ -100,6 +103,28 @@ const Navbar = ({ tabs }) => {
           >
             <div className="triangle"></div>
             {remainingTabs.map((tab, i) => (
+              <li className="nav-item" key={i}>
+                <Link to={`/category/${tab.title}`} className="nav-link links">
+                  <img
+                    src={tab.logo}
+                    alt={tab.title}
+                    width="30px"
+                    style={{ marginRight: "5px" }}
+                  />
+                  {tab.title}
+                </Link>
+              </li>
+            ))}
+          </div>
+        )}
+        {showSideNavbar && (
+          <div
+            className="dropdown-content"
+            onMouseEnter={() => setShowSideNavbar(true)}
+            onMouseLeave={() => setShowSideNavbar(false)}
+          >
+            <div className="triangle-side"></div>
+            {tabs.map((tab, i) => (
               <li className="nav-item" key={i}>
                 <Link to={`/category/${tab.title}`} className="nav-link links">
                   <img

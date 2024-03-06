@@ -1,27 +1,25 @@
 import React from "react";
-import CommonhomeComp from "../components/CommonhomeComp";
-
-import { useTabContext } from "../contexts/TabsContext";
 import { useParams } from "react-router-dom";
+import { useTabContext } from "../contexts/TabsContext";
 import CommonNavbar from "../components/CommonNavbar";
 
-const Commonhome = () => {
-  const tabs = useTabContext();
+function LiveNewsSub() {
   const { title } = useParams();
+  const tabs = useTabContext();
 
   const subs = tabs.filter((tab) => {
     if (tab.title.split(" ").join("") === title.split(" ").join("")) {
       return tab;
     } else return 0;
   });
-
   return (
-    <>
+    <div>
       <CommonNavbar subTabs={subs[0].subTitles} />
-
-      <CommonhomeComp title={title} logo={subs[0].logo} />
-    </>
+      <div className="container">
+        <h1>Live News Sub</h1>
+      </div>
+    </div>
   );
-};
+}
 
-export default Commonhome;
+export default LiveNewsSub;

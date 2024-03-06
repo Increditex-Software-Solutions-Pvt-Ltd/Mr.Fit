@@ -1,11 +1,11 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import StandingsComp from "../components/StandingsComp";
 import CommonNavbar from "../components/CommonNavbar";
+import ScoresSchedulesComp from "../components/ScoresSchedulesComp";
+import { useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
-import "../css/PagesCss/Standings.css";
+import "../css/PagesCss/ScoresSchedules.css";
 
-function Standings() {
+function ScoresSchedules() {
   const { title } = useParams();
   const tabs = useTabContext();
 
@@ -14,19 +14,18 @@ function Standings() {
       return tab;
     } else return 0;
   });
-
   return (
     <div>
       <CommonNavbar subTabs={subs[0].subTitles} />
       <div className="container">
-        <div className="standings-page">
-          <h1 style={{ fontWeight: "bold" }}>{title} Table</h1>
+        <div className="scores-schedules-page">
+          <h3 style={{ fontWeight: "bold" }}>{title} Schedule</h3>
           <hr />
-          <StandingsComp />
+          <ScoresSchedulesComp />
         </div>
       </div>
     </div>
   );
 }
 
-export default Standings;
+export default ScoresSchedules;

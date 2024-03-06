@@ -20,7 +20,7 @@ const tabs = [
       "Scores & Schedule",
       "Standings",
       "Podcasts",
-      // "Fantasy",
+      "Fantasy",
     ],
   },
 
@@ -28,7 +28,7 @@ const tabs = [
     title: "Champions League",
     name: "UCL",
     logo: "https://cdn-league-logos.theathletic.com/cdn-cgi/image/width=48%2cformat=auto%2cquality=75/https://cdn-league-logos.theathletic.com/league-7-color@2x.png",
-    subTitles: ["Home", "Scores & Schedules", "Standings", "Podcasts"],
+    subTitles: ["Home", "Scores & Schedule", "Standings", "Podcasts"],
   },
 
   {
@@ -56,7 +56,7 @@ const tabs = [
     title: "Europa League",
     name: "UEL",
     logo: "https://cdn-league-logos.theathletic.com/league-37-color@2x.png",
-    subTitles: ["Home", "Scores & Schedules", "Standings"],
+    subTitles: ["Home", "Scores & Schedule", "Standings"],
   },
 
   {
@@ -203,7 +203,7 @@ const tabs = [
       "Standings",
       "Podcasts",
       // "The Bounce newsletter",
-      // "Fantasy",
+      "Fantasy",
       // "NBA Odds",
       // "NBA Picks",
       // "NBA Drafts",
@@ -222,7 +222,7 @@ const tabs = [
       "Standings",
       "Podcasts",
       // "The Windup newsletter",
-      // "Fantasy",
+      "Fantasy",
       // "MLB Prospects",
       // "MLB Odds",
       // "NBA Picks",
@@ -239,7 +239,7 @@ const tabs = [
       "Scores & Schedule",
       "Standings",
       "Podcasts",
-      // "Fantasy",
+      "Fantasy",
       // "NHL Odds",
       // "NHL Picks",
     ],
@@ -346,7 +346,13 @@ const tabs = [
     title: "Men's World Cup",
     name: "World Cup",
     logo: "https://cdn-league-logos.theathletic.com/league-44-color@2x.png",
-    subTitles: ["Home", "The Radar", "Teams", "Scores & Schedule", "Standings"],
+    subTitles: [
+      "Home",
+      // "The Radar",
+      "Teams",
+      "Scores & Schedule",
+      "Standings",
+    ],
   },
 
   {

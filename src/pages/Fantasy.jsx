@@ -1,11 +1,11 @@
 import React from "react";
-import CommonhomeComp from "../components/CommonhomeComp";
 
 import { useTabContext } from "../contexts/TabsContext";
 import { useParams } from "react-router-dom";
 import CommonNavbar from "../components/CommonNavbar";
+import FantasyComp from "../components/FantasyComp";
 
-const Commonhome = () => {
+function Fantasy() {
   const tabs = useTabContext();
   const { title } = useParams();
 
@@ -14,14 +14,12 @@ const Commonhome = () => {
       return tab;
     } else return 0;
   });
-
   return (
     <>
       <CommonNavbar subTabs={subs[0].subTitles} />
-
-      <CommonhomeComp title={title} logo={subs[0].logo} />
+      <FantasyComp title={title} />
     </>
   );
-};
+}
 
-export default Commonhome;
+export default Fantasy;
