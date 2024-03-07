@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import { useWindowWidth } from "../contexts/WindowWidth";
+import "../css/ComponentsCSS/CommonNavbar.css";
 
 const CommonNavbar = ({ subTabs }) => {
   const { title } = useParams();
@@ -43,15 +44,22 @@ const CommonNavbar = ({ subTabs }) => {
   return (
     <>
       <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-        <div className="container">
+        <div className="container position-relative">
           <div className="d-flex justify-content-center align-items-center">
-            <div className="menu pt-1">
+            <div className="menu pt-1 position-relative">
               <button
                 onMouseEnter={() => setShowSideNavbar(true)}
                 onMouseLeave={() => setShowSideNavbar(false)}
               >
                 <i className="fas fa-bars" style={{ color: "white" }}></i>
               </button>
+              {showSideNavbar && (
+                <div
+                  className="triangle-side"
+                  onMouseEnter={() => setShowSideNavbar(true)}
+                  onMouseLeave={() => setShowSideNavbar(false)}
+                ></div>
+              )}
             </div>
             <div className="d-flex justify-content-center align-items-center ms-3">
               <Link to="/" className="navbar-brand">
@@ -90,7 +98,7 @@ const CommonNavbar = ({ subTabs }) => {
                   );
                 })}
                 {remainingTabs.length > 0 ? (
-                  <li>
+                  <li className="position-relative">
                     <button
                       className="nav-link links py-2 px-2 ms-1"
                       onMouseEnter={() => setShowRemainingTabs(true)}
@@ -98,6 +106,13 @@ const CommonNavbar = ({ subTabs }) => {
                     >
                       <i className="bi bi-three-dots nav-item"></i>
                     </button>
+                    {showRemainingTabs && (
+                      <div
+                        className="triangle"
+                        onMouseEnter={() => setShowRemainingTabs(true)}
+                        onMouseLeave={() => setShowRemainingTabs(false)}
+                      ></div>
+                    )}
                   </li>
                 ) : (
                   ""
@@ -118,52 +133,51 @@ const CommonNavbar = ({ subTabs }) => {
               <i className="bi bi-search"></i>
             </a>
           </div>
+          {showRemainingTabs && (
+            <div
+              className="dropdown-content"
+              onMouseEnter={() => setShowRemainingTabs(true)}
+              onMouseLeave={() => setShowRemainingTabs(false)}
+            >
+              {remainingTabs.map((tab, i) => (
+                <li className="nav-item" key={i}>
+                  <Link
+                    to={`/category/sub/${tab}/${title}`}
+                    className="nav-link links"
+                  >
+                    {tab}
+                  </Link>
+                </li>
+              ))}
+            </div>
+          )}
+
+          {showSideNavbar && (
+            <div
+              className="dropdown-content"
+              onMouseEnter={() => setShowSideNavbar(true)}
+              onMouseLeave={() => setShowSideNavbar(false)}
+            >
+              {tabs.map((tab, i) => (
+                <li className="nav-item" key={i}>
+                  <Link
+                    onClick={() => setShowSideNavbar(false)}
+                    to={`/category/${tab.title}`}
+                    className="nav-link links"
+                  >
+                    <img
+                      src={tab.logo}
+                      alt={tab.title}
+                      width="30px"
+                      style={{ marginRight: "5px" }}
+                    />
+                    {tab.title}
+                  </Link>
+                </li>
+              ))}
+            </div>
+          )}
         </div>
-        {showRemainingTabs && remainingTabs.length > 0 && (
-          <div
-            className="dropdown-content"
-            onMouseEnter={() => setShowRemainingTabs(true)}
-            onMouseLeave={() => setShowRemainingTabs(false)}
-          >
-            <div className="triangle"></div>
-            {remainingTabs.map((tab, i) => (
-              <li className="nav-item" key={i}>
-                <Link
-                  to={`/category/sub/${tab}/${title}`}
-                  className="nav-link links"
-                >
-                  {tab}
-                </Link>
-              </li>
-            ))}
-          </div>
-        )}
-        {showSideNavbar && (
-          <div
-            className="dropdown-content"
-            onMouseEnter={() => setShowSideNavbar(true)}
-            onMouseLeave={() => setShowSideNavbar(false)}
-          >
-            <div className="triangle-side"></div>
-            {tabs.map((tab, i) => (
-              <li className="nav-item" key={i}>
-                <Link
-                  onClick={() => setShowSideNavbar(false)}
-                  to={`/category/${tab.title}`}
-                  className="nav-link links"
-                >
-                  <img
-                    src={tab.logo}
-                    alt={tab.title}
-                    width="30px"
-                    style={{ marginRight: "5px" }}
-                  />
-                  {tab.title}
-                </Link>
-              </li>
-            ))}
-          </div>
-        )}
       </header>
     </>
   );
