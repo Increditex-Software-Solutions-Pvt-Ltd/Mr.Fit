@@ -135,20 +135,56 @@ const CommonNavbar = ({ subTabs }) => {
           </div>
           {showRemainingTabs && (
             <div
-              className="dropdown-content"
+              className="dropdown-content-sub"
               onMouseEnter={() => setShowRemainingTabs(true)}
               onMouseLeave={() => setShowRemainingTabs(false)}
             >
-              {remainingTabs.map((tab, i) => (
-                <li className="nav-item" key={i}>
-                  <Link
-                    to={`/category/sub/${tab}/${title}`}
-                    className="nav-link links"
-                  >
-                    {tab}
-                  </Link>
-                </li>
-              ))}
+              {remainingTabs.map((tab, i) =>
+                tab === "Home" ? (
+                  <li className="nav-item" key={i}>
+                    <Link to={`/category/${title}`} className="nav-link links">
+                      <img
+                        src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                        alt="logo"
+                        width="30px"
+                        style={{ marginRight: "10px" }}
+                      />
+                      <span
+                        style={{
+                          color: "black",
+                          fontSize: "1rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {tab}
+                      </span>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className="nav-item" key={i}>
+                    <Link
+                      to={`/category/sub/${tab}/${title}`}
+                      className="nav-link links"
+                    >
+                      <img
+                        src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                        alt="logo"
+                        width="30px"
+                        style={{ marginRight: "10px" }}
+                      />
+                      <span
+                        style={{
+                          color: "black",
+                          fontSize: "1rem",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {tab}
+                      </span>
+                    </Link>
+                  </li>
+                )
+              )}
             </div>
           )}
 

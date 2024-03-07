@@ -19,6 +19,28 @@
     font-size: 1.5rem;
 }
 
+.dropdown-content-sub {
+    position: absolute;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    width: 100%;
+    grid-gap: 20px;
+    top: 40px;
+    left: 10px;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+.dropdown-content-sub>li {
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
 .triangle {
     position: absolute;
     top: 30px;

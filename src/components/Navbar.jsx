@@ -110,7 +110,7 @@ const Navbar = ({ tabs }) => {
           </div>
           {showRemainingTabs && (
             <div
-              className="dropdown-content"
+              className="dropdown-content-remaining"
               onMouseEnter={() => setShowRemainingTabs(true)}
               onMouseLeave={() => setShowRemainingTabs(false)}
             >
@@ -126,7 +126,7 @@ const Navbar = ({ tabs }) => {
                       width="30px"
                       style={{ marginRight: "5px" }}
                     />
-                    {tab.title}
+                    <span style={{ color: "black" }}> {tab.title}</span>
                   </Link>
                 </li>
               ))}
