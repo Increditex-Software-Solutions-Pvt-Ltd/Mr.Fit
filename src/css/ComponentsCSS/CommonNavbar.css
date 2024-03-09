@@ -8,6 +8,7 @@
     top: 40px;
     left: -10px;
     padding: 20px 20px;
+    z-index: 1;
 }
 
 .dropdown-content>li {
@@ -21,7 +22,6 @@
 
 .dropdown-content-sub {
     position: absolute;
-    background-color: black;
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     width: 100%;
@@ -30,6 +30,7 @@
     left: 10px;
     padding: 20px 20px;
     background-color: white;
+    z-index: 1;
 }
 
 .dropdown-content-sub>li {
@@ -51,6 +52,7 @@
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid #f9f9f9;
+    z-index: 1;
 }
 
 .triangle-side {
@@ -63,6 +65,7 @@
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid #f9f9f9;
+    z-index: 1;
 }
 
 .navbar-nav {

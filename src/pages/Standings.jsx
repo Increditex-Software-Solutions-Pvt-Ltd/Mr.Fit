@@ -4,6 +4,8 @@ import StandingsComp from "../components/StandingsComp";
 import CommonNavbar from "../components/CommonNavbar";
 import { useTabContext } from "../contexts/TabsContext";
 import "../css/PagesCss/Standings.css";
+import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import { useWindowWidth } from "../contexts/WindowWidth";
 
 function Standings() {
   const { title } = useParams();
@@ -14,10 +16,14 @@ function Standings() {
       return tab;
     } else return 0;
   });
-
+  const windowWidth = useWindowWidth();
   return (
     <div>
-      <CommonNavbar subTabs={subs[0].subTitles} />
+      {windowWidth > 750 ? (
+        <CommonNavbar subTabs={subs[0].subTitles} />
+      ) : (
+        <MobileCommonNavbar subTabs={subs[0].subTitles} />
+      )}
       <div className="container">
         <div className="standings-page">
           <h1 style={{ fontWeight: "bold" }}>{title} Table</h1>

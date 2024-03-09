@@ -4,6 +4,8 @@ import { useTabContext } from "../contexts/TabsContext";
 import CommonNavbar from "../components/CommonNavbar";
 import TeamsComponent from "../components/TeamsComponent";
 import "../css/PagesCss/Teams.css";
+import { useWindowWidth } from "../contexts/WindowWidth";
+import MobileCommonNavbar from "../components/MobileCommonNavbar";
 
 function Team() {
   const { title } = useParams();
@@ -15,9 +17,14 @@ function Team() {
     } else return 0;
   });
 
+  const windowWidth = useWindowWidth();
   return (
     <div>
-      <CommonNavbar subTabs={subs[0].subTitles} />
+      {windowWidth > 750 ? (
+        <CommonNavbar subTabs={subs[0].subTitles} />
+      ) : (
+        <MobileCommonNavbar subTabs={subs[0].subTitles} />
+      )}
       <div className="container">
         <div className="teams-page">
           <h1 style={{ fontWeight: "bold" }}>{title} Teams</h1>

@@ -249,7 +249,7 @@ const tabs = [
     title: "Sports business",
     name: "Sports business",
     logo: "https://cdn-league-logos.theathletic.com/league-31-color@2x.png",
-    subTitles: "Home",
+    subTitles: ["Home"],
   },
 
   {

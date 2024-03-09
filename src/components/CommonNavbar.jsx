@@ -25,9 +25,9 @@ const CommonNavbar = ({ subTabs }) => {
     { width: 450, tabs: 1 },
     { width: 650, tabs: 1 },
     { width: 750, tabs: 2 },
-    { width: 1050, tabs: 3 },
-    { width: 1200, tabs: 5 },
-    { width: 1400, tabs: 6 },
+    { width: 1050, tabs: 2 },
+    { width: 1200, tabs: 3 },
+    { width: 1400, tabs: 4 },
   ];
 
   let tabsToDisplay = 7; // default value
@@ -75,28 +75,29 @@ const CommonNavbar = ({ subTabs }) => {
                 {name[0].name}
               </Link>
               <div className="vr-line"></div>
-              <ul className="navbar-nav">
-                {displayedTabs.map((tab, i) => {
-                  return tab === "Home" ? (
-                    <li className="nav-item" key={i}>
-                      <Link
-                        to={`/category/${title}`}
-                        className="nav-link links"
-                      >
-                        {tab}
-                      </Link>
-                    </li>
-                  ) : (
-                    <li className="nav-item" key={i}>
-                      <Link
-                        to={`/category/sub/${tab}/${title}`}
-                        className="nav-link links"
-                      >
-                        {tab}
-                      </Link>
-                    </li>
-                  );
-                })}
+              <ul className="navbar-nav justify-content-start align-items-center gap-3">
+                {subTabs.length > 1 &&
+                  displayedTabs.map((tab, i) => {
+                    return tab === "Home" ? (
+                      <li className="nav-item" key={i}>
+                        <Link
+                          to={`/category/${title}`}
+                          className="nav-link links"
+                        >
+                          {tab}
+                        </Link>
+                      </li>
+                    ) : (
+                      <li className="nav-item" key={i}>
+                        <Link
+                          to={`/category/sub/${tab}/${title}`}
+                          className="nav-link links"
+                        >
+                          {tab}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 {remainingTabs.length > 0 ? (
                   <li className="position-relative">
                     <button

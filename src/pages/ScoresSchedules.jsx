@@ -4,6 +4,8 @@ import ScoresSchedulesComp from "../components/ScoresSchedulesComp";
 import { useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import "../css/PagesCss/ScoresSchedules.css";
+import { useWindowWidth } from "../contexts/WindowWidth";
+import MobileCommonNavbar from "../components/MobileCommonNavbar";
 
 function ScoresSchedules() {
   const { title } = useParams();
@@ -14,9 +16,14 @@ function ScoresSchedules() {
       return tab;
     } else return 0;
   });
+  const windowWidth = useWindowWidth();
   return (
     <div>
-      <CommonNavbar subTabs={subs[0].subTitles} />
+      {windowWidth > 750 ? (
+        <CommonNavbar subTabs={subs[0].subTitles} />
+      ) : (
+        <MobileCommonNavbar subTabs={subs[0].subTitles} />
+      )}
       <div className="container">
         <div className="scores-schedules-page">
           <h3 style={{ fontWeight: "bold" }}>{title} Schedule</h3>

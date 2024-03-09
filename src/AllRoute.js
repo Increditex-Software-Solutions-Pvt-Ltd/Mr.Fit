@@ -7,7 +7,7 @@ import Podcasts from './pages/Podcasts'
 import LiveNews from './pages/LiveNews'
 import Standings from './pages/Standings'
 import ScoresSchedules from './pages/ScoresSchedules'
-import LiveNewsSub from './pages/LiveNewsSub'
+// import LiveNewsSub from './pages/LiveNewsSub'
 import Fantasy from './pages/Fantasy'
 
 const AllRoute = () => {
@@ -21,7 +21,7 @@ const AllRoute = () => {
       <Route path='/category/sub/Standings/:title' element={<Standings />} />
       <Route path='/category/sub/Scores & Schedule/:title' element={<ScoresSchedules />} />
       <Route path='/category/sub/Schedule/:title' element={<ScoresSchedules />} />
-      <Route path='/category/sub/Live News/:title' element={<LiveNewsSub />} />
+      <Route path='/category/sub/Live News/:title' element={<LiveNews />} />
       <Route path='/category/sub/Fantasy/:title' element={<Fantasy />} />
     </Routes>
   )

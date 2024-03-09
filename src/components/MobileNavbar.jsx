@@ -1,34 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useWindowWidth } from "../contexts/WindowWidth";
-import "../css/ComponentsCSS/Navbar.css";
 
-const Navbar = ({ tabs }) => {
-  const windowWidth = useWindowWidth();
-  const [showRemainingTabs, setShowRemainingTabs] = useState(false);
+function MobileNavbar({ tabs }) {
   const [showSideNavbar, setShowSideNavbar] = useState(false);
-
-  // Define breakpoints for tab display
-  const breakpoints = [
-    { width: 400, tabs: 0 },
-    { width: 450, tabs: 1 },
-    { width: 650, tabs: 2 },
-    { width: 750, tabs: 2 },
-    { width: 1050, tabs: 3 },
-    { width: 1200, tabs: 5 },
-    { width: 1400, tabs: 6 },
-  ];
-
-  let tabsToDisplay = 7; // default value
-  for (let i = 0; i < breakpoints.length; i++) {
-    if (windowWidth < breakpoints[i].width) {
-      tabsToDisplay = breakpoints[i].tabs;
-      break;
-    }
-  }
-
-  const displayedTabs = tabs.slice(0, tabsToDisplay);
-  const remainingTabs = tabs.slice(tabsToDisplay);
 
   return (
     <>
@@ -55,43 +29,6 @@ const Navbar = ({ tabs }) => {
               <Link to="/" className="navbar-brand">
                 The Athelitic
               </Link>
-              <div className="vr-line"></div>
-              <ul className="navbar-nav">
-                {displayedTabs.map((tab, i) => {
-                  return tab.title === "Live News" ? (
-                    <li className="nav-item" key={i}>
-                      <Link to={`/live`} className="nav-link links">
-                        {tab.title}
-                      </Link>
-                    </li>
-                  ) : (
-                    <li className="nav-item" key={i}>
-                      <Link
-                        to={`/category/${tab.title}`}
-                        className="nav-link links"
-                      >
-                        {tab.title}
-                      </Link>
-                    </li>
-                  );
-                })}
-                <li className="position-relative">
-                  <button
-                    className="nav-link links py-2 px-2 ms-1"
-                    onMouseEnter={() => setShowRemainingTabs(true)}
-                    onMouseLeave={() => setShowRemainingTabs(false)}
-                  >
-                    <i className="bi bi-three-dots nav-item"></i>
-                  </button>
-                  {showRemainingTabs && (
-                    <div
-                      className="triangle"
-                      onMouseEnter={() => setShowRemainingTabs(true)}
-                      onMouseLeave={() => setShowRemainingTabs(false)}
-                    ></div>
-                  )}
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -107,30 +44,6 @@ const Navbar = ({ tabs }) => {
               <i className="bi bi-search"></i>
             </a>
           </div>
-          {showRemainingTabs && (
-            <div
-              className="dropdown-content-remaining"
-              onMouseEnter={() => setShowRemainingTabs(true)}
-              onMouseLeave={() => setShowRemainingTabs(false)}
-            >
-              {remainingTabs.map((tab, i) => (
-                <li className="nav-item" key={i}>
-                  <Link
-                    to={`/category/${tab.title}`}
-                    className="nav-link links"
-                  >
-                    <img
-                      src={tab.logo}
-                      alt={tab.title}
-                      width="30px"
-                      style={{ marginRight: "5px" }}
-                    />
-                    <span style={{ color: "black" }}> {tab.title}</span>
-                  </Link>
-                </li>
-              ))}
-            </div>
-          )}
           {showSideNavbar && (
             <div
               className="dropdown-content"
@@ -216,6 +129,6 @@ const Navbar = ({ tabs }) => {
       </nav>
     </>
   );
-};
+}
 
-export default Navbar;
+export default MobileNavbar;

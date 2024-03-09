@@ -4,6 +4,8 @@ import { useTabContext } from "../contexts/TabsContext";
 import CommonNavbar from "../components/CommonNavbar";
 import PodcastsComp from "../components/PodcastsComp";
 import "../css/PagesCss/Podcasts.css";
+import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import { useWindowWidth } from "../contexts/WindowWidth";
 
 function Podcasts() {
   const { title } = useParams();
@@ -14,7 +16,7 @@ function Podcasts() {
       return tab;
     } else return 0;
   });
-
+  const windowWidth = useWindowWidth();
   return (
     <div
       style={{
@@ -23,7 +25,11 @@ function Podcasts() {
         paddingBottom: "20px",
       }}
     >
-      <CommonNavbar subTabs={subs[0].subTitles} />
+      {windowWidth > 750 ? (
+        <CommonNavbar subTabs={subs[0].subTitles} />
+      ) : (
+        <MobileCommonNavbar subTabs={subs[0].subTitles} />
+      )}
       <div className="container">
         <div className="podcasts-page">
           <h1 style={{ fontWeight: "bold" }}>

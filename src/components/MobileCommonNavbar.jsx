@@ -1,0 +1,246 @@
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { useTabContext } from "../contexts/TabsContext";
+import "../css/ComponentsCSS/CommonNavbar.css";
+import { useWindowWidth } from "../contexts/WindowWidth";
+
+function MobileCommonNavbar({ subTabs }) {
+  const { title } = useParams();
+  const tabs = useTabContext();
+
+  const name = tabs.filter((tab) => {
+    if (tab.title.split(" ").join("") === title.split(" ").join("")) {
+      return tab;
+    } else return 0;
+  });
+
+  const windowWidth = useWindowWidth();
+  const [showRemainingTabs, setShowRemainingTabs] = useState(false);
+  const [showSideNavbar, setShowSideNavbar] = useState(false);
+
+  // Define breakpoints for tab display
+  const breakpoints = [
+    { width: 400, tabs: 1 },
+    { width: 450, tabs: 1 },
+    { width: 550, tabs: 1 },
+    { width: 600, tabs: 2 },
+  ];
+
+  let tabsToDisplay = 4; // default value
+  for (let i = 0; i < breakpoints.length; i++) {
+    if (windowWidth < breakpoints[i].width) {
+      tabsToDisplay = breakpoints[i].tabs;
+      break;
+    }
+  }
+
+  const displayedTabs = subTabs.slice(0, tabsToDisplay);
+  const remainingTabs = subTabs.slice(tabsToDisplay);
+
+  return (
+    <div>
+      <>
+        <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+          <div className="container position-relative">
+            <div className="d-flex justify-content-center align-items-center">
+              <div className="menu pt-1 position-relative">
+                <button
+                  onMouseEnter={() => setShowSideNavbar(true)}
+                  onMouseLeave={() => setShowSideNavbar(false)}
+                >
+                  <i className="fas fa-bars" style={{ color: "white" }}></i>
+                </button>
+                {showSideNavbar && (
+                  <div
+                    className="triangle-side"
+                    onMouseEnter={() => setShowSideNavbar(true)}
+                    onMouseLeave={() => setShowSideNavbar(false)}
+                  ></div>
+                )}
+              </div>
+              <div className="d-flex justify-content-center align-items-center ms-3">
+                <Link to="/" className="navbar-brand">
+                  The Athelitic
+                </Link>
+              </div>
+            </div>
+
+            <div className="d-flex justify-content-center align-items-center">
+              <div>
+                <button className="subscribebtn">Subscribe for $2</button>
+              </div>
+              <a
+                href="#searchbar"
+                className="nav-link text-white text-lg ms-1"
+                data-bs-toggle="offcanvas"
+              >
+                <i className="bi bi-search"></i>
+              </a>
+            </div>
+            {showSideNavbar && (
+              <div
+                className="dropdown-content"
+                onMouseEnter={() => setShowSideNavbar(true)}
+                onMouseLeave={() => setShowSideNavbar(false)}
+              >
+                {tabs.map((tab, i) =>
+                  tab.title === "Live News" ? (
+                    <li className="nav-item" key={i}>
+                      <Link to={`/live`} className="nav-link links">
+                        <img
+                          src={tab.logo}
+                          alt={tab.title}
+                          width="30px"
+                          style={{ marginRight: "5px" }}
+                        />
+                        {tab.title}
+                      </Link>
+                    </li>
+                  ) : (
+                    <li className="nav-item" key={i}>
+                      <Link
+                        to={`/category/${tab.title}`}
+                        className="nav-link links"
+                      >
+                        <img
+                          src={tab.logo}
+                          alt={tab.title}
+                          width="30px"
+                          style={{ marginRight: "5px" }}
+                        />
+                        {tab.title}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </div>
+            )}
+          </div>
+        </header>
+
+        {/* sub navbar */}
+        <nav className="bg-dark pb-2">
+          <div className="container position-relative">
+            <div className="d-flex justify-content-start align-items-center gap-1 w-100">
+              <Link to={`/category/${title}`} className="navbar-brand">
+                <img
+                  src={`${name[0].logo}`}
+                  alt=""
+                  width="30px"
+                  className="pe-1"
+                />
+                <span style={{ color: "white" }}> {name[0].name}</span>
+              </Link>
+
+              <div className="vr-line"></div>
+
+              <ul className="navbar-nav d-flex justify-content-space-between align-items-center gap-3">
+                {subTabs.length > 1 &&
+                  displayedTabs.map((tab, i) => {
+                    return tab === "Home" ? (
+                      <li className="nav-item" key={i}>
+                        <Link
+                          to={`/category/${title}`}
+                          className="nav-link links"
+                        >
+                          {tab}
+                        </Link>
+                      </li>
+                    ) : (
+                      <li className="nav-item" key={i}>
+                        <Link
+                          to={`/category/sub/${tab}/${title}`}
+                          className="nav-link links"
+                        >
+                          {tab}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                {remainingTabs.length > 0 ? (
+                  <li className="position-relative">
+                    <button
+                      className="nav-link links py-2 px-2 ms-1"
+                      onMouseEnter={() => setShowRemainingTabs(true)}
+                      onMouseLeave={() => setShowRemainingTabs(false)}
+                    >
+                      <i className="bi bi-three-dots nav-item"></i>
+                    </button>
+                    {showRemainingTabs && (
+                      <div
+                        className="triangle"
+                        onMouseEnter={() => setShowRemainingTabs(true)}
+                        onMouseLeave={() => setShowRemainingTabs(false)}
+                      ></div>
+                    )}
+                  </li>
+                ) : (
+                  ""
+                )}
+              </ul>
+            </div>
+            {showRemainingTabs && (
+              <div
+                className="dropdown-content-sub"
+                onMouseEnter={() => setShowRemainingTabs(true)}
+                onMouseLeave={() => setShowRemainingTabs(false)}
+              >
+                {remainingTabs.map((tab, i) =>
+                  tab === "Home" ? (
+                    <li className="nav-item" key={i}>
+                      <Link
+                        to={`/category/${title}`}
+                        className="nav-link links"
+                      >
+                        <img
+                          src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                          alt="logo"
+                          width="30px"
+                          style={{ marginRight: "10px" }}
+                        />
+                        <span
+                          style={{
+                            color: "black",
+                            fontSize: "1rem",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {tab}
+                        </span>
+                      </Link>
+                    </li>
+                  ) : (
+                    <li className="nav-item" key={i}>
+                      <Link
+                        to={`/category/sub/${tab}/${title}`}
+                        className="nav-link links"
+                      >
+                        <img
+                          src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                          alt="logo"
+                          width="30px"
+                          style={{ marginRight: "10px" }}
+                        />
+                        <span
+                          style={{
+                            color: "black",
+                            fontSize: "1rem",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {tab}
+                        </span>
+                      </Link>
+                    </li>
+                  )
+                )}
+              </div>
+            )}
+          </div>
+        </nav>
+      </>
+    </div>
+  );
+}
+
+export default MobileCommonNavbar;
