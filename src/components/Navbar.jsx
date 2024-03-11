@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import "../css/ComponentsCSS/Navbar.css";
@@ -7,6 +7,7 @@ const Navbar = ({ tabs }) => {
   const windowWidth = useWindowWidth();
   const [showRemainingTabs, setShowRemainingTabs] = useState(false);
   const [showSideNavbar, setShowSideNavbar] = useState(false);
+  const [numColumns, setNumColumns] = useState(5); // State to keep track of number of columns
 
   // Define breakpoints for tab display
   const breakpoints = [
@@ -29,6 +30,45 @@ const Navbar = ({ tabs }) => {
 
   const displayedTabs = tabs.slice(0, tabsToDisplay);
   const remainingTabs = tabs.slice(tabsToDisplay);
+
+  useEffect(() => {
+    // Update number of columns based on screen width
+    const handleResize = () => {
+      if (window.innerWidth > 1200) {
+        setNumColumns(10);
+      } else if (window.innerWidth > 800) {
+        setNumColumns(16);
+      } else if (window.innerWidth > 900) {
+        setNumColumns(15);
+      } else {
+        setNumColumns(1);
+      }
+    };
+
+    // Call the function initially and add event listener for window resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+
+  // Split the tabs into groups based on the number of columns
+  const tabGroups = [];
+  for (let i = 0; i < tabs.length; i += numColumns) {
+    tabGroups.push(tabs.slice(i, i + numColumns));
+  }
+
+  // Add "Other Tabs" at the end
+  tabGroups.push([
+    { title: "Search" },
+    { title: "Login" },
+    { title: "invite Friends" },
+    { title: "Saved Stories" },
+    { title: "Manage Feed" },
+  ]);
 
   return (
     <>
@@ -137,7 +177,65 @@ const Navbar = ({ tabs }) => {
               onMouseEnter={() => setShowSideNavbar(true)}
               onMouseLeave={() => setShowSideNavbar(false)}
             >
-              {tabs.map((tab, i) =>
+              <div className="tabs-container">
+                {tabGroups.map((group, index) =>
+                  index !== tabGroups.length - 1 ? (
+                    <div key={index} className="column">
+                      {group.map((tab, i) =>
+                        tab.title === "Live News" ? (
+                          <div className="tab" key={i}>
+                            <Link to={`/live`} className="nav-link links">
+                              <img
+                                src={tab.logo}
+                                alt={tab.title}
+                                width="30px"
+                                style={{ marginRight: "5px" }}
+                              />
+                              {tab.title}
+                            </Link>
+                          </div>
+                        ) : (
+                          <div className="tab" key={i}>
+                            <Link
+                              to={`/category/${tab.title}`}
+                              className="nav-link links"
+                            >
+                              <img
+                                src={tab.logo}
+                                alt={tab.title}
+                                width="30px"
+                                style={{ marginRight: "5px" }}
+                              />
+                              {tab.title}
+                            </Link>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  ) : (
+                    <div key={index} className="column">
+                      <hr
+                        style={{
+                          color: "white",
+                          width: "200px",
+                          margin: "0px",
+                        }}
+                      />
+                      {group.map((tab, i) => (
+                        <div className="tab" key={i}>
+                          <Link
+                            to={`/category/${tab.title}`}
+                            className="nav-link links"
+                          >
+                            {tab.title}
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  )
+                )}
+              </div>
+              {/* {tabs.map((tab, i) =>
                 tab.title === "Live News" ? (
                   <li className="nav-item" key={i}>
                     <Link to={`/live`} className="nav-link links">
@@ -166,7 +264,7 @@ const Navbar = ({ tabs }) => {
                     </Link>
                   </li>
                 )
-              )}
+              )} */}
             </div>
           )}
         </div>

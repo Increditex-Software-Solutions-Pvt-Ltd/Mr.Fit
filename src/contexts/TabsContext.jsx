@@ -120,7 +120,7 @@ const tabs = [
       // "NFL Draft",
       "Standings",
       "Podcasts",
-      // "Fantasy",
+      "Fantasy",
       // "NFL Odds",
       // "NFL Picks",
       // "Free Agency Rankings",
