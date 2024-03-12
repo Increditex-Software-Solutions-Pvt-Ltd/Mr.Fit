@@ -49,7 +49,7 @@ const tabs = [
     title: "La Liga",
     name: "La Liga",
     logo: "https://cdn-league-logos.theathletic.com/league-17-color@2x.png",
-    subTitles: ["Home"],
+    subTitles: ["Home", "Scores & Schedule", "Standings", "Teams", "Podcasts"],
   },
 
   {
@@ -359,7 +359,12 @@ const tabs = [
     title: "Women's World Cup",
     name: "Women's World Cup",
     logo: "https://cdn-league-logos.theathletic.com/league-55-color@2x.png",
-    subTitles: ["Home", "Scores & Schedule", "Standings", "Bracket"],
+    subTitles: [
+      "Home",
+      "Scores & Schedule",
+      "Standings",
+      // "Bracket"
+    ],
   },
 
   {

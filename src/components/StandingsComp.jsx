@@ -229,7 +229,53 @@ function StandingsComp() {
               <td>{team.GA}</td>
               <td>{team.GD}</td>
               <td>{team.PTS}</td>
-              <td>{team.form}</td>
+              <td>
+                {team.form.split("").map((res) => {
+                  if (res === "W") {
+                    return (
+                      <span
+                        style={{
+                          backgroundColor: "green",
+                          borderRadius: "50%",
+                          padding: "3px 5px",
+                          margin: "0 1px",
+                          fontSize: "12px",
+                        }}
+                      >
+                        W
+                      </span>
+                    );
+                  } else if (res === "L") {
+                    return (
+                      <span
+                        style={{
+                          backgroundColor: "red",
+                          borderRadius: "50%",
+                          padding: "3px 10px",
+                          margin: "0 1px",
+                          fontSize: "12px",
+                        }}
+                      >
+                        L
+                      </span>
+                    );
+                  } else {
+                    return (
+                      <span
+                        style={{
+                          backgroundColor: "gray",
+                          borderRadius: "50%",
+                          padding: "3px 8px",
+                          margin: "0 1px",
+                          fontSize: "12px",
+                        }}
+                      >
+                        D
+                      </span>
+                    );
+                  }
+                })}
+              </td>
             </tr>
           ))}
         </tbody>

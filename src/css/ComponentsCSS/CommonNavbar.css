@@ -74,3 +74,35 @@
     justify-content: space-between;
     gap: 5px;
 }
+
+.tabs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* default to 1 column */
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .tabs-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* for medium screens, 2 columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    .tabs-container {
+        grid-template-columns: repeat(4, 1fr);
+        /* for large screens, 3 columns */
+    }
+}
+
+@media (min-width: 1400px) {
+    .tabs-container {
+        grid-template-columns: repeat(5, 1fr);
+        /* for extra-large screens, 5 columns */
+    }
+}
+
+.tab {
+    padding: 5px 10px;
+}

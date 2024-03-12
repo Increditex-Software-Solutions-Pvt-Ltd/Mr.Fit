@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import "../css/ComponentsCSS/CommonNavbar.css";
@@ -8,15 +8,57 @@ function MobileCommonNavbar({ subTabs }) {
   const { title } = useParams();
   const tabs = useTabContext();
 
+  const windowWidth = useWindowWidth();
+  const [showRemainingTabs, setShowRemainingTabs] = useState(false);
+  const [showSideNavbar, setShowSideNavbar] = useState(false);
+  const [numColumns, setNumColumns] = useState(5); // State to keep track of number of columns
+
+  useEffect(() => {
+    // Update number of columns based on screen width
+    const handleResize = () => {
+      if (window.innerWidth > 1400) {
+        setNumColumns(10);
+      } else if (window.innerWidth > 1200) {
+        setNumColumns(16);
+      } else if (window.innerWidth > 900) {
+        setNumColumns(15);
+      } else if (window.innerWidth > 786) {
+        setNumColumns(2);
+      } else {
+        setNumColumns(2);
+      }
+    };
+
+    // Call the function initially and add event listener for window resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+
+  // Split the tabs into groups based on the number of columns
+  const tabGroups = [];
+  for (let i = 0; i < tabs.length; i += numColumns) {
+    tabGroups.push(tabs.slice(i, i + numColumns));
+  }
+
+  // Add "Other Tabs" at the end
+  tabGroups.push([
+    { title: "Search" },
+    { title: "Login" },
+    { title: "invite Friends" },
+    { title: "Saved Stories" },
+    { title: "Manage Feed" },
+  ]);
+
   const name = tabs.filter((tab) => {
     if (tab.title.split(" ").join("") === title.split(" ").join("")) {
       return tab;
     } else return 0;
   });
-
-  const windowWidth = useWindowWidth();
-  const [showRemainingTabs, setShowRemainingTabs] = useState(false);
-  const [showSideNavbar, setShowSideNavbar] = useState(false);
 
   // Define breakpoints for tab display
   const breakpoints = [
@@ -83,6 +125,72 @@ function MobileCommonNavbar({ subTabs }) {
                 onMouseEnter={() => setShowSideNavbar(true)}
                 onMouseLeave={() => setShowSideNavbar(false)}
               >
+                <div className="tabs-container">
+                  {tabGroups.map((group, index) =>
+                    index !== tabGroups.length - 1 ? (
+                      <div key={index} className="column">
+                        {group.map((tab, i) =>
+                          tab.title === "Live News" ? (
+                            <div className="tab" key={i}>
+                              <Link to={`/live`} className="nav-link links">
+                                <img
+                                  src={tab.logo}
+                                  alt={tab.title}
+                                  width="30px"
+                                  style={{ marginRight: "5px" }}
+                                />
+                                {tab.title}
+                              </Link>
+                            </div>
+                          ) : (
+                            <div className="tab" key={i}>
+                              <Link
+                                to={`/category/${tab.title}`}
+                                className="nav-link links"
+                              >
+                                <img
+                                  src={tab.logo}
+                                  alt={tab.title}
+                                  width="30px"
+                                  style={{ marginRight: "5px" }}
+                                />
+                                {tab.title}
+                              </Link>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    ) : (
+                      <div key={index} className="column">
+                        <hr
+                          style={{
+                            color: "white",
+                            width: "200px",
+                            margin: "0px",
+                          }}
+                        />
+                        {group.map((tab, i) => (
+                          <div className="tab" key={i}>
+                            <Link
+                              to={`/category/${tab.title}`}
+                              className="nav-link links"
+                            >
+                              {tab.title}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+            )}
+            {/* {showSideNavbar && (
+              <div
+                className="dropdown-content"
+                onMouseEnter={() => setShowSideNavbar(true)}
+                onMouseLeave={() => setShowSideNavbar(false)}
+              >
                 {tabs.map((tab, i) =>
                   tab.title === "Live News" ? (
                     <li className="nav-item" key={i}>
@@ -114,7 +222,7 @@ function MobileCommonNavbar({ subTabs }) {
                   )
                 )}
               </div>
-            )}
+            )} */}
           </div>
         </header>
 

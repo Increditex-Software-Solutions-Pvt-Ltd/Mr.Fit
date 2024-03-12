@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Topnews from "../components/Topnews";
 import { useWindowWidth } from "../contexts/WindowWidth";
-
 import { useTabContext } from "../contexts/TabsContext";
 import MobileNavbar from "../components/MobileNavbar";
 

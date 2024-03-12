@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CommonhomeComp = ({ title, logo }) => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="sec2 my-3 py-3 ">
@@ -17,13 +19,23 @@ const CommonhomeComp = ({ title, logo }) => {
                 <div className="card border-0">
                   <div className="card-body">
                     <img
+                      style={{ cursor: "pointer" }}
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/02085517/02-02-contracts-2025-2-1024x683.png"
                       className="img-fluid"
                       alt=""
                     />
                   </div>
                   <div className="card-footer bg-transparent border-0">
-                    <h3 className="text-headblack text-lg">
+                    <h3
+                      style={{ cursor: "pointer" }}
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
+                      className="text-headblack text-lg"
+                    >
                       Will Man City be worried? Why did Southgate scout
                       Henderson? Are fan walkouts valid? – The Briefing
                     </h3>
@@ -46,13 +58,17 @@ const CommonhomeComp = ({ title, logo }) => {
             <div className="col-md-6">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -71,14 +87,18 @@ const CommonhomeComp = ({ title, logo }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04182449/GettyImages-1978650633-scaled-e1707089111403-1024x682.jpg"
                       className="img-fluid"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -99,14 +119,18 @@ const CommonhomeComp = ({ title, logo }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -127,14 +151,18 @@ const CommonhomeComp = ({ title, logo }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -171,13 +199,23 @@ const CommonhomeComp = ({ title, logo }) => {
                 <div className="card border-0">
                   <div className="card-body">
                     <img
+                      style={{ cursor: "pointer" }}
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/06021715/Foden-Manchester-City-Brentford-hat-trick-scaled-e1707203878962-1024x683.jpg"
                       className="img-fluid"
                       alt=""
                     />
                   </div>
                   <div className="card-footer bg-transparent border-0">
-                    <h3 className="text-headblack text-lg">
+                    <h3
+                      style={{ cursor: "pointer" }}
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
+                      className="text-headblack text-lg"
+                    >
                       Will Man City be worried? Why did Southgate scout
                       Henderson? Are fan walkouts valid? – The Briefing
                     </h3>
@@ -200,13 +238,17 @@ const CommonhomeComp = ({ title, logo }) => {
             <div className="col-md-6">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -225,14 +267,18 @@ const CommonhomeComp = ({ title, logo }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04182449/GettyImages-1978650633-scaled-e1707089111403-1024x682.jpg"
                       className="img-fluid"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -253,14 +299,18 @@ const CommonhomeComp = ({ title, logo }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -281,14 +331,18 @@ const CommonhomeComp = ({ title, logo }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
-                      style={{ height: "80px", width: "120px" }}
+                      style={{
+                        height: "80px",
+                        width: "120px",
+                        cursor: "pointer",
+                      }}
                       alt=""
                     />
                     <div className="col-lg-8">
@@ -340,6 +394,10 @@ const CommonhomeComp = ({ title, logo }) => {
                 <div className="col-md-6">
                   <div className="object-fit-cover">
                     <img
+                      style={{ cursor: "pointer" }}
+                      onClick={() =>
+                        navigate("/category/headlines/Premier League")
+                      }
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/02081506/ATSU-LEAD-scaled.jpeg"
                       className="object-fit-cover"
                       height="310px"

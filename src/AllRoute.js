@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import Commonhome from './pages/Commonhome'
 import Teams from './pages/Teams'
@@ -9,6 +9,7 @@ import Standings from './pages/Standings'
 import ScoresSchedules from './pages/ScoresSchedules'
 // import LiveNewsSub from './pages/LiveNewsSub'
 import Fantasy from './pages/Fantasy'
+import Headlines from './pages/Headlines'
 
 const AllRoute = () => {
   return (
@@ -23,6 +24,7 @@ const AllRoute = () => {
       <Route path='/category/sub/Schedule/:title' element={<ScoresSchedules />} />
       <Route path='/category/sub/Live News/:title' element={<LiveNews />} />
       <Route path='/category/sub/Fantasy/:title' element={<Fantasy />} />
+      <Route path="/category/headlines/:title" element={<Headlines />} />
     </Routes>
   )
 }
