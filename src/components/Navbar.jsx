@@ -34,10 +34,10 @@ const Navbar = ({ tabs }) => {
   useEffect(() => {
     // Update number of columns based on screen width
     const handleResize = () => {
-      if (window.innerWidth > 1200) {
+      if (window.innerWidth > 1400) {
         setNumColumns(10);
-      } else if (window.innerWidth > 800) {
-        setNumColumns(16);
+      } else if (window.innerWidth > 1024) {
+        setNumColumns(12);
       } else if (window.innerWidth > 900) {
         setNumColumns(15);
       } else {
