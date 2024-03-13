@@ -26,7 +26,7 @@ const AllRoute = () => {
       <Route path='/category/sub/Live News/:title' element={<LiveNews />} />
       <Route path='/category/sub/Fantasy/:title' element={<Fantasy />} />
       <Route path="/category/headlines/:title" element={<Headlines />} />
-      {/* <Route path="/team/:name" element={<TeamDetails />} /> */}
+      <Route path="/team/:name" element={<TeamDetails />} />
     </Routes>
 
   )

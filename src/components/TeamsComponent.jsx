@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/ComponentsCSS/TeamComp.css";
+import { useNavigate } from "react-router-dom";
 
 function TeamsComponent() {
   const teams = [
@@ -83,6 +84,8 @@ function TeamsComponent() {
     chunks.push(teams.slice(i, i + chunkSize));
   }
 
+  const navigate = useNavigate();
+
   return (
     <div className="teams-container">
       {chunks.map((chunk, index) => (
@@ -90,7 +93,7 @@ function TeamsComponent() {
           {chunk.map((team, teamIndex) => (
             <div key={teamIndex}>
               <button
-                onClick={() => handleClick(team.name)}
+                onClick={() => navigate(`/team/${team.name}`)}
                 style={{ cursor: "pointer" }}
               >
                 <img
