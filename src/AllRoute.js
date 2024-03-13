@@ -10,6 +10,7 @@ import ScoresSchedules from './pages/ScoresSchedules'
 // import LiveNewsSub from './pages/LiveNewsSub'
 import Fantasy from './pages/Fantasy'
 import Headlines from './pages/Headlines'
+import TeamDetails from './pages/TeamDetails'
 
 const AllRoute = () => {
   return (
@@ -25,7 +26,9 @@ const AllRoute = () => {
       <Route path='/category/sub/Live News/:title' element={<LiveNews />} />
       <Route path='/category/sub/Fantasy/:title' element={<Fantasy />} />
       <Route path="/category/headlines/:title" element={<Headlines />} />
+      <Route path="/team/:name" element={<TeamDetails />} />
     </Routes>
+
   )
 }
 

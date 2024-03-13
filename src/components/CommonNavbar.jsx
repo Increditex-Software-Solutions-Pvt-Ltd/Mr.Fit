@@ -282,7 +282,7 @@ const CommonNavbar = ({ subTabs }) => {
                       {group.map((tab, i) => (
                         <div className="tab" key={i}>
                           <Link
-                            to={`/category/${tab.title}`}
+                            // to={`/category/${tab.title}`}
                             className="nav-link links"
                           >
                             {tab.title}

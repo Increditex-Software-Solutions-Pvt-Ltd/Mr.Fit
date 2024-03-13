@@ -82,6 +82,13 @@
     gap: 10px;
 }
 
+@media (min-width: 320px) {
+    .tabs-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* for medium screens, 2 columns */
+    }
+}
+
 @media (min-width: 768px) {
     .tabs-container {
         grid-template-columns: repeat(2, 1fr);
