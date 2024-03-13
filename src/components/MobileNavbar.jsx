@@ -97,7 +97,11 @@ function MobileNavbar({ tabs }) {
                     <div key={index} className="column">
                       {group.map((tab, i) =>
                         tab.title === "Live News" ? (
-                          <div className="tab" key={i}>
+                          <div
+                            className="tab"
+                            key={i}
+                            onClick={() => setShowSideNavbar(false)}
+                          >
                             <Link to={`/live`} className="nav-link links">
                               <img
                                 src={tab.logo}
@@ -109,7 +113,11 @@ function MobileNavbar({ tabs }) {
                             </Link>
                           </div>
                         ) : (
-                          <div className="tab" key={i}>
+                          <div
+                            className="tab"
+                            key={i}
+                            onClick={() => setShowSideNavbar(false)}
+                          >
                             <Link
                               to={`/category/${tab.title}`}
                               className="nav-link links"
@@ -136,7 +144,11 @@ function MobileNavbar({ tabs }) {
                         }}
                       />
                       {group.map((tab, i) => (
-                        <div className="tab" key={i}>
+                        <div
+                          className="tab"
+                          key={i}
+                          onClick={() => setShowSideNavbar(false)}
+                        >
                           <Link
                             // to={`/category/${tab.title}`}
                             className="nav-link links"

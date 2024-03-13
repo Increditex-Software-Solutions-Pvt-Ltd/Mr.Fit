@@ -183,7 +183,11 @@ const CommonNavbar = ({ subTabs }) => {
             >
               {remainingTabs.map((tab, i) =>
                 tab === "Home" ? (
-                  <li className="nav-item" key={i}>
+                  <li
+                    className="nav-item"
+                    key={i}
+                    onClick={() => setShowRemainingTabs(false)}
+                  >
                     <Link to={`/category/${title}`} className="nav-link links">
                       <img
                         src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
@@ -203,7 +207,11 @@ const CommonNavbar = ({ subTabs }) => {
                     </Link>
                   </li>
                 ) : (
-                  <li className="nav-item" key={i}>
+                  <li
+                    className="nav-item"
+                    key={i}
+                    onClick={() => setShowRemainingTabs(false)}
+                  >
                     <Link
                       to={`/category/sub/${tab}/${title}`}
                       className="nav-link links"
@@ -241,7 +249,11 @@ const CommonNavbar = ({ subTabs }) => {
                     <div key={index} className="column">
                       {group.map((tab, i) =>
                         tab.title === "Live News" ? (
-                          <div className="tab" key={i}>
+                          <div
+                            className="tab"
+                            key={i}
+                            onClick={() => setShowSideNavbar(false)}
+                          >
                             <Link to={`/live`} className="nav-link links">
                               <img
                                 src={tab.logo}
@@ -253,7 +265,11 @@ const CommonNavbar = ({ subTabs }) => {
                             </Link>
                           </div>
                         ) : (
-                          <div className="tab" key={i}>
+                          <div
+                            className="tab"
+                            key={i}
+                            onClick={() => setShowSideNavbar(false)}
+                          >
                             <Link
                               to={`/category/${tab.title}`}
                               className="nav-link links"
@@ -280,7 +296,11 @@ const CommonNavbar = ({ subTabs }) => {
                         }}
                       />
                       {group.map((tab, i) => (
-                        <div className="tab" key={i}>
+                        <div
+                          className="tab"
+                          key={i}
+                          onClick={() => setShowSideNavbar(false)}
+                        >
                           <Link
                             // to={`/category/${tab.title}`}
                             className="nav-link links"

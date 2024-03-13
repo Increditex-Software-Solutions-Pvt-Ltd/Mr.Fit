@@ -154,7 +154,11 @@ const Navbar = ({ tabs }) => {
               onMouseLeave={() => setShowRemainingTabs(false)}
             >
               {remainingTabs.map((tab, i) => (
-                <li className="nav-item" key={i}>
+                <li
+                  className="nav-item"
+                  key={i}
+                  onClick={() => setShowRemainingTabs(false)}
+                >
                   <Link
                     to={`/category/${tab.title}`}
                     className="nav-link links"
@@ -183,7 +187,11 @@ const Navbar = ({ tabs }) => {
                     <div key={index} className="column">
                       {group.map((tab, i) =>
                         tab.title === "Live News" ? (
-                          <div className="tab" key={i}>
+                          <div
+                            className="tab"
+                            key={i}
+                            onClick={() => setShowSideNavbar(false)}
+                          >
                             <Link to={`/live`} className="nav-link links">
                               <img
                                 src={tab.logo}
@@ -195,7 +203,11 @@ const Navbar = ({ tabs }) => {
                             </Link>
                           </div>
                         ) : (
-                          <div className="tab" key={i}>
+                          <div
+                            className="tab"
+                            key={i}
+                            onClick={() => setShowSideNavbar(false)}
+                          >
                             <Link
                               to={`/category/${tab.title}`}
                               className="nav-link links"
@@ -222,7 +234,11 @@ const Navbar = ({ tabs }) => {
                         }}
                       />
                       {group.map((tab, i) => (
-                        <div className="tab" key={i}>
+                        <div
+                          className="tab"
+                          key={i}
+                          onClick={() => setShowSideNavbar(false)}
+                        >
                           <Link
                             // to={`/category/${tab.title}`}
                             className="nav-link links"

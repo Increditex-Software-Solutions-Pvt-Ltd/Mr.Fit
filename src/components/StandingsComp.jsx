@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/ComponentsCSS/StandingsComp.css";
 
 function StandingsComp() {
   const standingsData = [
