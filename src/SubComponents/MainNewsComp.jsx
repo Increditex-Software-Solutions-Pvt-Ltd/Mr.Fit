@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function MainNewsComp() {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="border-bottom mb-4">
       <section className="sec2 my-3 py-3">
         <div className="container">
           <div className="row">

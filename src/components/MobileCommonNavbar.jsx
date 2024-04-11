@@ -102,7 +102,7 @@ function MobileCommonNavbar({ subTabs }) {
               </div>
               <div className="d-flex justify-content-center align-items-center ms-3">
                 <Link to="/" className="navbar-brand">
-                  The Athelitic
+                  Mr.Fit
                 </Link>
               </div>
             </div>
