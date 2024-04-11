@@ -16,7 +16,6 @@ export const WindowWidthProvider = ({ children }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  console.log(windowWidth);
   return (
     <WindowWidthContext.Provider value={windowWidth}>
       {children}

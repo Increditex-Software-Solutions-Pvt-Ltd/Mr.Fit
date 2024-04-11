@@ -188,3 +188,7 @@ body {
 .border-end {
     border-right: 0.2px solid var(--semilight-color);
 }
+
+.border-bottom {
+    border-bottom: 0.2px solid var(--semilight-color);
+}
