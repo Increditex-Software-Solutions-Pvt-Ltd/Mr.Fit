@@ -1,0 +1,10 @@
+#storiesPic {
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+
+@media screen and (min-width:992px) {
+    #storiesPic {
+        aspect-ratio: 2/2;
+    }
+}

@@ -342,10 +342,11 @@ function TeamsDetailsHome({ teamName }) {
                       <td>{team.GD}</td>
                       <td>{team.PTS}</td>
                       <td>
-                        {team.form.split("").map((res) => {
+                        {team.form.split("").map((res, i) => {
                           if (res === "W") {
                             return (
                               <span
+                                key={i}
                                 style={{
                                   backgroundColor: "green",
                                   borderRadius: "50%",
@@ -360,6 +361,7 @@ function TeamsDetailsHome({ teamName }) {
                           } else if (res === "L") {
                             return (
                               <span
+                                key={i}
                                 style={{
                                   backgroundColor: "red",
                                   borderRadius: "50%",
@@ -374,6 +376,7 @@ function TeamsDetailsHome({ teamName }) {
                           } else {
                             return (
                               <span
+                                key={i}
                                 style={{
                                   backgroundColor: "gray",
                                   borderRadius: "50%",
@@ -438,9 +441,9 @@ function TeamsDetailsHome({ teamName }) {
             </div>
             <div className="my-3">
               <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div className="nav nav-tabs" id="nav-tab" role="tablist">
                   <button
-                    class="nav-link active"
+                    className="nav-link active"
                     id="nav-attack-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-attack"
@@ -452,7 +455,7 @@ function TeamsDetailsHome({ teamName }) {
                     Attack
                   </button>
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="nav-defence-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-defence"
@@ -465,9 +468,9 @@ function TeamsDetailsHome({ teamName }) {
                   </button>
                 </div>
               </nav>
-              <div class="tab-content" id="nav-tabContent">
+              <div className="tab-content" id="nav-tabContent">
                 <div
-                  class="tab-pane fade show active"
+                  className="tab-pane fade show active"
                   id="nav-attack"
                   role="tabpanel"
                   aria-labelledby="nav-attack-tab"
@@ -526,7 +529,7 @@ function TeamsDetailsHome({ teamName }) {
                   </div>
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="nav-defence"
                   role="tabpanel"
                   aria-labelledby="nav-defence-tab"

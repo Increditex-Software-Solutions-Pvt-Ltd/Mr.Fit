@@ -95,7 +95,7 @@ function teamDetailsComp({ teamName }) {
             role="tabpanel"
             aria-labelledby="pills-ScoresSchedule-tab"
           >
-            <TeamDScoresSchedule />
+            <TeamDScoresSchedule teamName={teamName} />
           </div>
           <div
             className="tab-pane fade"
