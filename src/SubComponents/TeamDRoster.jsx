@@ -1,7 +1,7 @@
 import React from "react";
 // import { useTable } from "react-table";
 
-function TeamDRoster() {
+function TeamDRoster({ teamName }) {
   let goalKeepers = [
     {
       pic: "",
@@ -37,6 +37,17 @@ function TeamDRoster() {
       NAT: "ENG",
     },
     {
+      pic: "",
+      name: "M. Merrick",
+      jerseyNo: "60",
+      POS: "GK",
+      HT: "",
+      WT: "",
+      DOB: "2005-11-10",
+      AGE: "18",
+      NAT: "ENG",
+    },
+    {
       pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1440%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/UUlxpMiAtFRLVfUx_96x96.png",
       name: "Robert Sanchez",
       jerseyNo: "1",
@@ -45,6 +56,17 @@ function TeamDRoster() {
       WT: "90",
       DOB: "1997-11-18",
       AGE: "26",
+      NAT: "ENG",
+    },
+    {
+      pic: "",
+      name: "T.Curd",
+      jerseyNo: "99",
+      POS: "GK",
+      HT: "1.83",
+      WT: "",
+      DOB: "2006-02-14",
+      AGE: "18",
       NAT: "ENG",
     },
   ];
@@ -62,92 +84,147 @@ function TeamDRoster() {
       NAT: "GHA",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/R2bx0CA0XeG2p2BL_96x96.png",
+      name: "A. Gilchrist",
+      jerseyNo: "42",
+      POS: "D",
+      HT: "1.83",
+      WT: "",
+      DOB: "2003-11-28",
+      AGE: "20",
+      NAT: "ENG",
     },
     {
       pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      name: "A. Disasi",
+      jerseyNo: "2",
+      POS: "D",
+      HT: "1.9",
+      WT: "83",
+      DOB: "1998-03-11",
+      AGE: "26",
+      NAT: "FRA",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/aT2UBrL6NFLEM9vk_96x96.png",
+      name: "B. Chilwell",
+      jerseyNo: "21",
+      POS: "D",
+      HT: "1.78",
+      WT: "77",
+      DOB: "1996-12-21",
+      AGE: "27",
+      NAT: "ENG",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/yZpMJzT5OAPGusuQ_96x96.png",
+      name: "C. Chukwuemeka",
+      jerseyNo: "17",
+      POS: "M",
+      HT: "1.87",
+      WT: "77",
+      DOB: "2003-10-20",
+      AGE: "20",
+      NAT: "ENG",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/m7BdvEXVEgjKUyTm_96x96.png",
+      name: "C. Casadei",
+      jerseyNo: "7",
+      POS: "M",
+      HT: "1.86",
+      WT: "",
+      DOB: "2003-01-10",
+      AGE: "21",
+      NAT: "ITA",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/seZH9xiRZMOKwcZ1_96x96.png",
+      name: "C. Nkunku",
+      jerseyNo: "18",
+      POS: "A",
+      HT: "1.78",
+      WT: "68",
+      DOB: "1997-11-14",
+      AGE: "26",
+      NAT: "FRA",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/SMvGFhYXbUH4qI7k_96x96.png",
+      name: "Thiago Silva",
+      jerseyNo: "6",
+      POS: "D",
+      HT: "1.83",
+      WT: "79",
+      DOB: "1984-09-22",
+      AGE: "39",
+      NAT: "BRA",
     },
     {
-      pic: "",
-      name: "D.Petrovic",
-      jerseyNo: "28",
-      POS: "GK",
-      HT: "1.94",
-      WT: "89",
-      DOB: "1999-10-08",
-      AGE: "24",
-      NAT: "SRB",
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/k4BPKfn0pvnrTLX4_96x96.png",
+      name: "R. Sterling",
+      jerseyNo: "7",
+      POS: "A",
+      HT: "1.72",
+      WT: "69",
+      DOB: "1994-12-08",
+      AGE: "29",
+      NAT: "ENG",
+    },
+    {
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/yZpMJzT5OAPGusuQ_96x96.png",
+      name: "C. Chukwuemeka",
+      jerseyNo: "17",
+      POS: "M",
+      HT: "1.87",
+      WT: "77",
+      DOB: "2003-10-20",
+      AGE: "20",
+      NAT: "ENG",
+    },
+    {
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/m7BdvEXVEgjKUyTm_96x96.png",
+      name: "C. Casadei",
+      jerseyNo: "7",
+      POS: "M",
+      HT: "1.86",
+      WT: "",
+      DOB: "2003-01-10",
+      AGE: "21",
+      NAT: "ITA",
+    },
+    {
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/seZH9xiRZMOKwcZ1_96x96.png",
+      name: "C. Nkunku",
+      jerseyNo: "18",
+      POS: "A",
+      HT: "1.78",
+      WT: "68",
+      DOB: "1997-11-14",
+      AGE: "26",
+      NAT: "FRA",
+    },
+    {
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/SMvGFhYXbUH4qI7k_96x96.png",
+      name: "Thiago Silva",
+      jerseyNo: "6",
+      POS: "D",
+      HT: "1.83",
+      WT: "79",
+      DOB: "1984-09-22",
+      AGE: "39",
+      NAT: "BRA",
+    },
+    {
+      pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/k4BPKfn0pvnrTLX4_96x96.png",
+      name: "R. Sterling",
+      jerseyNo: "7",
+      POS: "A",
+      HT: "1.72",
+      WT: "69",
+      DOB: "1994-12-08",
+      AGE: "29",
+      NAT: "ENG",
     },
   ];
 
@@ -225,7 +302,7 @@ function TeamDRoster() {
   return (
     <div>
       <h5 className="my-4">
-        <b>Chelsea Roster</b>
+        <b>{teamName} Roster</b>
       </h5>
       <div>
         <h5 className="my-2">
@@ -278,88 +355,92 @@ function TeamDRoster() {
         </div>
       </div>
 
-      <div className="my-3">
-        <h5 className="my-2">
-          <b>Outfield Players</b>
-        </h5>
-        <div style={{ width: "100%", overflow: "auto" }}>
-          <table className="table" style={{ width: "1150px" }}>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>POS</th>
-                <th>HT</th>
-                <th>WT</th>
-                <th>DOB</th>
-                <th>AGE</th>
-                <th>NAT</th>
-              </tr>
-            </thead>
-            <tbody>
-              {goalKeepers.map((player) => {
-                return (
-                  <tr>
-                    <td className="d-flex align-items-end gap-2">
-                      <img
-                        src={
-                          player.pic !== ""
-                            ? player.pic
-                            : "data:image/png;base64,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"
-                        }
-                        alt="player-pic"
-                        width="45px"
-                      />
-                      <h6>
-                        {player.name}
-                        {"  "}
-                        {player.jerseyNo ? `#${player.jerseyNo}` : ""}
-                      </h6>
-                    </td>
-                    <td>{player.POS}</td>
-                    <td>{player.HT ? `${player.HT} m` : "--"}</td>
-                    <td>{player.WT ? `${player.WT} kg` : "--"}</td>
-                    <td>{player.DOB}</td>
-                    <td>{player.AGE}</td>
-                    <td>{player.NAT}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+      <section className="my-4">
+        <div>
+          <h5 className="my-2">
+            <b>Outfield Players</b>
+          </h5>
+          <div style={{ width: "100%", overflow: "auto" }}>
+            <table className="table" style={{ width: "1150px" }}>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>POS</th>
+                  <th>HT</th>
+                  <th>WT</th>
+                  <th>DOB</th>
+                  <th>AGE</th>
+                  <th>NAT</th>
+                </tr>
+              </thead>
+              <tbody>
+                {outfieldPlayers.map((player) => {
+                  return (
+                    <tr>
+                      <td className="d-flex align-items-end gap-2">
+                        <img
+                          src={
+                            player.pic !== ""
+                              ? player.pic
+                              : "data:image/png;base64,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"
+                          }
+                          alt="player-pic"
+                          width="45px"
+                        />
+                        <h6>
+                          {player.name}
+                          {"  "}
+                          {player.jerseyNo ? `#${player.jerseyNo}` : ""}
+                        </h6>
+                      </td>
+                      <td>{player.POS}</td>
+                      <td>{player.HT ? `${player.HT} m` : "--"}</td>
+                      <td>{player.WT ? `${player.WT} kg` : "--"}</td>
+                      <td>{player.DOB}</td>
+                      <td>{player.AGE}</td>
+                      <td>{player.NAT}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="mt-4">
-        <h5>
-          <b>Stories</b>
-        </h5>
-        <div className="row">
-          {stories.map((story, i) => {
-            return (
-              <div className="col-12 col-lg-3" key={i}>
-                <div>
-                  <img
-                    id="storiesPic"
-                    src={story.pic}
-                    alt="story-pic"
-                    width="100%"
-                  />
+      <section className="mt-4">
+        <div>
+          <h5>
+            <b>Stories</b>
+          </h5>
+          <div className="row">
+            {stories.map((story, i) => {
+              return (
+                <div className="col-12 col-lg-3" key={i}>
+                  <div>
+                    <img
+                      id="storiesPic"
+                      src={story.pic}
+                      alt="story-pic"
+                      width="100%"
+                    />
+                  </div>
+                  <h5>
+                    <b>{story.headline}</b>
+                  </h5>
+                  <div>
+                    <small>{story.author}</small>
+                    <small className="ms-2">
+                      <i className="bi bi-chat-left-fill icon-md me-1"></i>
+                      {story.comments}
+                    </small>
+                  </div>
                 </div>
-                <h5>
-                  <b>{story.headline}</b>
-                </h5>
-                <div>
-                  <small>{story.author}</small>
-                  <small className="ms-2">
-                    <i className="bi bi-chat-left-fill icon-md me-1"></i>
-                    {story.comments}
-                  </small>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

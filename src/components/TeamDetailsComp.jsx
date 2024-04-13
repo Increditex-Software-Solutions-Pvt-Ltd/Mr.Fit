@@ -103,7 +103,7 @@ function teamDetailsComp({ teamName }) {
             role="tabpanel"
             aria-labelledby="pills-Roster-tab"
           >
-            <TeamDRoster />
+            <TeamDRoster teamName={teamName} />
           </div>
           <div
             className="tab-pane fade"
@@ -111,7 +111,7 @@ function teamDetailsComp({ teamName }) {
             role="tabpanel"
             aria-labelledby="pills-Stats-tab"
           >
-            <TeamDStats />
+            <TeamDStats teamName={teamName} />
           </div>
         </div>
       </div>
