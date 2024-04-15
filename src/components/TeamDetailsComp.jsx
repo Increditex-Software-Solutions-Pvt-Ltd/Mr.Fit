@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import TeamsDetailsHome from "../SubComponents/TeamsDetailsHome";
 import TeamDScoresSchedule from "../SubComponents/TeamDScoresSchedule";
 import TeamDRoster from "../SubComponents/TeamDRoster";
 import TeamDStats from "../SubComponents/TeamDStats";
 
-function teamDetailsComp({ teamName }) {
+function teamDetailsComp({ teamName, title }) {
+  const [activeTab, setActiveTab] = useState("pills-home");
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
+
   return (
     <div style={{ margin: "20px 0px" }}>
       <div className="">
@@ -22,7 +28,10 @@ function teamDetailsComp({ teamName }) {
             <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li className="nav-item" role="presentation">
                 <button
-                  className="nav-link active"
+                  className={`nav-link ${
+                    activeTab === "pills-home" ? "active" : ""
+                  }`}
+                  onClick={() => handleTabClick("pills-home")}
                   id="pills-home-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-home"
@@ -36,7 +45,10 @@ function teamDetailsComp({ teamName }) {
               </li>
               <li className="nav-item" role="presentation">
                 <button
-                  className="nav-link"
+                  className={`nav-link ${
+                    activeTab === "pills-ScoresSchedule" ? "active" : ""
+                  }`}
+                  onClick={() => handleTabClick("pills-ScoresSchedule")}
                   id="pills-ScoresSchedule-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-ScoresSchedule"
@@ -50,7 +62,10 @@ function teamDetailsComp({ teamName }) {
               </li>
               <li className="nav-item" role="presentation">
                 <button
-                  className="nav-link"
+                  className={`nav-link ${
+                    activeTab === "pills-Roster" ? "active" : ""
+                  }`}
+                  onClick={() => handleTabClick("pills-Roster")}
                   id="pills-Roster-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-Roster"
@@ -64,7 +79,10 @@ function teamDetailsComp({ teamName }) {
               </li>
               <li className="nav-item" role="presentation">
                 <button
-                  className="nav-link"
+                  className={`nav-link ${
+                    activeTab === "pills-Stats" ? "active" : ""
+                  }`}
+                  onClick={() => handleTabClick("pills-Stats")}
                   id="pills-Stats-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-Stats"
@@ -82,15 +100,23 @@ function teamDetailsComp({ teamName }) {
 
         <div className="tab-content ms-1" id="pills-tabContent">
           <div
-            className="tab-pane fade show active"
+            className={`tab-pane fade ${
+              activeTab === "pills-home" ? "show active" : ""
+            }`}
             id="pills-home"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <TeamsDetailsHome teamName={teamName} />
+            <TeamsDetailsHome
+              handleTabClick={handleTabClick}
+              teamName={teamName}
+              title={title}
+            />
           </div>
           <div
-            className="tab-pane fade"
+            className={`tab-pane fade ${
+              activeTab === "pills-ScoresSchedule" ? "show active" : ""
+            }`}
             id="pills-ScoresSchedule"
             role="tabpanel"
             aria-labelledby="pills-ScoresSchedule-tab"
@@ -98,7 +124,9 @@ function teamDetailsComp({ teamName }) {
             <TeamDScoresSchedule teamName={teamName} />
           </div>
           <div
-            className="tab-pane fade"
+            className={`tab-pane fade ${
+              activeTab === "pills-Roster" ? "show active" : ""
+            }`}
             id="pills-Roster"
             role="tabpanel"
             aria-labelledby="pills-Roster-tab"
@@ -106,7 +134,9 @@ function teamDetailsComp({ teamName }) {
             <TeamDRoster teamName={teamName} />
           </div>
           <div
-            className="tab-pane fade"
+            className={`tab-pane fade ${
+              activeTab === "pills-Stats" ? "show active" : ""
+            }`}
             id="pills-Stats"
             role="tabpanel"
             aria-labelledby="pills-Stats-tab"

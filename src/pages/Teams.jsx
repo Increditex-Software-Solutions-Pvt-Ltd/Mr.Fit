@@ -29,7 +29,7 @@ function Team() {
         <div className="teams-page">
           <h1 style={{ fontWeight: "bold" }}>{title} Teams</h1>
           <hr />
-          <TeamsComponent />
+          <TeamsComponent title={title} />
         </div>
       </div>
     </div>

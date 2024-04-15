@@ -2,7 +2,7 @@ import React from "react";
 import "../css/ComponentsCSS/TeamComp.css";
 import { useNavigate } from "react-router-dom";
 
-function TeamsComponent() {
+function TeamsComponent({ title }) {
   const teams = [
     {
       name: "Bournemouth",
@@ -93,7 +93,7 @@ function TeamsComponent() {
           {chunk.map((team, teamIndex) => (
             <div key={teamIndex}>
               <button
-                onClick={() => navigate(`/team/${team.name}`)}
+                onClick={() => navigate(`/team/${title}/${team.name}`)}
                 style={{ cursor: "pointer" }}
               >
                 <img

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import MainNewsComp from "./MainNewsComp";
 import "../css/SubComponentsCSS/TeamDetailsHome.css";
 
-function TeamsDetailsHome({ teamName }) {
+function TeamsDetailsHome({ teamName, title, handleTabClick }) {
   const navigate = useNavigate();
   const standingsData = [
     {
@@ -116,7 +116,10 @@ function TeamsDetailsHome({ teamName }) {
           <div className="col-md-12 col-lg-4 border-end mb-4">
             <div className="d-flex justify-content-between">
               <h5 style={{ fontWeight: "bold" }}>Schedule</h5>
-              <small>
+              <small
+                style={{ cursor: "pointer" }}
+                onClick={() => handleTabClick("pills-ScoresSchedule")}
+              >
                 Full Schedule
                 <i className="fa fa-angle-right ms-2" aria-hidden="true"></i>
               </small>
@@ -135,8 +138,8 @@ function TeamsDetailsHome({ teamName }) {
                         />
                         <span className="ms-2">
                           <b
-                            onClick={() => navigate(`/team/Arsenal`)}
                             style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Arsenal`)}
                           >
                             Arsenal
                           </b>
@@ -154,7 +157,14 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>Bayern Munchen</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() =>
+                              navigate(`/team/${title}/Bayern Munchen`)
+                            }
+                          >
+                            Bayern Munchen
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -181,7 +191,12 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>Sheff Utd</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Sheff Utd`)}
+                          >
+                            Sheff Utd
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -196,7 +211,12 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>chelsea</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Chelsea`)}
+                          >
+                            Chelsea
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -223,7 +243,12 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>Chelsea</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Chelsea`)}
+                          >
+                            Chelsea
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -238,7 +263,12 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>Everton</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Everton`)}
+                          >
+                            Everton
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -265,7 +295,12 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>Man City</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Man City`)}
+                          >
+                            Man City
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -280,7 +315,12 @@ function TeamsDetailsHome({ teamName }) {
                           alt="team-logo"
                         />
                         <span className="ms-2">
-                          <b>Chelsea</b>
+                          <b
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/team/${title}/Chelsea`)}
+                          >
+                            Chelsea
+                          </b>
                         </span>
                       </div>
                       <div>
@@ -301,7 +341,10 @@ function TeamsDetailsHome({ teamName }) {
           <div className="col-md-12 col-lg-4 border-end mb-4">
             <div className="d-flex justify-content-between">
               <h5 style={{ fontWeight: "bold" }}>{teamName}</h5>
-              <small>
+              <small
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate(`/team/Standings/${title}/${teamName}`)}
+              >
                 Full Standings
                 <i className="fa fa-angle-right ms-2" aria-hidden="true"></i>
               </small>
@@ -351,7 +394,7 @@ function TeamsDetailsHome({ teamName }) {
                                   backgroundColor: "green",
                                   borderRadius: "50%",
                                   padding: "3px 5px",
-                                  margin: "0 1px",
+                                  margin: "0 2px",
                                   fontSize: "12px",
                                 }}
                               >
@@ -434,7 +477,10 @@ function TeamsDetailsHome({ teamName }) {
           <div className="col-md-12 col-lg-4 mb-4">
             <div className="d-flex justify-content-between">
               <h5 style={{ fontWeight: "bold" }}>Team Leader</h5>
-              <small>
+              <small
+                style={{ cursor: "pointer" }}
+                onClick={() => handleTabClick("pills-Stats")}
+              >
                 Full Team Stats
                 <i className="fa fa-angle-right ms-2" aria-hidden="true"></i>
               </small>
@@ -478,7 +524,14 @@ function TeamsDetailsHome({ teamName }) {
                   <div className="row my-2">
                     <div className="col-sm-12 col-md-4 col-lg-12 my-2 d-flex justify-content-between border-bottom">
                       <div>
-                        <h6>C. Palmer, M</h6>
+                        <h6
+                          style={{ cursor: "pointer" }}
+                          onClick={() =>
+                            navigate(`/playerDetails/${title}/C. Palmer`)
+                          }
+                        >
+                          C. Palmer, M
+                        </h6>
                         <span className="fs-3 me-1">
                           <b>16</b>
                         </span>
@@ -494,7 +547,14 @@ function TeamsDetailsHome({ teamName }) {
                     </div>
                     <div className="col-sm-12 col-md-4 col-lg-12 my-2 d-flex justify-content-between border-bottom">
                       <div>
-                        <h6>C. Palmer, M</h6>
+                        <h6
+                          style={{ cursor: "pointer" }}
+                          onClick={() =>
+                            navigate(`/playerDetails/${title}/C. Palmer`)
+                          }
+                        >
+                          C. Palmer, M
+                        </h6>
                         <span className="fs-3 me-1">
                           <b>9</b>
                         </span>
@@ -510,7 +570,14 @@ function TeamsDetailsHome({ teamName }) {
                     </div>
                     <div className="col-sm-12 col-md-4 col-lg-12 my-2 d-flex justify-content-between border-bottom">
                       <div>
-                        <h6>Thiago Silva, D</h6>
+                        <h6
+                          style={{ cursor: "pointer" }}
+                          onClick={() =>
+                            navigate(`/playerDetails/${title}/Thiago Silva`)
+                          }
+                        >
+                          Thiago Silva, D
+                        </h6>
                         <span className="fs-3 me-1">
                           <b>94.6</b>
                         </span>
@@ -537,7 +604,14 @@ function TeamsDetailsHome({ teamName }) {
                   <div className="row my-2">
                     <div className="col-sm-12 col-md-4 col-lg-12 my-2 d-flex justify-content-between border-bottom">
                       <div>
-                        <h6>Robert Sánchez, GK</h6>
+                        <h6
+                          style={{ cursor: "pointer" }}
+                          onClick={() =>
+                            navigate(`/playerDetails/${title}/Robert Sánchez`)
+                          }
+                        >
+                          Robert Sánchez, GK
+                        </h6>
                         <span className="fs-3 me-1">
                           <b>3</b>
                         </span>
@@ -555,7 +629,14 @@ function TeamsDetailsHome({ teamName }) {
                     </div>
                     <div className="col-sm-12 col-md-4 col-lg-12 my-2 d-flex justify-content-between border-bottom">
                       <div>
-                        <h6>C. Gallagher, M</h6>
+                        <h6
+                          style={{ cursor: "pointer" }}
+                          onClick={() =>
+                            navigate(`/playerDetails/${title}/C. Gallagher`)
+                          }
+                        >
+                          C. Gallagher, M
+                        </h6>
                         <span className="fs-3 me-1">
                           <b>43</b>
                         </span>
@@ -573,7 +654,14 @@ function TeamsDetailsHome({ teamName }) {
                     </div>
                     <div className="col-sm-12 col-md-4 col-lg-12 my-2 d-flex justify-content-between border-bottom">
                       <div>
-                        <h6>C. Gallagher, M</h6>
+                        <h6
+                          style={{ cursor: "pointer" }}
+                          onClick={() =>
+                            navigate(`/playerDetails/${title}/C. Gallagher`)
+                          }
+                        >
+                          C. Gallagher, M
+                        </h6>
                         <span className="fs-3 me-1">
                           <b>36</b>
                         </span>
