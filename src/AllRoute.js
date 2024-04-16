@@ -12,6 +12,10 @@ import Fantasy from "./pages/Fantasy";
 import Headlines from "./pages/Headlines";
 import TeamDetails from "./pages/TeamDetails";
 import PlayerDetails from "./pages/PlayerDetails";
+import SuperBowlNFL from "./pages/SuperBowlNFL";
+import NFLDraft from "./pages/NFLDraft";
+import NFLOdds from "./pages/OddsPicks";
+import OddsPicks from "./pages/OddsPicks";
 // import TeamDStats from "./SubComponents/TeamDStats";
 // import TeamStatsPage from "./pages/TeamStatsPage";
 
@@ -34,6 +38,15 @@ const AllRoute = () => {
       />
       <Route path="/category/sub/Live News/:title" element={<LiveNews />} />
       <Route path="/category/sub/Fantasy/:title" element={<Fantasy />} />
+      <Route
+        path="/category/sub/Super Bowl/:title"
+        element={<SuperBowlNFL />}
+      />
+      <Route path="/category/sub/NFL Draft/:title" element={<NFLDraft />} />
+      <Route
+        path="/category/sub/OddsPicks/:title/:sort?"
+        element={<OddsPicks />}
+      />
       <Route path="/category/headlines/:title" element={<Headlines />} />
       <Route path="/team/:title/:name?" element={<TeamDetails />} />
       <Route path="/team/Standings/:title/:name?" element={<Standings />} />

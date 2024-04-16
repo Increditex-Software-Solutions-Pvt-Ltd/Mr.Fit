@@ -354,7 +354,9 @@ const PlayerDComp = ({ title, playername }) => {
                   <h5 style={{ fontWeight: "bold" }}>Team Leader</h5>
                   <small
                     style={{ cursor: "pointer" }}
-                    onClick={() => handleTabClick("pills-Stats")}
+                    onClick={() => {
+                      navigate(-1);
+                    }}
                   >
                     Full Team Stats
                     <i

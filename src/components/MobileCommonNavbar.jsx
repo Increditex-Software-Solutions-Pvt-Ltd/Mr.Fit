@@ -257,25 +257,41 @@ function MobileCommonNavbar({ subTabs }) {
               <ul className="navbar-nav d-flex justify-content-space-between align-items-center gap-3">
                 {subTabs.length > 1 &&
                   displayedTabs.map((tab, i) => {
-                    return tab === "Home" ? (
-                      <li className="nav-item" key={i}>
-                        <Link
-                          to={`/category/${title}`}
-                          className="nav-link links"
-                        >
-                          {tab}
-                        </Link>
-                      </li>
-                    ) : (
-                      <li className="nav-item" key={i}>
-                        <Link
-                          to={`/category/sub/${tab}/${title}`}
-                          className="nav-link links"
-                        >
-                          {tab}
-                        </Link>
-                      </li>
-                    );
+                    if (tab === "Home") {
+                      return (
+                        <li className="nav-item" key={i}>
+                          <Link
+                            to={`/category/${title}`}
+                            className="nav-link links"
+                          >
+                            {tab}
+                          </Link>
+                        </li>
+                      );
+                    } else if (tab.includes("Odds") || tab.includes("Picks")) {
+                      let tabs = tab.split(" ");
+                      return (
+                        <li className="nav-item" key={i}>
+                          <Link
+                            to={`/category/sub/OddsPicks/${tabs[0]}/${tabs[1]}`}
+                            className="nav-link links"
+                          >
+                            {tab}
+                          </Link>
+                        </li>
+                      );
+                    } else {
+                      return (
+                        <li className="nav-item" key={i}>
+                          <Link
+                            to={`/category/sub/${tab}/${title}`}
+                            className="nav-link links"
+                          >
+                            {tab}
+                          </Link>
+                        </li>
+                      );
+                    }
                   })}
                 {remainingTabs.length > 0 ? (
                   <li className="position-relative">
@@ -305,55 +321,97 @@ function MobileCommonNavbar({ subTabs }) {
                 onMouseEnter={() => setShowRemainingTabs(true)}
                 onMouseLeave={() => setShowRemainingTabs(false)}
               >
-                {remainingTabs.map((tab, i) =>
-                  tab === "Home" ? (
-                    <li className="nav-item" key={i}>
-                      <Link
-                        to={`/category/${title}`}
-                        className="nav-link links"
+                {remainingTabs.map((tab, i) => {
+                  if (tab === "Home") {
+                    return (
+                      <li
+                        className="nav-item"
+                        key={i}
+                        onClick={() => setShowRemainingTabs(false)}
                       >
-                        <img
-                          src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
-                          alt="logo"
-                          width="30px"
-                          style={{ marginRight: "10px" }}
-                        />
-                        <span
-                          style={{
-                            color: "black",
-                            fontSize: "1rem",
-                            fontWeight: "bold",
-                          }}
+                        <Link
+                          to={`/category/${title}`}
+                          className="nav-link links"
                         >
-                          {tab}
-                        </span>
-                      </Link>
-                    </li>
-                  ) : (
-                    <li className="nav-item" key={i}>
-                      <Link
-                        to={`/category/sub/${tab}/${title}`}
-                        className="nav-link links"
+                          <img
+                            src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                            alt="logo"
+                            width="30px"
+                            style={{ marginRight: "10px" }}
+                          />
+                          <span
+                            style={{
+                              color: "black",
+                              fontSize: "1rem",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {tab}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  } else if (tab.includes("Odds") || tab.includes("Picks")) {
+                    const tabs = tab.split(" ");
+                    return (
+                      <li
+                        className="nav-item"
+                        key={i}
+                        onClick={() => setShowRemainingTabs(false)}
                       >
-                        <img
-                          src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
-                          alt="logo"
-                          width="30px"
-                          style={{ marginRight: "10px" }}
-                        />
-                        <span
-                          style={{
-                            color: "black",
-                            fontSize: "1rem",
-                            fontWeight: "bold",
-                          }}
+                        <Link
+                          to={`/category/sub/OddsPicks/${tabs[0]}/${tabs[1]}`}
+                          className="nav-link links"
                         >
-                          {tab}
-                        </span>
-                      </Link>
-                    </li>
-                  )
-                )}
+                          <img
+                            src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                            alt="logo"
+                            width="30px"
+                            style={{ marginRight: "10px" }}
+                          />
+                          <span
+                            style={{
+                              color: "black",
+                              fontSize: "1rem",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {tab}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li
+                        className="nav-item"
+                        key={i}
+                        onClick={() => setShowRemainingTabs(false)}
+                      >
+                        <Link
+                          to={`/category/sub/${tab}/${title}`}
+                          className="nav-link links"
+                        >
+                          <img
+                            src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                            alt="logo"
+                            width="30px"
+                            style={{ marginRight: "10px" }}
+                          />
+                          <span
+                            style={{
+                              color: "black",
+                              fontSize: "1rem",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {tab}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  }
+                })}
               </div>
             )}
           </div>
