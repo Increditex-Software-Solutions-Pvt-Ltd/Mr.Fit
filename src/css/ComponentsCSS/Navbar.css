@@ -1,120 +1,123 @@
 .dropdown-content {
-    position: absolute;
-    background-color: black;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 100%;
-    grid-gap: 20px;
-    top: 40px;
-    left: -10px;
-    padding: 20px 20px;
-    z-index: 1;
-    height: 100vh;
-    overflow: scroll;
-    box-shadow: 10px 10px 10 black;
+  position: absolute;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  grid-gap: 20px;
+  top: 40px;
+  left: -10px;
+  padding: 20px 20px;
+  z-index: 1;
+  height: 100vh;
+  overflow: scroll;
+  box-shadow: 10px 10px 10 black;
 }
 
-.dropdown-content>li {
-    list-style-type: none;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
+.dropdown-content > li {
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
-
 
 .dropdown-content-remaining {
-    position: absolute;
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 100%;
-    grid-gap: 20px;
-    top: 40px;
-    left: 0px;
-    padding: 20px 20px;
-    z-index: 1;
+  position: absolute;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  grid-gap: 18px;
+  top: 40px;
+  left: 0px;
+  padding: 20px 20px;
+  z-index: 1;
 }
 
-.dropdown-content-remaining>li {
-    list-style-type: none;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
+.dropdown-content-remaining > li {
+  list-style-type: none;
+  padding: 6px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.dropdown-content-remaining > li:hover {
+  background-color: rgba(202, 200, 200, 0.8);
+  border-radius: 20px;
 }
 
 .triangle {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #f9f9f9;
-    z-index: 1;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #f9f9f9;
+  z-index: 1;
 }
 
 .triangle-side {
-    position: absolute;
-    top: 25px;
-    left: 8px;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #f9f9f9;
-    z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: 8px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #f9f9f9;
+  z-index: 1;
 }
 
 .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
 }
 
-
 .tabs-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* default to 1 column */
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* default to 1 column */
+  gap: 10px;
 }
 
 @media (min-width: 320px) {
-    .tabs-container {
-        grid-template-columns: repeat(1, 1fr);
-        /* for medium screens, 2 columns */
-    }
+  .tabs-container {
+    grid-template-columns: repeat(1, 1fr);
+    /* for medium screens, 2 columns */
+  }
 }
 
 @media (min-width: 768px) {
-    .tabs-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* for medium screens, 2 columns */
-    }
+  .tabs-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* for medium screens, 2 columns */
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .tabs-container {
-        grid-template-columns: repeat(4, 1fr);
-        /* for large screens, 3 columns */
-    }
+  .tabs-container {
+    grid-template-columns: repeat(4, 1fr);
+    /* for large screens, 3 columns */
+  }
 }
 
 @media (min-width: 1400px) {
-    .tabs-container {
-        grid-template-columns: repeat(5, 1fr);
-        /* for extra-large screens, 5 columns */
-    }
+  .tabs-container {
+    grid-template-columns: repeat(5, 1fr);
+    /* for extra-large screens, 5 columns */
+  }
 }
 
 .tab {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }

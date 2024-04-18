@@ -142,6 +142,17 @@ const CommonNavbar = ({ subTabs }) => {
                           </Link>
                         </li>
                       );
+                    } else if (tab.includes("newsletter")) {
+                      return (
+                        <li className="nav-item" key={i}>
+                          <Link
+                            to={`/category/sub/newsletter/${title}/${tab}`}
+                            className="nav-link links"
+                          >
+                            {tab}
+                          </Link>
+                        </li>
+                      );
                     } else {
                       return (
                         <li className="nav-item" key={i}>
@@ -237,6 +248,35 @@ const CommonNavbar = ({ subTabs }) => {
                     >
                       <Link
                         to={`/category/sub/OddsPicks/${tabs[0]}/${tabs[1]}`}
+                        className="nav-link links"
+                      >
+                        <img
+                          src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                          alt="logo"
+                          width="30px"
+                          style={{ marginRight: "10px" }}
+                        />
+                        <span
+                          style={{
+                            color: "black",
+                            fontSize: "1rem",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {tab}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                } else if (tab.includes("newsletter")) {
+                  return (
+                    <li
+                      className="nav-item"
+                      key={i}
+                      onClick={() => setShowRemainingTabs(false)}
+                    >
+                      <Link
+                        to={`/category/sub/newsletter/${title}/${tab}`}
                         className="nav-link links"
                       >
                         <img
