@@ -4,7 +4,7 @@ import { useTabContext } from "../contexts/TabsContext";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import "../css/ComponentsCSS/CommonNavbar.css";
 
-const CommonNavbar = ({ subTabs }) => {
+const CommonNavbar = ({ subTabs, subCategories }) => {
   const { title } = useParams();
 
   const tabs = useTabContext();
@@ -84,7 +84,7 @@ const CommonNavbar = ({ subTabs }) => {
 
   return (
     <>
-      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top d-flex flex-column align-items-start">
         <div className="container position-relative">
           <div className="d-flex justify-content-center align-items-center">
             <div className="menu pt-1 position-relative">
@@ -147,6 +147,17 @@ const CommonNavbar = ({ subTabs }) => {
                         <li className="nav-item" key={i}>
                           <Link
                             to={`/category/sub/newsletter/${title}/${tab}`}
+                            className="nav-link links"
+                          >
+                            {tab}
+                          </Link>
+                        </li>
+                      );
+                    } else if (tab.includes("Prospects")) {
+                      return (
+                        <li className="nav-item" key={i}>
+                          <Link
+                            to={`/category/sub/prospects/${title}/${tab}`}
                             className="nav-link links"
                           >
                             {tab}
@@ -277,6 +288,35 @@ const CommonNavbar = ({ subTabs }) => {
                     >
                       <Link
                         to={`/category/sub/newsletter/${title}/${tab}`}
+                        className="nav-link links"
+                      >
+                        <img
+                          src="https://cdn-media.theathletic.com/cropped-favicon-50x50.png"
+                          alt="logo"
+                          width="30px"
+                          style={{ marginRight: "10px" }}
+                        />
+                        <span
+                          style={{
+                            color: "black",
+                            fontSize: "1rem",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {tab}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                } else if (tab.includes("Prospects")) {
+                  return (
+                    <li
+                      className="nav-item"
+                      key={i}
+                      onClick={() => setShowRemainingTabs(false)}
+                    >
+                      <Link
+                        to={`/category/sub/prospects/${title}/${tab}`}
                         className="nav-link links"
                       >
                         <img
@@ -434,6 +474,26 @@ const CommonNavbar = ({ subTabs }) => {
             </div>
           )} */}
         </div>
+        <ul
+          style={{ listStyleType: "none", margin: "0px", padding: "10px" }}
+          className="d-flex gap-3"
+        >
+          {subCategories
+            ? subCategories.map((category) => {
+                return (
+                  <li
+                    style={{
+                      listStyleType: "none",
+                      color: "white",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {category}
+                  </li>
+                );
+              })
+            : ""}
+        </ul>
       </header>
     </>
   );

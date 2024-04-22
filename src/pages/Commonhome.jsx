@@ -17,12 +17,20 @@ const Commonhome = () => {
     } else return 0;
   });
 
+  const subCategories = subs[0].subCategories || 0;
+
   return (
     <>
       {windowWidth > 750 ? (
-        <CommonNavbar subTabs={subs[0].subTitles} />
+        <CommonNavbar
+          subTabs={subs[0].subTitles}
+          subCategories={subCategories}
+        />
       ) : (
-        <MobileCommonNavbar subTabs={subs[0].subTitles} />
+        <MobileCommonNavbar
+          subTabs={subs[0].subTitles}
+          subCategories={subCategories}
+        />
       )}
 
       <CommonhomeComp title={title} logo={subs[0].logo} />

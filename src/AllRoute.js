@@ -16,6 +16,7 @@ import SuperBowlNFL from "./pages/SuperBowlNFL";
 import NFLDraft from "./pages/NFLDraft";
 import OddsPicks from "./pages/OddsPicks";
 import Newsletters from "./pages/Newsletters";
+import Prospects from "./pages/Prospects";
 // import TeamDStats from "./SubComponents/TeamDStats";
 // import TeamStatsPage from "./pages/TeamStatsPage";
 
@@ -50,6 +51,10 @@ const AllRoute = () => {
       <Route
         path="/category/sub/newsletter/:title/:name?"
         element={<Newsletters />}
+      />
+      <Route
+        path="/category/sub/prospects/:title/:name?"
+        element={<Prospects />}
       />
       <Route path="/category/headlines/:title" element={<Headlines />} />
       <Route path="/team/:title/:name?" element={<TeamDetails />} />

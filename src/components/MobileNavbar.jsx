@@ -47,7 +47,7 @@ function MobileNavbar({ tabs }) {
   ]);
   return (
     <>
-      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top  align-items-center">
+      <header className="navbar navbar-expand-md bg-dark navbar-dark sticky-top align-items-center">
         <div className="container position-relative">
           <div className="d-flex justify-content-center align-items-center ">
             <div className="menu pt-1 position-relative">
