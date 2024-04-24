@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import "../css/ComponentsCSS/CommonNavbar.css";
 import { useWindowWidth } from "../contexts/WindowWidth";
 
-function MobileCommonNavbar({ subTabs }) {
+function MobileCommonNavbar({ subTabs, subCategories }) {
   const { title } = useParams();
   const tabs = useTabContext();
 
@@ -78,6 +78,8 @@ function MobileCommonNavbar({ subTabs }) {
 
   const displayedTabs = subTabs.slice(0, tabsToDisplay);
   const remainingTabs = subTabs.slice(tabsToDisplay);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -498,6 +500,52 @@ function MobileCommonNavbar({ subTabs }) {
           )}
         </div>
       </nav>
+      {subCategories ? (
+        <div
+          className="position-sticky top-0 d-flex justify-content-start"
+          style={{
+            width: "100%",
+            overflow: "auto",
+            zIndex: 99,
+            backgroundColor: "black",
+          }}
+        >
+          <ul
+            style={{
+              listStyleType: "none",
+              margin: "0px",
+              padding: "10px",
+              width: "max-content",
+            }}
+            className="d-flex gap-3"
+          >
+            {subCategories
+              ? subCategories.map((category) => {
+                  return (
+                    <li
+                      className="nav-items"
+                      style={{
+                        listStyleType: "none",
+                        color: "white",
+                        cursor: "pointer",
+                        width: "max-content",
+                      }}
+                    >
+                      <Link
+                        className="nav-link links"
+                        to={`/category/subCategory/${title}/${category}`}
+                      >
+                        {category}
+                      </Link>
+                    </li>
+                  );
+                })
+              : ""}
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
     </>
   );
 }

@@ -17,6 +17,8 @@ import NFLDraft from "./pages/NFLDraft";
 import OddsPicks from "./pages/OddsPicks";
 import Newsletters from "./pages/Newsletters";
 import Prospects from "./pages/Prospects";
+import Formula1SubCategory from "./pages/Formula1SubCategory";
+import Recruiting from "./pages/Recruiting";
 // import TeamDStats from "./SubComponents/TeamDStats";
 // import TeamStatsPage from "./pages/TeamStatsPage";
 
@@ -55,6 +57,11 @@ const AllRoute = () => {
       <Route
         path="/category/sub/prospects/:title/:name?"
         element={<Prospects />}
+      />
+      <Route path="/category/sub/Recruiting/:title" element={<Recruiting />} />
+      <Route
+        path="/category/subCategory/:title/:category?"
+        element={<Formula1SubCategory />}
       />
       <Route path="/category/headlines/:title" element={<Headlines />} />
       <Route path="/team/:title/:name?" element={<TeamDetails />} />

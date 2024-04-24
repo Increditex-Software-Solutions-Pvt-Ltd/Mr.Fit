@@ -1,0 +1,60 @@
+.tournament-card {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.matches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.match-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-details p {
+  margin: 0;
+}
+
+.tournament-name-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize arrow buttons */
+.alice-carousel__next-btn,
+.alice-carousel__prev-btn {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.alice-carousel__next-btn:hover,
+.alice-carousel__prev-btn:hover {
+  background-color: #0056b3;
+}

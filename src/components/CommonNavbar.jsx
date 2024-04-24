@@ -375,6 +375,7 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
               className="dropdown-content"
               onMouseEnter={() => setShowSideNavbar(true)}
               onMouseLeave={() => setShowSideNavbar(false)}
+              style={{ zIndex: 100 }}
             >
               <div className="tabs-container">
                 {tabGroups.map((group, index) =>
@@ -474,26 +475,52 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
             </div>
           )} */}
         </div>
-        <ul
-          style={{ listStyleType: "none", margin: "0px", padding: "10px" }}
-          className="d-flex gap-3"
-        >
-          {subCategories
-            ? subCategories.map((category) => {
-                return (
-                  <li
-                    style={{
-                      listStyleType: "none",
-                      color: "white",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {category}
-                  </li>
-                );
-              })
-            : ""}
-        </ul>
+        {subCategories ? (
+          <div
+            className="position-sticky top-0 d-flex justify-content-center"
+            style={{
+              width: "100%",
+              overflow: "auto",
+              zIndex: 99,
+            }}
+            onMouseEnter={() => (showSideNavbar ? setShowSideNavbar(true) : "")}
+            onMouseLeave={() => setShowSideNavbar(false)}
+          >
+            <ul
+              style={{
+                listStyleType: "none",
+                margin: "0px",
+                padding: "10px",
+                width: "max-content",
+              }}
+              className="d-flex gap-3"
+            >
+              {subCategories
+                ? subCategories.map((category) => {
+                    return (
+                      <li
+                        className="nav-items"
+                        style={{
+                          listStyleType: "none",
+                          color: "white",
+                          cursor: "pointer",
+                        }}
+                      >
+                        <Link
+                          className="nav-link links"
+                          to={`/category/subCategory/${title}/${category}`}
+                        >
+                          {category}
+                        </Link>
+                      </li>
+                    );
+                  })
+                : ""}
+            </ul>
+          </div>
+        ) : (
+          ""
+        )}
       </header>
     </>
   );

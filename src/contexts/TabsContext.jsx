@@ -134,7 +134,7 @@ const tabs = [
     subTitles: ["Home", "Schedule", "Standings", "Prime Tire newsletter"],
     subCategories: [
       "Red Bull",
-      "ferrari",
+      "Ferrari",
       "Mercedes",
       "Mc Laren",
       "Aston Martin",
@@ -310,11 +310,11 @@ const tabs = [
     subTitles: [
       "Home",
       "Teams",
-      "Scores & Schedule",
+      "Schedule",
       "Standings",
       "Podcasts",
       "Until Saturday newsletter",
-      // "Recruiting",
+      "Recruiting",
       "NCAAF Odds",
       "NCAAF Picks",
       // "Top 25 for 2024",

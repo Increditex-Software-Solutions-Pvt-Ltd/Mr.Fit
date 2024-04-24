@@ -17,12 +17,19 @@ function ScoresSchedules() {
     } else return 0;
   });
   const windowWidth = useWindowWidth();
+  const subCategories = subs[0].subCategories || 0;
   return (
     <div>
       {windowWidth > 750 ? (
-        <CommonNavbar subTabs={subs[0].subTitles} />
+        <CommonNavbar
+          subTabs={subs[0].subTitles}
+          subCategories={subCategories}
+        />
       ) : (
-        <MobileCommonNavbar subTabs={subs[0].subTitles} />
+        <MobileCommonNavbar
+          subTabs={subs[0].subTitles}
+          subCategories={subCategories}
+        />
       )}
       <div className="container">
         <div className="scores-schedules-page">

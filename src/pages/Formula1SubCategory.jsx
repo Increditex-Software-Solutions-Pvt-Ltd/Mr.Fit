@@ -1,26 +1,34 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import StandingsComp from "../components/StandingsComp";
-import CommonNavbar from "../components/CommonNavbar";
+import { useNavigate, useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
-import "../css/PagesCss/Standings.css";
-import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
+import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import CommonNavbar from "../components/CommonNavbar";
+import Formula1Subcomp from "../components/Formula1Subcomp";
 
-function Standings() {
-  const { title } = useParams();
+const Formula1SubCategory = () => {
   const tabs = useTabContext();
+  let { title, category } = useParams();
+
+  if (category === "Red Bull") {
+    category = "Red bull racing";
+  } else if (category === "VCARB") {
+    category = "AlphaTauri";
+  } else if (category === "Stake") {
+    category = "Alfa Romeo";
+  }
+
+  const navigate = useNavigate();
 
   const subs = tabs.filter((tab) => {
     if (tab.title.split(" ").join("") === title.split(" ").join("")) {
       return tab;
     } else return 0;
   });
-  const windowWidth = useWindowWidth();
-
   const subCategories = subs[0].subCategories || 0;
+  const windowWidth = useWindowWidth();
   return (
-    <div>
+    <>
       {windowWidth > 750 ? (
         <CommonNavbar
           subTabs={subs[0].subTitles}
@@ -33,14 +41,10 @@ function Standings() {
         />
       )}
       <div className="container">
-        <div className="standings-page">
-          <h1 style={{ fontWeight: "bold" }}>{title} Table</h1>
-          <hr />
-          <StandingsComp />
-        </div>
+        <Formula1Subcomp title={title} category={category} />
       </div>
-    </div>
+    </>
   );
-}
+};
 
-export default Standings;
+export default Formula1SubCategory;

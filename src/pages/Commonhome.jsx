@@ -8,7 +8,7 @@ import MobileCommonNavbar from "../components/MobileCommonNavbar";
 
 const Commonhome = () => {
   const tabs = useTabContext();
-  const { title } = useParams();
+  let { title } = useParams();
   const windowWidth = useWindowWidth();
 
   const subs = tabs.filter((tab) => {
@@ -16,7 +16,9 @@ const Commonhome = () => {
       return tab;
     } else return 0;
   });
-
+  if (title === "NCAAF") {
+    title = "College Footbaal";
+  }
   const subCategories = subs[0].subCategories || 0;
 
   return (

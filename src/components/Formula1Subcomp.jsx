@@ -1,12 +1,12 @@
 import React from "react";
 
-const Formula1Subcomp = () => {
+const Formula1Subcomp = ({ title, category }) => {
   return (
     <div>
       <section className="m-4">
         <div className="my-3 border-bottom">
           <h3>
-            <b>{title} coverage</b>
+            <b>{category}</b>
           </h3>
         </div>
         <div></div>
