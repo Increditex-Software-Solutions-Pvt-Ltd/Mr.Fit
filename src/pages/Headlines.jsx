@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useTabContext } from "../contexts/TabsContext";
 import CommonNavbar from "../components/CommonNavbar";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import Footer from "../components/Footer";
 
 function Headlines() {
   const headlineData = {
@@ -37,6 +38,11 @@ function Headlines() {
       <div className="container">
         <HeadlineNews headline={headlineData} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

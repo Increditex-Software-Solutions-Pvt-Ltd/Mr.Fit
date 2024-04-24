@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileNavbar from "../components/MobileNavbar";
 import LiveNewsComp from "../components/LiveNewsComp";
+import Footer from "../components/Footer";
 
 function LiveNews() {
   const tabs = useTabContext();
@@ -58,6 +59,11 @@ function LiveNews() {
         <hr />
         <LiveNewsComp news={dummyNews} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

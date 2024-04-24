@@ -6,6 +6,7 @@ import { useTabContext } from "../contexts/TabsContext";
 import "../css/PagesCss/Standings.css";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
+import Footer from "../components/Footer";
 
 function Standings() {
   const { title } = useParams();
@@ -39,6 +40,11 @@ function Standings() {
           <StandingsComp />
         </div>
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

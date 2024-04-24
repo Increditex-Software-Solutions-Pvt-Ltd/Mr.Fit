@@ -5,6 +5,7 @@ import CommonNavbar from "../components/CommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import LiveNewsComp from "../components/LiveNewsComp";
+import Footer from "../components/Footer";
 
 function LiveNewsSub() {
   const { title } = useParams();
@@ -43,6 +44,11 @@ function LiveNewsSub() {
       <div className="container">
         <LiveNewsComp news={dummyNews} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </>
   );
 }

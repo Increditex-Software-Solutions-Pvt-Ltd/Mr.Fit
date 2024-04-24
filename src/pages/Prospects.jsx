@@ -5,6 +5,7 @@ import CommonNavbar from "../components/CommonNavbar";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import { useTabContext } from "../contexts/TabsContext";
 import ProspectsComp from "../components/ProspectsComp";
+import Footer from "../components/Footer";
 
 const Prospects = () => {
   const tabs = useTabContext();
@@ -27,6 +28,11 @@ const Prospects = () => {
           <MobileCommonNavbar subTabs={subs[0].subTitles} />
         )}
         <ProspectsComp title={title} name={name} />
+        <section className="bg-dark">
+          <div className="p-4">
+            <Footer />
+          </div>
+        </section>
       </>
     </div>
   );

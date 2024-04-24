@@ -6,6 +6,7 @@ import TeamsComponent from "../components/TeamsComponent";
 import "../css/PagesCss/Teams.css";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import Footer from "../components/Footer";
 
 function Team() {
   const { title } = useParams();
@@ -32,6 +33,11 @@ function Team() {
           <TeamsComponent title={title} />
         </div>
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

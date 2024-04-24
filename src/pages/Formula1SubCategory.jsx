@@ -5,6 +5,7 @@ import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import CommonNavbar from "../components/CommonNavbar";
 import Formula1Subcomp from "../components/Formula1Subcomp";
+import Footer from "../components/Footer";
 
 const Formula1SubCategory = () => {
   const tabs = useTabContext();
@@ -43,6 +44,11 @@ const Formula1SubCategory = () => {
       <div className="container">
         <Formula1Subcomp title={title} category={category} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </>
   );
 };

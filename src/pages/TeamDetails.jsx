@@ -5,6 +5,7 @@ import TeamDetailsComp from "../components/TeamDetailsComp";
 import Navbar from "../components/Navbar";
 import MobileNavbar from "../components/MobileNavbar";
 import { useParams } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function TeamDetails() {
   const tabs = useTabContext();
@@ -20,6 +21,11 @@ function TeamDetails() {
       <div className="container">
         <TeamDetailsComp teamName={name} title={title} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

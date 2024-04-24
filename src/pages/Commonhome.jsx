@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import CommonNavbar from "../components/CommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import Footer from "../components/Footer";
 
 const Commonhome = () => {
   const tabs = useTabContext();
@@ -36,6 +37,12 @@ const Commonhome = () => {
       )}
 
       <CommonhomeComp title={title} logo={subs[0].logo} />
+
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </>
   );
 };

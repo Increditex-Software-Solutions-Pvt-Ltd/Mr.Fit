@@ -5,6 +5,7 @@ import PlayerDComp from "../components/PlayerDComp";
 import Navbar from "../components/Navbar";
 import MobileNavbar from "../components/MobileNavbar";
 import { useParams } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const PlayerDetails = () => {
   const tabs = useTabContext();
@@ -20,6 +21,11 @@ const PlayerDetails = () => {
       <div className="container">
         <PlayerDComp title={title} playername={playername} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 };

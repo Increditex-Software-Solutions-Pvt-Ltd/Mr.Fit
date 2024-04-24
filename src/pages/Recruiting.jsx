@@ -5,6 +5,7 @@ import CommonNavbar from "../components/CommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import { useTabContext } from "../contexts/TabsContext";
 import { useParams } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Recruiting = () => {
   const { title } = useParams();
@@ -26,6 +27,11 @@ const Recruiting = () => {
       <div className="container">
         <RecruitingComp title={title} />
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 };

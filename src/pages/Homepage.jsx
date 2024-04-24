@@ -5,6 +5,7 @@ import { useWindowWidth } from "../contexts/WindowWidth";
 import { useTabContext } from "../contexts/TabsContext";
 import MobileNavbar from "../components/MobileNavbar";
 import SlidingSchedule from "../components/SlidingSchedule";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   const tabs = useTabContext();
@@ -18,9 +19,7 @@ const Homepage = () => {
       )}
 
       <div className="bg-dark d-flex align-items-center justify-content-center flex-column">
-        <div>
-          <SlidingSchedule />
-        </div>
+        <div>{/* <SlidingSchedule /> */}</div>
 
         <h2 className="mainheading">
           Access sports reporting that sets the standard.
@@ -30,6 +29,11 @@ const Homepage = () => {
         </a>
       </div>
       <Topnews />
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </>
   );
 };

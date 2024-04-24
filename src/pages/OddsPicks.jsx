@@ -6,6 +6,7 @@ import { useTabContext } from "../contexts/TabsContext";
 import { useNavigate, useParams } from "react-router-dom";
 import PicksComp from "../components/PicksComp";
 import OddsComp from "../components/OddsComp";
+import Footer from "../components/Footer";
 
 const OddsPicks = () => {
   const tabs = useTabContext();
@@ -159,6 +160,11 @@ const OddsPicks = () => {
           </section>
         </div>
       </>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 };

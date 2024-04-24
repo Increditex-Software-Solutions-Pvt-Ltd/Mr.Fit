@@ -5,6 +5,7 @@ import { useWindowWidth } from "../contexts/WindowWidth";
 import NFLDraftComp from "../components/NFLDraftComp";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import CommonNavbar from "../components/CommonNavbar";
+import Footer from "../components/Footer";
 
 const NFLDraft = () => {
   const tabs = useTabContext();
@@ -26,6 +27,11 @@ const NFLDraft = () => {
           <MobileCommonNavbar subTabs={subs[0].subTitles} />
         )}
         <NFLDraftComp title={title} />
+        <section className="bg-dark">
+          <div className="p-4">
+            <Footer />
+          </div>
+        </section>
       </>
     </div>
   );

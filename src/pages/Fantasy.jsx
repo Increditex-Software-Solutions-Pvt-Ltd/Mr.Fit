@@ -6,6 +6,7 @@ import CommonNavbar from "../components/CommonNavbar";
 import FantasyComp from "../components/FantasyComp";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
+import Footer from "../components/Footer";
 
 function Fantasy() {
   const tabs = useTabContext();
@@ -26,6 +27,11 @@ function Fantasy() {
         <MobileCommonNavbar subTabs={subs[0].subTitles} />
       )}
       <FantasyComp title={title} />
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </>
   );
 }

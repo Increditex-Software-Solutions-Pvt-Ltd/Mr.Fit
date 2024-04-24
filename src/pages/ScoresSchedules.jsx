@@ -6,6 +6,7 @@ import { useTabContext } from "../contexts/TabsContext";
 import "../css/PagesCss/ScoresSchedules.css";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
+import Footer from "../components/Footer";
 
 function ScoresSchedules() {
   const { title } = useParams();
@@ -38,6 +39,11 @@ function ScoresSchedules() {
           <ScoresSchedulesComp />
         </div>
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

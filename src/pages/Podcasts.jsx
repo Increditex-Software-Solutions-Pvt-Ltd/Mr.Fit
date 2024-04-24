@@ -6,6 +6,7 @@ import PodcastsComp from "../components/PodcastsComp";
 import "../css/PagesCss/Podcasts.css";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
+import Footer from "../components/Footer";
 
 function Podcasts() {
   const { title } = useParams();
@@ -54,6 +55,11 @@ function Podcasts() {
           <PodcastsComp />
         </div>
       </div>
+      <section className="bg-dark">
+        <div className="p-4">
+          <Footer />
+        </div>
+      </section>
     </div>
   );
 }

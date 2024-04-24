@@ -5,6 +5,7 @@ import { useWindowWidth } from "../contexts/WindowWidth";
 import CommonNavbar from "../components/CommonNavbar";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import SuperBowlNFLComp from "../components/SuperBowlNFLComp";
+import Footer from "../components/Footer";
 
 const SuperBowlNFL = () => {
   const tabs = useTabContext();
@@ -27,6 +28,11 @@ const SuperBowlNFL = () => {
           <MobileCommonNavbar subTabs={subs[0].subTitles} />
         )}
         <SuperBowlNFLComp title={title} />
+        <section className="bg-dark">
+          <div className="p-4">
+            <Footer />
+          </div>
+        </section>
       </>
     </div>
   );
