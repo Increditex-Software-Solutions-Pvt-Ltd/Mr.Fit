@@ -113,6 +113,7 @@ const PlayerDComp = ({ title, playername }) => {
                   <small
                     onClick={() => {
                       navigate(-1);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
                     Full Schedule{" "}
@@ -249,9 +250,13 @@ const PlayerDComp = ({ title, playername }) => {
                             <span className="ms-2">
                               <b
                                 style={{ cursor: "pointer" }}
-                                onClick={() =>
-                                  navigate(`/team/${title}/Chelsea`)
-                                }
+                                onClick={() => {
+                                  navigate(`/team/${title}/Chelsea`);
+                                  window.scrollTo({
+                                    top: 0,
+                                    behavior: "smooth",
+                                  });
+                                }}
                               >
                                 Chelsea
                               </b>
@@ -271,9 +276,13 @@ const PlayerDComp = ({ title, playername }) => {
                             <span className="ms-2">
                               <b
                                 style={{ cursor: "pointer" }}
-                                onClick={() =>
-                                  navigate(`/team/${title}/Everton`)
-                                }
+                                onClick={() => {
+                                  navigate(`/team/${title}/Everton`);
+                                  window.scrollTo({
+                                    top: 0,
+                                    behavior: "smooth",
+                                  });
+                                }}
                               >
                                 Everton
                               </b>
@@ -305,9 +314,13 @@ const PlayerDComp = ({ title, playername }) => {
                             <span className="ms-2">
                               <b
                                 style={{ cursor: "pointer" }}
-                                onClick={() =>
-                                  navigate(`/team/${title}/Man City`)
-                                }
+                                onClick={() => {
+                                  navigate(`/team/${title}/Man City`);
+                                  window.scrollTo({
+                                    top: 0,
+                                    behavior: "smooth",
+                                  });
+                                }}
                               >
                                 Man City
                               </b>
@@ -327,9 +340,13 @@ const PlayerDComp = ({ title, playername }) => {
                             <span className="ms-2">
                               <b
                                 style={{ cursor: "pointer" }}
-                                onClick={() =>
-                                  navigate(`/team/${title}/Chelsea`)
-                                }
+                                onClick={() => {
+                                  navigate(`/team/${title}/Chelsea`);
+                                  window.scrollTo({
+                                    top: 0,
+                                    behavior: "smooth",
+                                  });
+                                }}
                               >
                                 Chelsea
                               </b>
@@ -356,6 +373,7 @@ const PlayerDComp = ({ title, playername }) => {
                     style={{ cursor: "pointer" }}
                     onClick={() => {
                       navigate(-1);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
                     Full Team Stats
@@ -406,9 +424,10 @@ const PlayerDComp = ({ title, playername }) => {
                           <div>
                             <h6
                               style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                navigate(`/playerDetails/${title}/C. Palmer`)
-                              }
+                              onClick={() => {
+                                navigate(`/playerDetails/${title}/C. Palmer`);
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
                             >
                               C. Palmer, M
                             </h6>
@@ -429,9 +448,10 @@ const PlayerDComp = ({ title, playername }) => {
                           <div>
                             <h6
                               style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                navigate(`/playerDetails/${title}/C. Palmer`)
-                              }
+                              onClick={() => {
+                                navigate(`/playerDetails/${title}/C. Palmer`);
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
                             >
                               C. Palmer, M
                             </h6>
@@ -454,9 +474,12 @@ const PlayerDComp = ({ title, playername }) => {
                           <div>
                             <h6
                               style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                navigate(`/playerDetails/${title}/Thiago Silva`)
-                              }
+                              onClick={() => {
+                                navigate(
+                                  `/playerDetails/${title}/Thiago Silva`
+                                );
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
                             >
                               Thiago Silva, D
                             </h6>
@@ -488,11 +511,12 @@ const PlayerDComp = ({ title, playername }) => {
                           <div>
                             <h6
                               style={{ cursor: "pointer" }}
-                              onClick={() =>
+                              onClick={() => {
                                 navigate(
                                   `/playerDetails/${title}/Robert Sánchez`
-                                )
-                              }
+                                );
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
                             >
                               Robert Sánchez, GK
                             </h6>
@@ -515,9 +539,12 @@ const PlayerDComp = ({ title, playername }) => {
                           <div>
                             <h6
                               style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                navigate(`/playerDetails/${title}/C. Gallagher`)
-                              }
+                              onClick={() => {
+                                navigate(
+                                  `/playerDetails/${title}/C. Gallagher`
+                                );
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
                             >
                               C. Gallagher, M
                             </h6>
@@ -540,9 +567,12 @@ const PlayerDComp = ({ title, playername }) => {
                           <div>
                             <h6
                               style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                navigate(`/playerDetails/${title}/C. Gallagher`)
-                              }
+                              onClick={() => {
+                                navigate(
+                                  `/playerDetails/${title}/C. Gallagher`
+                                );
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
                             >
                               C. Gallagher, M
                             </h6>

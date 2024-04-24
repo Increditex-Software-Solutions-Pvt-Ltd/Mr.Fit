@@ -14,9 +14,10 @@ const Topnews = () => {
                   <div className="card-body">
                     <img
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=770%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
                       className="img-fluid"
                       alt=""
@@ -25,9 +26,10 @@ const Topnews = () => {
                   <div className="card-footer bg-transparent border-0">
                     <h3
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="text-headblack text-lg"
                     >
                       Will Man City be worried? Why did Southgate scout
@@ -58,9 +60,10 @@ const Topnews = () => {
                       href="#"
                     >
                       <img
-                        onClick={() =>
-                          navigate("/category/headlines/Premier League")
-                        }
+                        onClick={() => {
+                          navigate("/category/headlines/Premier League");
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
                         style={{
                           height: "80px",
@@ -92,9 +95,10 @@ const Topnews = () => {
                       href="#"
                     >
                       <img
-                        onClick={() =>
-                          navigate("/category/headlines/Premier League")
-                        }
+                        onClick={() => {
+                          navigate("/category/headlines/Premier League");
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04182449/GettyImages-1978650633-scaled-e1707089111403-1024x682.jpg"
                         className="img-fluid"
                         style={{
@@ -129,9 +133,10 @@ const Topnews = () => {
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                         className="img-fluid"
-                        onClick={() =>
-                          navigate("/category/headlines/Premier League")
-                        }
+                        onClick={() => {
+                          navigate("/category/headlines/Premier League");
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
                         style={{
                           height: "80px",
                           width: "80px",
@@ -162,9 +167,10 @@ const Topnews = () => {
                       href="#"
                     >
                       <img
-                        onClick={() =>
-                          navigate("/category/headlines/Premier League")
-                        }
+                        onClick={() => {
+                          navigate("/category/headlines/Premier League");
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                         className="img-fluid"
                         style={{
@@ -200,9 +206,10 @@ const Topnews = () => {
                 <span className="text-stone">
                   <a
                     style={{ cursor: "pointer" }}
-                    onClick={() =>
-                      navigate("/category/headlines/Premier League")
-                    }
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="nav-link"
                   >
                     see all
@@ -214,9 +221,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -225,9 +233,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -236,9 +245,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -247,9 +257,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -258,9 +269,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -269,9 +281,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -280,9 +293,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -291,9 +305,10 @@ const Topnews = () => {
                   <li className="my-1">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="nav-link text-normal"
                     >
                       Regragui to remain as Morocco head coach
@@ -316,9 +331,10 @@ const Topnews = () => {
                   <div className="card-body">
                     <img
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/02085517/02-02-contracts-2025-2-1024x683.png"
                       className="img-fluid"
                       alt=""
@@ -327,9 +343,10 @@ const Topnews = () => {
                   <div className="card-footer bg-transparent border-0">
                     <h3
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="text-headblack text-lg"
                     >
                       Will Man City be worried? Why did Southgate scout
@@ -359,9 +376,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
                       style={{
                         height: "80px",
@@ -391,9 +409,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04182449/GettyImages-1978650633-scaled-e1707089111403-1024x682.jpg"
                       className="img-fluid"
                       style={{
@@ -426,9 +445,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
                       style={{
@@ -461,9 +481,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
                       style={{
@@ -508,9 +529,10 @@ const Topnews = () => {
                   <div className="card-body">
                     <img
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/06021715/Foden-Manchester-City-Brentford-hat-trick-scaled-e1707203878962-1024x683.jpg"
                       className="img-fluid"
                       alt=""
@@ -545,9 +567,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
                       style={{
                         height: "80px",
@@ -577,9 +600,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04182449/GettyImages-1978650633-scaled-e1707089111403-1024x682.jpg"
                       className="img-fluid"
                       style={{
@@ -612,9 +636,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
                       style={{
@@ -647,9 +672,10 @@ const Topnews = () => {
                     href="#"
                   >
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
                       style={{
@@ -688,7 +714,10 @@ const Topnews = () => {
             <h6 className="text-dark fw-bold">A1: Today's Must-Read</h6>
             <a
               style={{ cursor: "pointer" }}
-              onClick={() => navigate("/category/headlines/Premier League")}
+              onClick={() => {
+                navigate("/category/headlines/Premier League");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="nav-link text-stone text-sm"
             >
               see all
@@ -713,9 +742,10 @@ const Topnews = () => {
                   <div className="object-fit-cover">
                     <img
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/02081506/ATSU-LEAD-scaled.jpeg"
                       className="object-fit-cover"
                       height="310px"

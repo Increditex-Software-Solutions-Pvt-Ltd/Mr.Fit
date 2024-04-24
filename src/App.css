@@ -192,3 +192,12 @@ body {
 .border-bottom {
   border-bottom: 0.2px solid var(--semilight-color);
 }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: white;
+  background-color: black;
+}
+.nav-pills .nav-link {
+  color: black;
+}

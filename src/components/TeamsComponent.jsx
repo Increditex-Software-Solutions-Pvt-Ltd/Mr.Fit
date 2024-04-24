@@ -93,7 +93,10 @@ function TeamsComponent({ title }) {
           {chunk.map((team, teamIndex) => (
             <div key={teamIndex}>
               <button
-                onClick={() => navigate(`/team/${title}/${team.name}`)}
+                onClick={() => {
+                  navigate(`/team/${title}/${team.name}`);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 style={{ cursor: "pointer" }}
               >
                 <img

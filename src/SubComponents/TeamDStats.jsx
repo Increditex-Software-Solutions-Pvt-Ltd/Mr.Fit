@@ -563,7 +563,7 @@ function TeamDStats({ teamName }) {
           <div className="row">
             {stories.map((story, i) => {
               return (
-                <div className="col-12 col-lg-3" key={i}>
+                <div className="col-12 col-lg-3 mt-3" key={i}>
                   <div>
                     <img
                       id="storiesPic"

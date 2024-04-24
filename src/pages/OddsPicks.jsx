@@ -25,6 +25,7 @@ const OddsPicks = () => {
 
   const handleActiveTab = (tabId) => {
     setActive(tabId);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {

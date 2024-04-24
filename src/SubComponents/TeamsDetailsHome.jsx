@@ -139,7 +139,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Arsenal`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Arsenal`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Arsenal
                           </b>
@@ -159,9 +162,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() =>
-                              navigate(`/team/${title}/Bayern Munchen`)
-                            }
+                            onClick={() => {
+                              navigate(`/team/${title}/Bayern Munchen`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Bayern Munchen
                           </b>
@@ -193,7 +197,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Sheff Utd`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Sheff Utd`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Sheff Utd
                           </b>
@@ -213,7 +220,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Chelsea`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Chelsea`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Chelsea
                           </b>
@@ -245,7 +255,11 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Chelsea`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Chelsea`);
+
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Chelsea
                           </b>
@@ -265,7 +279,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Everton`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Everton`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Everton
                           </b>
@@ -297,7 +314,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Man City`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Man City`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Man City
                           </b>
@@ -317,7 +337,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                         <span className="ms-2">
                           <b
                             style={{ cursor: "pointer" }}
-                            onClick={() => navigate(`/team/${title}/Chelsea`)}
+                            onClick={() => {
+                              navigate(`/team/${title}/Chelsea`);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
                           >
                             Chelsea
                           </b>
@@ -343,7 +366,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
               <h5 style={{ fontWeight: "bold" }}>{teamName}</h5>
               <small
                 style={{ cursor: "pointer" }}
-                onClick={() => navigate(`/team/Standings/${title}/${teamName}`)}
+                onClick={() => {
+                  navigate(`/team/Standings/${title}/${teamName}`);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 Full Standings
                 <i className="fa fa-angle-right ms-2" aria-hidden="true"></i>
@@ -367,12 +393,12 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                 <tbody>
                   {standingsData.map((team, index) => (
                     <tr key={index}>
-                      <td>
-                        {index + 1}
+                      <td>{index + 1}</td>
+                      <td style={{ fontSize: "14px" }}>
                         <img
                           src={team.logo}
                           alt={team.name}
-                          width="30px"
+                          width="20px"
                           style={{ marginRight: "5px", marginLeft: "5px" }}
                         />
                         {team.name}
@@ -450,12 +476,12 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                 <tbody>
                   {standingsData.map((team, index) => (
                     <tr key={index}>
-                      <td>
-                        {index + 1}
+                      <td>{index + 1}</td>
+                      <td style={{ fontSize: "14px" }}>
                         <img
                           src={team.logo}
                           alt={team.name}
-                          width="30px"
+                          width="20px"
                           style={{ marginRight: "5px", marginLeft: "5px" }}
                         />
                         {team.name === teamName ? (
@@ -526,9 +552,11 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                       <div>
                         <h6
                           style={{ cursor: "pointer" }}
-                          onClick={() =>
-                            navigate(`/playerDetails/${title}/C. Palmer`)
-                          }
+                          onClick={() => {
+                            navigate(`/playerDetails/${title}/C. Palmer`);
+
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           C. Palmer, M
                         </h6>
@@ -549,9 +577,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                       <div>
                         <h6
                           style={{ cursor: "pointer" }}
-                          onClick={() =>
-                            navigate(`/playerDetails/${title}/C. Palmer`)
-                          }
+                          onClick={() => {
+                            navigate(`/playerDetails/${title}/C. Palmer`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           C. Palmer, M
                         </h6>
@@ -572,9 +601,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                       <div>
                         <h6
                           style={{ cursor: "pointer" }}
-                          onClick={() =>
-                            navigate(`/playerDetails/${title}/Thiago Silva`)
-                          }
+                          onClick={() => {
+                            navigate(`/playerDetails/${title}/Thiago Silva`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           Thiago Silva, D
                         </h6>
@@ -606,9 +636,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                       <div>
                         <h6
                           style={{ cursor: "pointer" }}
-                          onClick={() =>
-                            navigate(`/playerDetails/${title}/Robert Sánchez`)
-                          }
+                          onClick={() => {
+                            navigate(`/playerDetails/${title}/Robert Sánchez`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           Robert Sánchez, GK
                         </h6>
@@ -631,9 +662,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                       <div>
                         <h6
                           style={{ cursor: "pointer" }}
-                          onClick={() =>
-                            navigate(`/playerDetails/${title}/C. Gallagher`)
-                          }
+                          onClick={() => {
+                            navigate(`/playerDetails/${title}/C. Gallagher`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           C. Gallagher, M
                         </h6>
@@ -656,9 +688,10 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
                       <div>
                         <h6
                           style={{ cursor: "pointer" }}
-                          onClick={() =>
-                            navigate(`/playerDetails/${title}/C. Gallagher`)
-                          }
+                          onClick={() => {
+                            navigate(`/playerDetails/${title}/C. Gallagher`);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
                         >
                           C. Gallagher, M
                         </h6>

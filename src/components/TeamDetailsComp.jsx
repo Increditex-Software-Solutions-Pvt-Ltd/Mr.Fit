@@ -9,6 +9,7 @@ function teamDetailsComp({ teamName, title }) {
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

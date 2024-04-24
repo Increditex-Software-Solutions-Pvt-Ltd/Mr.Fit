@@ -19,9 +19,10 @@ const FooterCommonComp = ({ title }) => {
                   <div className="card-body">
                     <img
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/06021715/Foden-Manchester-City-Brentford-hat-trick-scaled-e1707203878962-1024x683.jpg"
                       className="img-fluid"
                       alt=""
@@ -30,9 +31,10 @@ const FooterCommonComp = ({ title }) => {
                   <div className="card-footer bg-transparent border-0">
                     <h3
                       style={{ cursor: "pointer" }}
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       className="text-headblack text-lg"
                     >
                       Will Man City be worried? Why did Southgate scout
@@ -59,9 +61,10 @@ const FooterCommonComp = ({ title }) => {
                 <li>
                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04151344/0204_TheBriefing-1024x683.jpg"
                       style={{
                         height: "80px",
@@ -88,9 +91,10 @@ const FooterCommonComp = ({ title }) => {
                 <li>
                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/04182449/GettyImages-1978650633-scaled-e1707089111403-1024x682.jpg"
                       className="img-fluid"
                       style={{
@@ -120,9 +124,10 @@ const FooterCommonComp = ({ title }) => {
                 <li>
                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
                       style={{
@@ -152,9 +157,10 @@ const FooterCommonComp = ({ title }) => {
                 <li>
                   <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
-                      onClick={() =>
-                        navigate("/category/headlines/Premier League")
-                      }
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                       className="img-fluid"
                       style={{
@@ -165,7 +171,13 @@ const FooterCommonComp = ({ title }) => {
                       alt=""
                     />
                     <div className="col-lg-8">
-                      <h6 className="mb-0 text-md">
+                      <h6
+                        className="mb-0 text-md"
+                        onClick={() => {
+                          navigate("/category/headlines/Premier League");
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                      >
                         Longer blog post title: This one has multiple lines!
                       </h6>
                       <div
@@ -196,15 +208,25 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/25103039/GettyImages-2106010111-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       Off to a 'brutal' start, Mercedes and Lewis Hamilton
                       struggle for understanding{" "}
                     </h4>
@@ -229,16 +251,26 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/24032250/F1-Australian-GP-2024-takeaways-1024x683.jpg"
                     className="img-fluid"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       F1 Australian GP takeaways: Ferrari takes advantage,
                       Mercedes lost at sea
                     </h4>
@@ -262,16 +294,26 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/23021503/F1_-Race-Preview-2-1024x683.png"
                     className="img-fluid"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       F1 Australian GP preview: Ferrari sets sights on Red Bull,
                       Albon out for redemption
                     </h4>
@@ -295,16 +337,26 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/13125803/GettyImages-2048037861-1024x683.jpg"
                     className="img-fluid"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       The tricky dynamics of Lewis Hamilton's Ferrari move won't
                       wait for 2025
                     </h4>
@@ -328,15 +380,25 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/09170323/GettyImages-2071353403-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       On top of the F1 world, would Max Verstappen really leave
                       Red Bull for Mercedes?{" "}
                     </h4>
@@ -360,15 +422,25 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/09142853/3-9-24-Saudi-GP-Takeaways-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       F1 Saudi Arabian GP takeaways: Verstappen's a class above,
                       Haas takes advantage{" "}
                     </h4>
@@ -391,15 +463,25 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/13144224/GettyImages-1686717668-1-2-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       Let's imagine F1's 2023 season under NASCAR's playoff
                       system: Prime Tire{" "}
                     </h4>
@@ -423,15 +505,25 @@ const FooterCommonComp = ({ title }) => {
               <li>
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
+                  href=""
                 >
                   <img
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/06141221/GettyImages-1813292064-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
-                    <h4 className="mb-0">
+                    <h4
+                      className="mb-0"
+                      onClick={() => {
+                        navigate("/category/headlines/Premier League");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
                       Mercedes' optimism for 2024 and a brewing F1 mess: Prime
                       Tire{" "}
                     </h4>

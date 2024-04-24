@@ -226,7 +226,10 @@ const OddsComp = ({ handleActiveTab, title, sort }) => {
               </h4>
               <small
                 style={{ cursor: "pointer" }}
-                onClick={() => handleActiveTab("Picks")}
+                onClick={() => {
+                  handleActiveTab("Picks");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 All {title} Picks{" "}
                 <i className="fa fa-angle-right ms-1" aria-hidden="true"></i>
@@ -236,7 +239,7 @@ const OddsComp = ({ handleActiveTab, title, sort }) => {
             <div className="row">
               {stories.map((story, i) => {
                 return (
-                  <div className="col-12 col-lg-3 mb-5" key={i}>
+                  <div className="col-12 col-lg-3 mt-5" key={i}>
                     <div>
                       <img
                         id="storiesPic"
