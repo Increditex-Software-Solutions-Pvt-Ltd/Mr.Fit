@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
 const PlayerDComp = ({ title, playername }) => {
   const navigate = useNavigate();
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <div>
-      <section className="border-bottom">
+      <section data-aos="fade-up" className="border-bottom">
         <div
           id="mainSection"
           className="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between m-4"
@@ -72,7 +82,7 @@ const PlayerDComp = ({ title, playername }) => {
         </div>
       </section>
 
-      <section>
+      <section data-aos="fade-up">
         <div className="row">
           <div className="col-12 col-lg-4">
             <div className="border-end">

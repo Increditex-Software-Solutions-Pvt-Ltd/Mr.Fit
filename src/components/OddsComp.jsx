@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const OddsComp = ({ handleActiveTab, title, sort }) => {
   const teamBets = [
@@ -111,10 +113,18 @@ const OddsComp = ({ handleActiveTab, title, sort }) => {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <div>
       <>
-        <section className="m-3">
+        <section data-aos="fade-up" className="m-3">
           <div className="row">
             {teamBets.map((bet, i) => {
               return (
@@ -239,7 +249,11 @@ const OddsComp = ({ handleActiveTab, title, sort }) => {
             <div className="row">
               {stories.map((story, i) => {
                 return (
-                  <div className="col-12 col-lg-3 mt-5" key={i}>
+                  <div
+                    data-aos="fade-up"
+                    className="col-12 col-lg-3 mt-5"
+                    key={i}
+                  >
                     <div>
                       <img
                         id="storiesPic"

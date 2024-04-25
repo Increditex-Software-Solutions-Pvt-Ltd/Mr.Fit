@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/ComponentsCSS/TeamComp.css";
 import { useNavigate } from "react-router-dom";
 
@@ -85,11 +87,18 @@ function TeamsComponent({ title }) {
   }
 
   const navigate = useNavigate();
-
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <div className="teams-container">
       {chunks.map((chunk, index) => (
-        <div key={index} className="teams-div">
+        <div key={index} className="teams-div" data-aos="fade-up">
           {chunk.map((team, teamIndex) => (
             <div key={teamIndex}>
               <button

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../css/ComponentsCSS/ScoresScheduleComp.css";
 import Schedule from "../SubComponents/Schedule";
 import DateTabs from "../SubComponents/DateTabs";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function ScoresSchedulescomp() {
   // random time
@@ -131,8 +134,18 @@ function ScoresSchedulescomp() {
 
   // State to manage selected date
   const [selectedDate, setSelectedDate] = useState(dates[0]);
+
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 200,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
-    <div>
+    <div data-aos="fade-up">
       <DateTabs
         // dates={dates}
         selectedDate={selectedDate}

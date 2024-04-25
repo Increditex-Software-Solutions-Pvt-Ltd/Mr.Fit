@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Formula1Subcomp = ({ title, category }) => {
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div>
-      <section className="m-4">
+      <section data-aos="fade-up" className="m-4">
         <div className="my-3 border-bottom">
           <h3>
             <b>{category}</b>
@@ -11,7 +22,7 @@ const Formula1Subcomp = ({ title, category }) => {
         </div>
         <div></div>
       </section>
-      <section className="sec2 my-2 py-2 ">
+      <section data-aos="fade-up" className="sec2 my-2 py-2 ">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -166,7 +177,7 @@ const Formula1Subcomp = ({ title, category }) => {
           </div>
         </div>
       </section>
-      <section className="sec2 my-3 py-3 ">
+      <section data-aos="fade-up" className="sec2 my-3 py-3 ">
         <div className="container">
           <hr />
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>

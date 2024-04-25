@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,600;1,6..12,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -198,6 +200,23 @@ body {
   color: white;
   background-color: black;
 }
+
+.nav-link {
+  color: gray;
+}
+
+.nav {
+  --bs-nav-link-hover-color: gray;
+}
+
 .nav-pills .nav-link {
   color: black;
+}
+
+.bungee-outline-regular {
+  font-family: "Bungee Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-weight: bolder;
 }

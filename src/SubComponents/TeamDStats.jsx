@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function TeamDStats({ teamName }) {
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   let goalKeepers = [
     {
       pic: "https://cdn-headshots.theathletic.com/cdn-cgi/image/width=1440%2cformat=auto%2cquality=75/https://cdn-headshots.theathletic.com/soccer/UUlxpMiAtFRLVfUx_96x96.png",
@@ -563,7 +574,11 @@ function TeamDStats({ teamName }) {
           <div className="row">
             {stories.map((story, i) => {
               return (
-                <div className="col-12 col-lg-3 mt-3" key={i}>
+                <div
+                  data-aos="fade-up"
+                  className="col-12 col-lg-3 mt-3"
+                  key={i}
+                >
                   <div>
                     <img
                       id="storiesPic"

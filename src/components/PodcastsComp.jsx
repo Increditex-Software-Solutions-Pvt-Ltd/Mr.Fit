@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/ComponentsCSS/PodcastsComp.css";
 
 function PodcastsComp() {
@@ -44,11 +46,22 @@ function PodcastsComp() {
       title: "Dummy Title 10",
     },
   ];
+
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div className="podcasts-container">
       {podcasts.map((podcast, i) => {
         return (
           <div
+            data-aos="fade-up"
             className="card background-dark"
             style={{ width: "18rem" }}
             key={i}

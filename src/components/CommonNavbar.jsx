@@ -103,10 +103,18 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
               )}
             </div>
             <div className="d-flex justify-content-center align-items-center ms-3">
-              <Link to="/" className="navbar-brand">
+              <Link
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                to="/"
+                className="navbar-brand"
+              >
                 Mr.Fit
               </Link>
-              <Link to={`/category/${title}`} className="navbar-brand">
+              <Link
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                to={`/category/${title}`}
+                className="navbar-brand"
+              >
                 <img
                   src={`${name[0].logo}`}
                   alt=""
@@ -123,6 +131,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       return (
                         <li className="nav-item" key={i}>
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             to={`/category/${title}`}
                             className="nav-link links"
                           >
@@ -135,6 +146,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       return (
                         <li className="nav-item" key={i}>
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             to={`/category/sub/OddsPicks/${tabs[0]}/${tabs[1]}`}
                             className="nav-link links"
                           >
@@ -146,6 +160,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       return (
                         <li className="nav-item" key={i}>
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             to={`/category/sub/newsletter/${title}/${tab}`}
                             className="nav-link links"
                           >
@@ -157,6 +174,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       return (
                         <li className="nav-item" key={i}>
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             to={`/category/sub/prospects/${title}/${tab}`}
                             className="nav-link links"
                           >
@@ -168,6 +188,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       return (
                         <li className="nav-item" key={i}>
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             to={`/category/sub/${tab}/${title}`}
                             className="nav-link links"
                           >
@@ -228,6 +251,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       onClick={() => setShowRemainingTabs(false)}
                     >
                       <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
                         to={`/category/${title}`}
                         className="nav-link links"
                       >
@@ -258,6 +284,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       onClick={() => setShowRemainingTabs(false)}
                     >
                       <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
                         to={`/category/sub/OddsPicks/${tabs[0]}/${tabs[1]}`}
                         className="nav-link links"
                       >
@@ -287,6 +316,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       onClick={() => setShowRemainingTabs(false)}
                     >
                       <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
                         to={`/category/sub/newsletter/${title}/${tab}`}
                         className="nav-link links"
                       >
@@ -316,6 +348,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       onClick={() => setShowRemainingTabs(false)}
                     >
                       <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
                         to={`/category/sub/prospects/${title}/${tab}`}
                         className="nav-link links"
                       >
@@ -345,6 +380,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                       onClick={() => setShowRemainingTabs(false)}
                     >
                       <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
                         to={`/category/sub/${tab}/${title}`}
                         className="nav-link links"
                       >
@@ -388,7 +426,13 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                             key={i}
                             onClick={() => setShowSideNavbar(false)}
                           >
-                            <Link to={`/live`} className="nav-link links">
+                            <Link
+                              onClick={() =>
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                              }
+                              to={`/live`}
+                              className="nav-link links"
+                            >
                               <img
                                 src={tab.logo}
                                 alt={tab.title}
@@ -405,6 +449,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                             onClick={() => setShowSideNavbar(false)}
                           >
                             <Link
+                              onClick={() =>
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                              }
                               to={`/category/${tab.title}`}
                               className="nav-link links"
                             >
@@ -436,6 +483,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                           onClick={() => setShowSideNavbar(false)}
                         >
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             // to={`/category/${tab.title}`}
                             className="nav-link links"
                           >
@@ -457,7 +507,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
             >
               {tabs.map((tab, i) => (
                 <li className="nav-item" key={i}>
-                  <Link
+                  <Link onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                     onClick={() => setShowSideNavbar(false)}
                     to={`/category/${tab.title}`}
                     className="nav-link links"
@@ -507,6 +559,9 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
                         }}
                       >
                         <Link
+                          onClick={() =>
+                            window.scrollTo({ top: 0, behavior: "smooth" })
+                          }
                           className="nav-link links"
                           to={`/category/subCategory/${title}/${category}`}
                         >

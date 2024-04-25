@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/SubComponentsCSS/TeamsDScoresSchedule.css";
 
 function TeamDScoresSchedule({ teamName }) {
@@ -309,6 +311,15 @@ function TeamDScoresSchedule({ teamName }) {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div>
       <h5 className="my-3">
@@ -426,7 +437,7 @@ function TeamDScoresSchedule({ teamName }) {
         <div className="row">
           {stories.map((story, i) => {
             return (
-              <div className="col-12 col-lg-3 mt-3" key={i}>
+              <div data-aos="fade-up" className="col-12 col-lg-3 mt-3" key={i}>
                 <div>
                   <img
                     id="storiesPic"

@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import TeamsDetailsHome from "../SubComponents/TeamsDetailsHome";
 import TeamDScoresSchedule from "../SubComponents/TeamDScoresSchedule";
 import TeamDRoster from "../SubComponents/TeamDRoster";
@@ -11,10 +14,17 @@ function teamDetailsComp({ teamName, title }) {
     setActiveTab(tabId);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <div style={{ margin: "20px 0px" }}>
-      <div className="">
+      <div data-aos="fade-up">
         <div className="teamNavbar row border-bottom">
           <div
             className="col-lg-3 col-sm-12"

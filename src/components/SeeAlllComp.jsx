@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useParams } from "react-router-dom";
 
-function FantasyComp({ title }) {
+const SeeAlllComp = () => {
+  const { title } = useParams();
   useEffect(() => {
     Aos.init({
       offset: 200,
@@ -11,6 +13,7 @@ function FantasyComp({ title }) {
       delay: 100,
     });
   }, []);
+
   return (
     <>
       <section
@@ -19,14 +22,12 @@ function FantasyComp({ title }) {
         className="sec2 my-3 py-3 "
       >
         <div className="container">
-          <h1>
-            <img
-              src="https://cdn-league-logos.theathletic.com/cdn-cgi/image/width=48%2cformat=auto%2cquality=75/https://cdn-league-logos.theathletic.com/league-34-color@2x.png"
-              alt={title}
-              width="60px"
-            />
-            Fantasy {title}
-          </h1>
+          <h3>
+            <b>
+              {" "}
+              {title} {title === "A1" ? ":Must-Read Stories" : ""}
+            </b>
+          </h3>
           <hr />
           <div className="row">
             <div className="col-md-6">
@@ -34,28 +35,25 @@ function FantasyComp({ title }) {
                 <div className="card border-0">
                   <div className="card-body">
                     <img
-                      src="https://cdn.theathletic.com/cdn-cgi/image/width=770%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/04065303/GettyImages-2046330544-1024x788.jpg"
+                      src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/24152848/0425_QBs-1024x512.jpg"
                       className="img-fluid"
                       alt=""
                     />
                   </div>
                   <div className="card-footer bg-transparent border-0">
                     <h3 className="text-headblack">
-                      Fantasy Premier League Gameweek 27 review: West Ham are
-                      back, Solanke
+                      Why drafting a successful NFL quarterback remains 'an
+                      inexact science'
                     </h3>
                     <p className="text-stone text-lg mb-0">
-                      Abdul Rehman analyses the main FPL talking points from
-                      Gameweek 27
+                      Despite NFL decision-makers' robust resumes as talent
+                      evaluators and extensive research, franchise
                     </p>
                     <div
                       className="text-stone text-sm
                     text-stone text-md mt-1"
                     >
-                      <span>Abdul Rehman</span>
-                      <span className="ms-3">
-                        <i className="bi bi-chat-left-fill icon-sm me-1"></i>16
-                      </span>
+                      <span>Mike Jones</span>
                     </div>
                   </div>
                 </div>
@@ -69,22 +67,23 @@ function FantasyComp({ title }) {
                     href="#"
                   >
                     <img
-                      src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/01083222/GettyImages-1963212000-1024x683.jpg"
+                      src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/24115040/0422_CoyotesThenNow-1024x512.png"
                       style={{ height: "100px", width: "140px" }}
                       alt=""
                     />
                     <div className="col-lg-8">
                       <h5 className="mb-0">
-                        Tottenham's Richarlison set for several weeks out with{" "}
+                        The Arizona Coyotes are gone. Someone please tell
+                        ex-owner Alex Meruelo{" "}
                       </h5>
                       <div
                         className="text-stone text-sm
                        text-stone text-sm mt-1"
                       >
-                        <span>Nick miller</span>
+                        <span>Katie Strang</span>
                         <span className="ms-3">
                           <i className="bi bi-chat-left-fill icon-sm me-1"></i>
-                          49
+                          508
                         </span>
                       </div>
                     </div>
@@ -96,22 +95,23 @@ function FantasyComp({ title }) {
                     href="#"
                   >
                     <img
-                      src="https://cdn.theathletic.com/cdn-cgi/image/width=600%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/01073415/wolves-hwang-scaled-e1709296523252-1024x683.jpeg"
+                      src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/22113537/0422_Michigan-QB-J.J.-McCarthy-copy-1024x512.png"
                       style={{ height: "100px", width: "140px" }}
                       alt=""
                     />
                     <div className="col-lg-8">
                       <h5 className="mb-0">
-                        Wolves' Hwang Hee-chan out of Newcastle trip due to
+                        How hockey helped make J.J. McCarthy one of NFL Draft's
+                        most...
                       </h5>
                       <div
                         className="text-stone text-sm
                        text-stone text-sm mt-1"
                       >
-                        <span>Nick miller</span>
+                        <span>Adam Jahns</span>
                         <span className="ms-3">
                           <i className="bi bi-chat-left-fill icon-sm me-1"></i>
-                          49
+                          100
                         </span>
                       </div>
                     </div>
@@ -123,24 +123,24 @@ function FantasyComp({ title }) {
                     href="#"
                   >
                     <img
-                      src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/01080852/Liverpool-1024x683.jpg"
+                      src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/22010709/IMG_1072-1-1024x512.png"
                       className="img-fluid"
                       style={{ height: "100px", width: "140px" }}
                       alt=""
                     />
                     <div className="col-lg-8">
                       <h5 className="mb-0">
-                        Liverpool's Nunez and Szoboszlai in contention to face
-                        Nottingham Forest,
+                        Dangerous games: What's next for Mike Brown, Vivek
+                        Ranadivé and the...
                       </h5>
                       <div
                         className="text-stone text-sm
                        text-stone text-sm mt-1"
                       >
-                        <span>Nick miller</span>
+                        <span>Anthony Slater and Sam Amick</span>
                         <span className="ms-3">
                           <i className="bi bi-chat-left-fill icon-sm me-1"></i>
-                          49
+                          111
                         </span>
                       </div>
                     </div>
@@ -152,23 +152,24 @@ function FantasyComp({ title }) {
                     href="#"
                   >
                     <img
-                      src="https://theathletic.com/static/img/qa-recap.svg"
+                      src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/18090549/0419_DraisaitlMcDavid-1024x512.jpg"
                       className="img-fluid"
                       style={{ height: "100px", width: "140px" }}
                       alt=""
                     />
                     <div className="col-lg-8">
                       <h5 className="mb-0">
-                        Fantasy Premier League Q&A: FPL Gameweek 27 advice from
+                        Is this the last stand for Connor McDavid, Leon
+                        Draisaitl and the Oilers?
                       </h5>
                       <div
                         className="text-stone text-sm
                        text-stone text-sm mt-1"
                       >
-                        <span>Nick miller</span>
+                        <span>Daniel Nugent-bowman</span>
                         <span className="ms-3">
                           <i className="bi bi-chat-left-fill icon-sm me-1"></i>
-                          49
+                          157
                         </span>
                       </div>
                     </div>
@@ -192,14 +193,14 @@ function FantasyComp({ title }) {
                   href="#"
                 >
                   <img
-                    src="https://cdn.theathletic.com/cdn-cgi/image/width=770%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/23061435/GettyImages-1756364354-scaled-e1709294859732-1024x681.jpg"
+                    src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/16143911/0417_ConnorBedard_FirstYear-1024x512.png"
                     style={{ height: "160px", width: "240px" }}
                     alt=""
                   />
                   <div className="col-lg-8">
                     <h4 className="mb-0">
-                      Fantasy Premier League: Strategies for using chips in
-                      Blank{" "}
+                      Connor Bedard's rookie season dazzles fans and defies age:
+                      'Unlike anything we've seen'
                     </h4>
                     <div
                       className="text-stone text-sm
@@ -415,6 +416,6 @@ function FantasyComp({ title }) {
       </section>
     </>
   );
-}
+};
 
-export default FantasyComp;
+export default SeeAlllComp;

@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const FooterCommonComp = ({ title }) => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <>
-      <section className="sec3 my-3 py-3">
+      <section data-aos="fade-up" className="sec3 my-3 py-3">
         <div className="container">
           <div className="p-3 border-bottom">
             {" "}
@@ -199,7 +211,7 @@ const FooterCommonComp = ({ title }) => {
         </div>
       </section>
 
-      <section className="sec2 my-3 py-3 ">
+      <section data-aos="fade-up" className="sec2 my-3 py-3 ">
         <div className="container">
           <hr />
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>

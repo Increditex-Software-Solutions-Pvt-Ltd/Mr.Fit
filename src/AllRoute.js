@@ -20,6 +20,8 @@ import Prospects from "./pages/Prospects";
 import Formula1SubCategory from "./pages/Formula1SubCategory";
 import Recruiting from "./pages/Recruiting";
 import FooterCommon from "./pages/FooterCommon";
+import SeeAll from "./pages/SeeAll";
+import AllNews from "./pages/AllNews";
 // import TeamDStats from "./SubComponents/TeamDStats";
 // import TeamStatsPage from "./pages/TeamStatsPage";
 
@@ -61,6 +63,8 @@ const AllRoute = () => {
         element={<Prospects />}
       />
       <Route path="/category/sub/Recruiting/:title" element={<Recruiting />} />
+      <Route path="/category/seeAll/:title" element={<SeeAll />} />
+      <Route path="/AllNews" element={<AllNews />} />
       <Route
         path="/category/subCategory/:title/:category?"
         element={<Formula1SubCategory />}

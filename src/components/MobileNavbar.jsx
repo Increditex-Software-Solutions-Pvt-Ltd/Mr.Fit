@@ -67,7 +67,11 @@ function MobileNavbar({ tabs }) {
             </div>
 
             <div className="d-flex justify-content-center align-items-center ms-3">
-              <Link to="/" className="navbar-brand">
+              <Link
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                to="/"
+                className="navbar-brand"
+              >
                 Mr.Fit
               </Link>
             </div>
@@ -102,7 +106,13 @@ function MobileNavbar({ tabs }) {
                             key={i}
                             onClick={() => setShowSideNavbar(false)}
                           >
-                            <Link to={`/live`} className="nav-link links">
+                            <Link
+                              onClick={() =>
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                              }
+                              to={`/live`}
+                              className="nav-link links"
+                            >
                               <img
                                 src={tab.logo}
                                 alt={tab.title}
@@ -119,6 +129,9 @@ function MobileNavbar({ tabs }) {
                             onClick={() => setShowSideNavbar(false)}
                           >
                             <Link
+                              onClick={() =>
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                              }
                               to={`/category/${tab.title}`}
                               className="nav-link links"
                             >
@@ -150,6 +163,9 @@ function MobileNavbar({ tabs }) {
                           onClick={() => setShowSideNavbar(false)}
                         >
                           <Link
+                            onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                             // to={`/category/${tab.title}`}
                             className="nav-link links"
                           >
@@ -172,7 +188,9 @@ function MobileNavbar({ tabs }) {
               {tabs.map((tab, i) =>
                 tab.title === "Live News" ? (
                   <li className="nav-item" key={i}>
-                    <Link to={`/live`} className="nav-link links">
+                    <Link onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            } to={`/live`} className="nav-link links">
                       <img
                         src={tab.logo}
                         alt={tab.title}
@@ -184,7 +202,9 @@ function MobileNavbar({ tabs }) {
                   </li>
                 ) : (
                   <li className="nav-item" key={i}>
-                    <Link
+                    <Link onClick={() =>
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
                       to={`/category/${tab.title}`}
                       className="nav-link links"
                     >

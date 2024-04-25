@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import "../css/ComponentsCSS/StandingsComp.css";
 
 function StandingsComp() {
@@ -194,9 +197,18 @@ function StandingsComp() {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div className="standings-table">
-      <table className="table table-striped">
+      <table className="table table-striped" data-aos="fade-up">
         <thead>
           <tr>
             <th>Team</th>

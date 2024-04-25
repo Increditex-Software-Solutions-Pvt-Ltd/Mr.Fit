@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // import { useTable } from "react-table";
 
 function TeamDRoster({ teamName }) {
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   let goalKeepers = [
     {
       pic: "",
@@ -416,7 +427,11 @@ function TeamDRoster({ teamName }) {
           <div className="row">
             {stories.map((story, i) => {
               return (
-                <div className="col-12 col-lg-3 mt-5" key={i}>
+                <div
+                  data-aos="fade-up"
+                  className="col-12 col-lg-3 mt-5"
+                  key={i}
+                >
                   <div>
                     <img
                       id="storiesPic"

@@ -180,6 +180,7 @@ const Footer = () => {
     });
     return subs.length;
   }
+
   return (
     <>
       <div className="row">

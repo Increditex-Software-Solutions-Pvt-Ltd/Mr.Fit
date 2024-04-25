@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useParams } from "react-router-dom";
 
 const NewsletterComp = () => {
@@ -8,9 +10,19 @@ const NewsletterComp = () => {
     .split(" ")
     .slice(0, length - 1)
     .join(" ");
+
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <>
-      <section>
+      <section data-aos="fade-up">
         <div
           style={{
             backgroundColor: "black",
@@ -38,7 +50,7 @@ const NewsletterComp = () => {
         </div>
       </section>
 
-      <section className="sec2 my-3 py-3 ">
+      <section data-aos="fade-up" className="sec2 my-3 py-3 ">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -194,7 +206,7 @@ const NewsletterComp = () => {
         </div>
       </section>
 
-      <section className="sec2 my-3 py-3 ">
+      <section data-aos="fade-up" className="sec2 my-3 py-3 ">
         <div className="container">
           <hr />
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>

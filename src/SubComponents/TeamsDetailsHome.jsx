@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 import MainNewsComp from "./MainNewsComp";
 import "../css/SubComponentsCSS/TeamDetailsHome.css";
@@ -107,11 +109,21 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
       form: "WLDWW",
     },
   ];
+
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div>
       <MainNewsComp />
 
-      <section>
+      <section data-aos="fade-up">
         <div className="row">
           <div className="col-md-12 col-lg-4 border-end mb-4">
             <div className="d-flex justify-content-between">
@@ -718,7 +730,7 @@ function TeamsDetailsHome({ teamName, title, handleTabClick }) {
         </div>
       </section>
 
-      <section className="sec2 my-3 py-3 ">
+      <section data-aos="fade-up" className="sec2 my-3 py-3 ">
         <div className="container">
           <hr />
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
