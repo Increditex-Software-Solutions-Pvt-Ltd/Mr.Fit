@@ -220,3 +220,11 @@ body {
   color: black;
   font-weight: bolder;
 }
+
+.EuroStandings > td {
+  font-size: 0.8rem;
+}
+
+.scheduleTableEuro > td {
+  font-size: 0.9rem;
+}

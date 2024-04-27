@@ -156,7 +156,6 @@ function StandingsComp() {
       PTS: 21,
       form: "WLDWW",
     },
-    ,
     {
       name: "Manchester City",
       logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-654-50x50.png",
@@ -169,7 +168,6 @@ function StandingsComp() {
       PTS: 21,
       form: "WLDWW",
     },
-    ,
     {
       name: "Manchester United",
       logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-655-50x50.png",
@@ -182,7 +180,6 @@ function StandingsComp() {
       PTS: 21,
       form: "WLDWW",
     },
-    ,
     {
       name: "Newcastle United",
       logo: "https://cdn-team-logos.theathletic.com/cdn-cgi/image/width=32%2cformat=auto%2cquality=75/https://cdn-team-logos.theathletic.com/team-logo-679-50x50.png",
@@ -207,10 +204,14 @@ function StandingsComp() {
   }, []);
 
   return (
-    <div className="standings-table">
-      <table className="table table-striped" data-aos="fade-up">
+    <div
+      className="standings-table"
+      style={{ width: "100%", overflow: "auto" }}
+    >
+      <table className="table table-striped standingTable" data-aos="fade-up">
         <thead>
           <tr>
+            <th></th>
             <th>Team</th>
             <th>GP</th>
             <th>W</th>
@@ -225,12 +226,12 @@ function StandingsComp() {
         <tbody>
           {standingsData.map((team, index) => (
             <tr key={index}>
+              <td> {index + 1}</td>
               <td>
-                {index + 1}
                 <img
                   src={team.logo}
                   alt={team.name}
-                  width="30px"
+                  width="25px"
                   style={{ marginRight: "5px", marginLeft: "5px" }}
                 />
                 {team.name}

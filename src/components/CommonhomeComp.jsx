@@ -957,7 +957,7 @@ const CommonhomeComp = ({ title, logo }) => {
           <hr />
         </div>
 
-        <div className="teams-container">
+        <div className="teams-container" data-aos="fade-up">
           {chunks.map((chunk, index) => (
             <div key={index} className="teams-div" data-aos="fade-up">
               {chunk.map((team, teamIndex) => (

@@ -7,6 +7,7 @@ import "../css/PagesCss/ScoresSchedules.css";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import Footer from "../components/Footer";
+import EuroScoresSchedulesComp from "../components/EuroScoresSchedulesComp";
 
 function ScoresSchedules() {
   const { title } = useParams();
@@ -36,7 +37,11 @@ function ScoresSchedules() {
         <div className="scores-schedules-page">
           <h3 style={{ fontWeight: "bold" }}>{title} Schedule</h3>
           <hr />
-          <ScoresSchedulesComp />
+          {title === "Euro 2024" ? (
+            <EuroScoresSchedulesComp />
+          ) : (
+            <ScoresSchedulesComp />
+          )}
         </div>
       </div>
       <section className="bg-dark">

@@ -184,7 +184,7 @@ const Footer = () => {
   return (
     <>
       <div className="row">
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-sm-4">
           <h6 className="text-white">
             <b>{footerNavs[0].title}</b>
           </h6>
@@ -333,7 +333,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-sm-4">
           <h6 className="text-white">
             <b>{footerNavs[1].title}</b>
           </h6>
@@ -457,7 +457,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-2">
+        <div className="col-12 col-sm-2">
           <h6 className="text-white">
             <b>{footerNavs[2].title}</b>
           </h6>
@@ -574,7 +574,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="col-12 col-md-2">
+        <div className="col-12 col-sm-2">
           <h6 className="text-white">
             <b>{footerNavs[4].title}</b>
           </h6>

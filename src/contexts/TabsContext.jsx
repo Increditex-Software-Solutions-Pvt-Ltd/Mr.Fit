@@ -35,7 +35,7 @@ const tabs = [
     title: "Euro 2024",
     name: "European Champions",
     logo: "https://cdn-league-logos.theathletic.com/cdn-cgi/image/width=48%2cformat=auto%2cquality=75/https://cdn-league-logos.theathletic.com/league-7-color@2x.png",
-    subTitles: ["Home", "Teams"],
+    subTitles: ["Home", "Scores & Schedule", "Standings"],
   },
 
   {

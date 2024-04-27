@@ -7,6 +7,7 @@ import "../css/PagesCss/Standings.css";
 import MobileCommonNavbar from "../components/MobileCommonNavbar";
 import { useWindowWidth } from "../contexts/WindowWidth";
 import Footer from "../components/Footer";
+import EuroStandingsComp from "../components/EuroStandingsComp";
 
 function Standings() {
   const { title } = useParams();
@@ -35,9 +36,11 @@ function Standings() {
       )}
       <div className="container">
         <div className="standings-page">
-          <h1 style={{ fontWeight: "bold" }}>{title} Table</h1>
+          <h1 style={{ fontWeight: "bold" }}>
+            {title === "Euro 2024" ? "European Championship" : ""} Table
+          </h1>
           <hr />
-          <StandingsComp />
+          {title === "Euro 2024" ? <EuroStandingsComp /> : <StandingsComp />}
         </div>
       </div>
       <section className="bg-dark">
