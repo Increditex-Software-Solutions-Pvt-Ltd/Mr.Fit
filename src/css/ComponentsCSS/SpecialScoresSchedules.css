@@ -1,0 +1,19 @@
+.specialScheduleTable {
+  width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  th {
+    font-size: 12px;
+  }
+
+  tbody > tr > td {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .specialScheduleTable {
+    width: 700px;
+  }
+}

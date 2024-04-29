@@ -124,6 +124,7 @@ function MobileCommonNavbar({ subTabs, subCategories }) {
           </div>
           {showSideNavbar && (
             <div
+              style={{ zIndex: 5 }}
               className="dropdown-content"
               onMouseEnter={() => setShowSideNavbar(true)}
               onMouseLeave={() => setShowSideNavbar(false)}
@@ -258,10 +259,7 @@ function MobileCommonNavbar({ subTabs, subCategories }) {
       </header>
 
       {/* sub navbar */}
-      <nav
-        className="bg-dark pb-2 position-sticky top-0"
-        style={{ zIndex: 99 }}
-      >
+      <nav className="bg-dark pb-2 position-sticky top-0" style={{ zIndex: 2 }}>
         <div className="container position-relative">
           <div className="d-flex justify-content-start align-items-center gap-1 w-100">
             <Link
@@ -558,7 +556,7 @@ function MobileCommonNavbar({ subTabs, subCategories }) {
           style={{
             width: "100%",
             overflow: "auto",
-            zIndex: 99,
+            zIndex: 3,
             backgroundColor: "black",
           }}
         >

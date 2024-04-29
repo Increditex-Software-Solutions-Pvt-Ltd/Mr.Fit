@@ -37,8 +37,8 @@ function ScoresSchedules() {
         <div className="scores-schedules-page">
           <h3 style={{ fontWeight: "bold" }}>{title} Schedule</h3>
           <hr />
-          {title === "Euro 2024" ? (
-            <EuroScoresSchedulesComp />
+          {title === "Euro 2024" || title === "Europa League" ? (
+            <EuroScoresSchedulesComp title={title} />
           ) : (
             <ScoresSchedulesComp />
           )}

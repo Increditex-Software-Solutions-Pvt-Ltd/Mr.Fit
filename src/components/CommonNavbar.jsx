@@ -413,7 +413,7 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
               className="dropdown-content"
               onMouseEnter={() => setShowSideNavbar(true)}
               onMouseLeave={() => setShowSideNavbar(false)}
-              style={{ zIndex: 100 }}
+              style={{ zIndex: 2 }}
             >
               <div className="tabs-container">
                 {tabGroups.map((group, index) =>
@@ -533,7 +533,7 @@ const CommonNavbar = ({ subTabs, subCategories }) => {
             style={{
               width: "100%",
               overflow: "auto",
-              zIndex: 99,
+              zIndex: 3,
             }}
             onMouseEnter={() => (showSideNavbar ? setShowSideNavbar(true) : "")}
             onMouseLeave={() => setShowSideNavbar(false)}
