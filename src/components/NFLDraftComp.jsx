@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 
 import NFLTeamGroup from "../SubComponents/NFLTeamGroup";
 import "../css/ComponentsCSS/NFLDraftComp.css";
+import { useNavigate } from "react-router-dom";
 
 const NFLDraftComp = ({ title }) => {
   const currentDate = new Date();
@@ -187,6 +188,9 @@ const NFLDraftComp = ({ title }) => {
       delay: 100,
     });
   }, []);
+
+  const navigate = useNavigate();
+
   return (
     <>
       <section data-aos="fade-up" className="sec2 my-3 py-3 ">
@@ -196,7 +200,14 @@ const NFLDraftComp = ({ title }) => {
           <div className="row">
             <div className="col-md-6">
               <div className="border-end">
-                <div className="card border-0">
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="card border-0"
+                >
                   <div className="card-body">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/08120251/24_NFLDraft_TheBeast-1024x512.jpg"
@@ -229,7 +240,13 @@ const NFLDraftComp = ({ title }) => {
             </div>
             <div className="col-md-6">
               <ul className="list-unstyled">
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
                     href="#"
@@ -257,7 +274,13 @@ const NFLDraftComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -285,7 +308,13 @@ const NFLDraftComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -314,7 +343,13 @@ const NFLDraftComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -355,7 +390,13 @@ const NFLDraftComp = ({ title }) => {
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
           <div className="col-12 mx-2">
             <ul className="list-unstyled">
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -387,7 +428,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -420,7 +467,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -454,7 +507,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -487,7 +546,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -519,7 +584,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -551,7 +622,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -583,7 +660,13 @@ const NFLDraftComp = ({ title }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"

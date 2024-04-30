@@ -1126,7 +1126,14 @@ const Topnews = () => {
           </h3>
           <div className="row pt-3">
             <div className="col-12 col-md-6 border-end">
-              <div className="d-flex justify-content-between align-items-center gap-3 px-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 px-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>1</b>
@@ -1147,7 +1154,14 @@ const Topnews = () => {
                   />
                 </div>
               </div>
-              <div className="d-flex justify-content-between align-items-center gap-3 p-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 p-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>2</b>
@@ -1168,7 +1182,14 @@ const Topnews = () => {
                   />
                 </div>
               </div>
-              <div className="d-flex justify-content-between align-items-center gap-3 p-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 p-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>3</b>
@@ -1191,7 +1212,14 @@ const Topnews = () => {
                   />
                 </div>
               </div>
-              <div className="d-flex justify-content-between align-items-center gap-3 p-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 p-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>4</b>
@@ -1214,7 +1242,14 @@ const Topnews = () => {
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="d-flex justify-content-between align-items-center gap-3 px-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 px-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>5</b>
@@ -1235,7 +1270,14 @@ const Topnews = () => {
                   />
                 </div>
               </div>
-              <div className="d-flex justify-content-between align-items-center gap-3 p-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 p-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>6</b>
@@ -1253,7 +1295,14 @@ const Topnews = () => {
                   />
                 </div>
               </div>
-              <div className="d-flex justify-content-between align-items-center gap-3 p-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 p-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>7</b>
@@ -1274,7 +1323,14 @@ const Topnews = () => {
                   />
                 </div>
               </div>
-              <div className="d-flex justify-content-between align-items-center gap-3 p-2">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="d-flex justify-content-between align-items-center gap-3 p-2"
+              >
                 <div className="bungee-outline-regular">
                   <h3>
                     <b>8</b>
@@ -1430,6 +1486,10 @@ const Topnews = () => {
               <div className="p-3 mb-5">
                 <div
                   style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/seeAll/A1");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className="d-flex justify-content-between border-bottom align-items-center"
                 >
                   <h6>

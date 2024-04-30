@@ -30,7 +30,7 @@ const SpecialScoresSchedules = ({ data, title }) => {
             value={schedule.title}
             style={{
               fontWeight: selectedTitle === schedule.title ? "bold" : "normal",
-              textAlign: "center",
+              textAlign: "start",
             }}
           >
             {schedule.title}

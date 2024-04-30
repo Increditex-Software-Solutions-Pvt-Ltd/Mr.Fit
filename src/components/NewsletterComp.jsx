@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const NewsletterComp = () => {
   const { title, name } = useParams();
@@ -19,6 +19,8 @@ const NewsletterComp = () => {
       delay: 100,
     });
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -55,7 +57,14 @@ const NewsletterComp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="border-end">
-                <div className="card border-0">
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="card border-0"
+                >
                   <div className="card-body">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/09135756/pt-apr-9-1024x683.png"
@@ -87,7 +96,13 @@ const NewsletterComp = () => {
             </div>
             <div className="col-md-6">
               <ul className="list-unstyled">
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
                     href="#"
@@ -114,7 +129,13 @@ const NewsletterComp = () => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -142,7 +163,13 @@ const NewsletterComp = () => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -171,7 +198,13 @@ const NewsletterComp = () => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -212,7 +245,13 @@ const NewsletterComp = () => {
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
           <div className="col-12 mx-2">
             <ul className="list-unstyled">
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -244,7 +283,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -277,7 +322,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -310,7 +361,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -343,7 +400,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -374,7 +437,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -405,7 +474,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -437,7 +512,13 @@ const NewsletterComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"

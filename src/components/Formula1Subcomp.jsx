@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const Formula1Subcomp = ({ title, category }) => {
   useEffect(() => {
@@ -12,6 +13,8 @@ const Formula1Subcomp = ({ title, category }) => {
     });
   }, []);
 
+  const navigate = useNavigate();
+
   return (
     <div>
       <section data-aos="fade-up" className="m-4">
@@ -20,14 +23,20 @@ const Formula1Subcomp = ({ title, category }) => {
             <b>{category}</b>
           </h3>
         </div>
-        <div></div>
       </section>
       <section data-aos="fade-up" className="sec2 my-2 py-2 ">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div className="border-end">
-                <div className="card border-0">
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="card border-0"
+                >
                   <div className="card-body">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=600%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/20043853/Chinese-GP-Preview-4-20-24-1024x683.jpg"
@@ -60,7 +69,13 @@ const Formula1Subcomp = ({ title, category }) => {
             </div>
             <div className="col-md-6">
               <ul className="list-unstyled">
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
                     href="#"
@@ -88,7 +103,13 @@ const Formula1Subcomp = ({ title, category }) => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -115,7 +136,13 @@ const Formula1Subcomp = ({ title, category }) => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -143,7 +170,13 @@ const Formula1Subcomp = ({ title, category }) => {
                     </div>
                   </a>
                 </li>
-                <li>
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <a
                     className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                     href="#"
@@ -183,7 +216,13 @@ const Formula1Subcomp = ({ title, category }) => {
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
           <div className="col-12 mx-2">
             <ul className="list-unstyled">
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -216,7 +255,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -249,7 +294,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -282,7 +333,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
                   href="#"
@@ -315,7 +372,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -347,7 +410,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -378,7 +447,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"
@@ -410,7 +485,13 @@ const Formula1Subcomp = ({ title, category }) => {
                   </div>
                 </a>
               </li>
-              <li>
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <a
                   className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
                   href="#"

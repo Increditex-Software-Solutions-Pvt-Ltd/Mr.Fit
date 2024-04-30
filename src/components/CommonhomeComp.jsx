@@ -638,7 +638,14 @@ const CommonhomeComp = ({ title, logo }) => {
         <div className="container">
           <div className="d-flex justify-content-between align-items-center my-2">
             <h6 className="text-dark fw-bold">A1: Today's Must-Read</h6>
-            <a href="" className="nav-link text-stone text-sm">
+            <a
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                navigate("/category/seeAll/A1");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="nav-link text-stone text-sm"
+            >
               see all
             </a>
           </div>
