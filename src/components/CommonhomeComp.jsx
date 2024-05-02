@@ -692,10 +692,7 @@ const CommonhomeComp = ({ title, logo }) => {
           <div className="col-12 mx-2">
             <ul className="list-unstyled">
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/25103039/GettyImages-2106010111-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -725,10 +722,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/24032250/F1-Australian-GP-2024-takeaways-1024x683.jpg"
                     className="img-fluid"
@@ -758,10 +752,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/23021503/F1_-Race-Preview-2-1024x683.png"
                     className="img-fluid"
@@ -791,10 +782,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/13125803/GettyImages-2048037861-1024x683.jpg"
                     className="img-fluid"
@@ -824,10 +812,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/09170323/GettyImages-2071353403-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -856,10 +841,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/09142853/3-9-24-Saudi-GP-Takeaways-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -887,10 +869,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/13144224/GettyImages-1686717668-1-2-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -919,10 +898,7 @@ const CommonhomeComp = ({ title, logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/06141221/GettyImages-1813292064-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}

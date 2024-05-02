@@ -103,10 +103,7 @@ const NewsletterComp = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/05122652/5-1024x683.png"
                       style={{ height: "100px", width: "140px" }}
@@ -136,10 +133,7 @@ const NewsletterComp = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/29115215/PT-Mar-29-2-1024x683.png"
                       style={{ height: "100px", width: "140px" }}
@@ -170,10 +164,7 @@ const NewsletterComp = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/26121137/PT-Mar-22-1-1024x683.png"
                       className="img-fluid"
@@ -205,10 +196,7 @@ const NewsletterComp = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/22102540/pt_mar_22_720.png"
                       className="img-fluid"
@@ -252,10 +240,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/08222041/02_ColorBlock_TwoPhotos-8-1024x683.png"
                     style={{ height: "160px", width: "240px" }}
@@ -290,10 +275,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/05113048/5-1-1024x683.png"
                     className="img-fluid"
@@ -329,10 +311,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/01163615/PT-Lewis-to-Ferrari-6-1024x683.png"
                     className="img-fluid"
@@ -368,10 +347,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/01/03093316/F1_Reviews-8-1024x683.png"
                     className="img-fluid"
@@ -407,10 +383,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/27112959/Alfa-Romeo-PT-2-1024x683.png"
                     style={{ height: "160px", width: "240px" }}
@@ -444,10 +417,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/20101053/F1_Reviews-6-1024x683.png"
                     style={{ height: "160px", width: "240px" }}
@@ -481,10 +451,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/13144224/GettyImages-1686717668-1-2-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -519,10 +486,7 @@ const NewsletterComp = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/12/06141221/GettyImages-1813292064-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}

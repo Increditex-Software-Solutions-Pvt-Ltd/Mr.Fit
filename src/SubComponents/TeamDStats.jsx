@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
-function TeamDStats({ teamName }) {
+function TeamDStats({ teamName, title }) {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({
       offset: 200,
@@ -460,7 +462,15 @@ function TeamDStats({ teamName }) {
                 {goalKeepers.map((player) => {
                   return (
                     <tr>
-                      <td className="d-flex align-items-end gap-2">
+                      <td
+                        style={{ cursor: "pointer" }}
+                        onClick={() => {
+                          navigate(`/playerDetails/${title}/${player.name}`);
+
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                        className="d-flex align-items-end gap-2"
+                      >
                         <img
                           src={
                             player.pic !== ""
@@ -527,7 +537,15 @@ function TeamDStats({ teamName }) {
                 {outfieldPlayers.map((player) => {
                   return (
                     <tr>
-                      <td className="d-flex align-items-end gap-2">
+                      <td
+                        style={{ cursor: "pointer" }}
+                        onClick={() => {
+                          navigate(`/playerDetails/${title}/${player.name}`);
+
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                        className="d-flex align-items-end gap-2"
+                      >
                         <img
                           src={
                             player.pic !== ""
@@ -575,6 +593,11 @@ function TeamDStats({ teamName }) {
             {stories.map((story, i) => {
               return (
                 <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   data-aos="fade-up"
                   className="col-12 col-lg-3 mt-3"
                   key={i}

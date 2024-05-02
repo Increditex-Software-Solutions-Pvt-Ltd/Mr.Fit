@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const PicksComp = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     Aos.init({
       offset: 200,
@@ -18,7 +21,14 @@ const PicksComp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="border-end">
-                <div className="card border-0">
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="card border-0"
+                >
                   <div className="card-body">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/04023315/USATSI_19948812-1024x675.jpg"
@@ -51,11 +61,14 @@ const PicksComp = () => {
             </div>
             <div className="col-md-6">
               <ul className="list-unstyled">
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/17202224/0315_AmitPatel-1024x512.jpg"
                       style={{ height: "100px", width: "140px" }}
@@ -79,11 +92,14 @@ const PicksComp = () => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/07/20190440/GettyImages-1063197040-1024x683.jpg"
                       style={{ height: "100px", width: "140px" }}
@@ -107,11 +123,14 @@ const PicksComp = () => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/04163114/GettyImages-2047896326-1024x683.jpg"
                       className="img-fluid"
@@ -136,11 +155,14 @@ const PicksComp = () => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/13112241/chiefs-49ers-1024x683.jpg"
                       className="img-fluid"
@@ -177,11 +199,14 @@ const PicksComp = () => {
           <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
           <div className="col-12 mx-2">
             <ul className="list-unstyled">
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/06234844/0207_LettermanProducer-1024x512.png"
                     style={{ height: "160px", width: "240px" }}
@@ -209,11 +234,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/11231713/GettyImages-1946580246-1024x613.jpg"
                     className="img-fluid"
@@ -242,11 +270,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/11232603/GettyImages-2004207865-scaled-e1707711999385-1024x683.jpg"
                     className="img-fluid"
@@ -274,11 +305,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/11212357/GettyImages-2004008405-scaled-e1707704662271-1024x512.jpg"
                     className="img-fluid"
@@ -307,11 +341,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/11230740/GettyImages-2003635626-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -339,11 +376,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/10172500/Screenshot-2024-02-10-at-5.19.33-PM-1024x580.png"
                     style={{ height: "160px", width: "240px" }}
@@ -371,11 +411,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/07152020/GettyImages-1990467047-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -403,11 +446,14 @@ const PicksComp = () => {
                   </div>
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/10153546/GettyImages-1971524769-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}

@@ -132,7 +132,11 @@ function teamDetailsComp({ teamName, title }) {
             role="tabpanel"
             aria-labelledby="pills-ScoresSchedule-tab"
           >
-            <TeamDScoresSchedule teamName={teamName} />
+            <TeamDScoresSchedule
+              handleTabClick={handleTabClick}
+              teamName={teamName}
+              title={title}
+            />
           </div>
           <div
             className={`tab-pane fade ${
@@ -142,7 +146,7 @@ function teamDetailsComp({ teamName, title }) {
             role="tabpanel"
             aria-labelledby="pills-Roster-tab"
           >
-            <TeamDRoster teamName={teamName} />
+            <TeamDRoster teamName={teamName} title={title} />
           </div>
           <div
             className={`tab-pane fade ${
@@ -152,7 +156,7 @@ function teamDetailsComp({ teamName, title }) {
             role="tabpanel"
             aria-labelledby="pills-Stats-tab"
           >
-            <TeamDStats teamName={teamName} />
+            <TeamDStats teamName={teamName} title={title} />
           </div>
         </div>
       </div>

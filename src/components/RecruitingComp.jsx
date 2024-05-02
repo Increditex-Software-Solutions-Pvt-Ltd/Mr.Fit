@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const RecruitingComp = ({ title }) => {
   if (title === "NCAAF") {
     title = "College Football";
   }
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     Aos.init({
@@ -29,7 +32,14 @@ const RecruitingComp = ({ title }) => {
             <div className="row">
               <div className="col-md-6">
                 <div className="border-end">
-                  <div className="card border-0">
+                  <div
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="card border-0"
+                  >
                     <div className="card-body">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/22121653/GettyImages-2149428549-1024x683.jpg"
@@ -62,11 +72,14 @@ const RecruitingComp = ({ title }) => {
               </div>
               <div className="col-md-6">
                 <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=96%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/17080707/0404_Dallas_RecruitingConfidential-1024x512.png"
                         style={{ height: "100px", width: "140px" }}
@@ -90,11 +103,14 @@ const RecruitingComp = ({ title }) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=96%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/17142251/SmithCarter2-scaled-e1713378192386-1024x682.jpg"
                         style={{ height: "100px", width: "140px" }}
@@ -118,11 +134,14 @@ const RecruitingComp = ({ title }) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=96%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/17153318/USATSI_22829999-scaled-e1713382417928-1024x682.jpg"
                         className="img-fluid"
@@ -147,11 +166,14 @@ const RecruitingComp = ({ title }) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=96%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/16090700/IMG_3836-scaled-e1713273265515-1024x684.jpg"
                         className="img-fluid"
@@ -187,11 +209,14 @@ const RecruitingComp = ({ title }) => {
             <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
             <div className="col-12 mx-2">
               <ul className="list-unstyled">
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/15144226/NorthCarolina_AllState-1024x683.png"
                       style={{ height: "160px", width: "240px" }}
@@ -220,11 +245,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://theathletic.com/static/img/discussion.svg"
                       className="img-fluid"
@@ -250,11 +278,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/11112001/USATSI_22405226-1024x684.jpg"
                       className="img-fluid"
@@ -282,11 +313,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/10103422/USATSI_22364227-scaled-e1712795787401-1024x683.jpg"
                       className="img-fluid"
@@ -316,11 +350,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/21110508/Recruiting_Rankings_2024-1024x512.png"
                       style={{ height: "160px", width: "240px" }}
@@ -349,11 +386,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/04154229/April4_All_Georgia_Team-1-1024x683.png"
                       style={{ height: "160px", width: "240px" }}
@@ -382,11 +422,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2023/08/10133226/GettyImages-1245186912-1024x757.jpg"
                       style={{ height: "160px", width: "240px" }}
@@ -415,11 +458,14 @@ const RecruitingComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/03163744/USATSI_21705276-1-1024x683.jpg"
                       style={{ height: "160px", width: "240px" }}

@@ -247,10 +247,7 @@ const NFLDraftComp = ({ title }) => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/05175605/0408_Mock-draft-copy.png"
                       style={{ height: "100px", width: "140px" }}
@@ -281,10 +278,7 @@ const NFLDraftComp = ({ title }) => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=1000%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/01121449/GettyImages-1486353971-scaled-e1711988196818-1024x681.jpg"
                       style={{ height: "100px", width: "140px" }}
@@ -315,10 +309,7 @@ const NFLDraftComp = ({ title }) => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=770%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/06155801/GettyImages-2092448585-scaled-e1712441079799-1024x683.jpg"
                       className="img-fluid"
@@ -350,10 +341,7 @@ const NFLDraftComp = ({ title }) => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/07192157/0408_Adisa_Isaac.png"
                       className="img-fluid"
@@ -397,10 +385,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/20181110/GettyImages-1698044438-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -435,10 +420,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/24231800/USATSI_21702506-1024x683.jpg"
                     className="img-fluid"
@@ -474,10 +456,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/15093602/Giants-7-round-mock-e1713188187914-1024x683.jpg"
                     className="img-fluid"
@@ -514,10 +493,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/12175232/GettyImages-1806657262-1024x683.jpg"
                     className="img-fluid"
@@ -553,10 +529,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/12164904/GettyImages-1463524964-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -591,10 +564,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/03/29122011/GettyImages-2058816134-scaled-e1711747742942-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -629,10 +599,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/12150519/GettyImages-951892950-scaled-e1712960987280-1024x682.jpg"
                     style={{ height: "160px", width: "240px" }}
@@ -667,10 +634,7 @@ const NFLDraftComp = ({ title }) => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
-                <a
-                  className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+                <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <img
                     src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/04/14220553/USATSI_21931386-scaled-e1713148419103-1024x683.jpg"
                     style={{ height: "160px", width: "240px" }}

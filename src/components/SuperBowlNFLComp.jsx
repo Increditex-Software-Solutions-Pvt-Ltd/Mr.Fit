@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const SuperBowlNFLComp = ({ title }) => {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     Aos.init({
@@ -25,7 +28,14 @@ const SuperBowlNFLComp = ({ title }) => {
             <div className="row">
               <div className="col-md-6">
                 <div className="border-end">
-                  <div className="card border-0">
+                  <div
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="card border-0"
+                  >
                     <div className="card-body">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=770%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/13220611/USATSI_22501971-1024x683.jpg"
@@ -59,11 +69,14 @@ const SuperBowlNFLComp = ({ title }) => {
               </div>
               <div className="col-md-6">
                 <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                       <img
                         src="https://cdn-media.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn-media.theathletic.com/s1iecqQvbh5m_QdXcDSKH6u6m_720x480.jpg"
                         style={{ height: "100px", width: "140px" }}
@@ -87,11 +100,14 @@ const SuperBowlNFLComp = ({ title }) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12200436/GettyImages-2004098180-scaled-e1707789301831-1024x683.jpg"
                         style={{ height: "100px", width: "140px" }}
@@ -115,11 +131,14 @@ const SuperBowlNFLComp = ({ title }) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12220728/AP24033670363713-1024x683.jpg"
                         className="img-fluid"
@@ -144,11 +163,14 @@ const SuperBowlNFLComp = ({ title }) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                  <li
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate("/category/headlines/Premier League");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12025227/GettyImages-2004341962-1024x683.jpg"
                         className="img-fluid"
@@ -185,11 +207,14 @@ const SuperBowlNFLComp = ({ title }) => {
             <h4 className="text-dark ps-2 pt-2 fw-bold">More Stories</h4>
             <div className="col-12 mx-2">
               <ul className="list-unstyled">
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=384%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12164421/GettyImages-2003857935-1024x683.jpg"
                       style={{ height: "160px", width: "240px" }}
@@ -218,11 +243,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn-media.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn-media.theathletic.com/PBgeIc1pUwC0_eP2P9SOGTK3V_720x480.jpg"
                       className="img-fluid"
@@ -248,11 +276,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/10172500/Screenshot-2024-02-10-at-5.19.33-PM-1024x580.png"
                       className="img-fluid"
@@ -281,11 +312,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12101547/GettyImages-1025973528-1024x828.jpg"
                       className="img-fluid"
@@ -315,11 +349,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12105256/GettyImages-2005219831-1024x688.jpg"
                       style={{ height: "160px", width: "240px" }}
@@ -347,11 +384,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12033711/GettyImages-2003877678-1024x683.jpg"
                       style={{ height: "160px", width: "240px" }}
@@ -380,11 +420,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12015209/GettyImages-2004030777-1024x683.jpeg"
                       style={{ height: "160px", width: "240px" }}
@@ -412,11 +455,14 @@ const SuperBowlNFLComp = ({ title }) => {
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                <li
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate("/category/headlines/Premier League");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                     <img
                       src="https://cdn.theathletic.com/cdn-cgi/image/width=128%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/12032455/2-11-pick-six-1024x683.jpg"
                       style={{ height: "160px", width: "240px" }}

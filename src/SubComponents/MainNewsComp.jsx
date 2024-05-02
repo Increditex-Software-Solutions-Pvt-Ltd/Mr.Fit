@@ -54,10 +54,7 @@ function MainNewsComp() {
             <div className="col-md-6">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -87,10 +84,7 @@ function MainNewsComp() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -123,10 +117,7 @@ function MainNewsComp() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -159,10 +150,7 @@ function MainNewsComp() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");

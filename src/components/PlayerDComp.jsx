@@ -608,13 +608,17 @@ const PlayerDComp = ({ title, playername }) => {
               </div>
             </div>
           </div>
+
           <div className="col-12 col-lg-8">
             <ul className="list-unstyled">
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Fantasy Premier League: Strategies for using chips in
@@ -638,11 +642,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Arsenal’s game against Chelsea postponed due to FA
@@ -666,11 +673,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Dominic Solanke to have knee injury assessed before
@@ -695,11 +705,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none border-top">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Brighton's Kaoru Mitoma likely ruled out for season due to
@@ -723,11 +736,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Fantasy Premier League tips: When is the best time to{" "}
@@ -750,11 +766,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Fantasy Premier League Gameweek 26 review: Villa on fire,
@@ -778,11 +797,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Fantasy Premier League tips: Should you hold or sell your{" "}
@@ -805,11 +827,14 @@ const PlayerDComp = ({ title, playername }) => {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none"
-                  href="#"
-                >
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                <a className="d-flex flex-column-reverse flex-lg-row gap-3 align-items-start align-items-lg-start py-3 link-body-emphasis text-decoration-none">
                   <div className="col-lg-8">
                     <h4 className="mb-0">
                       Fantasy Premier League tips: When is the best time to use

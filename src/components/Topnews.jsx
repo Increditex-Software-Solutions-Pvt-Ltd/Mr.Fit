@@ -67,10 +67,7 @@ const Topnews = () => {
               <div className="border-end my-3 px-2">
                 <ul className="list-unstyled">
                   <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                      href="#"
-                    >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                       <img
                         onClick={() => {
                           navigate("/category/headlines/Premier League");
@@ -102,10 +99,7 @@ const Topnews = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         onClick={() => {
                           navigate("/category/headlines/Premier League");
@@ -138,10 +132,7 @@ const Topnews = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         src="https://cdn.theathletic.com/cdn-cgi/image/width=256%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/02/05062435/E3-1.png"
                         className="img-fluid"
@@ -174,10 +165,7 @@ const Topnews = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="#"
-                    >
+                    <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                       <img
                         onClick={() => {
                           navigate("/category/headlines/Premier League");
@@ -383,10 +371,7 @@ const Topnews = () => {
             <div className="col-md-6">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -416,10 +401,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -452,10 +434,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -488,10 +467,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -574,10 +550,7 @@ const Topnews = () => {
             <div className="col-md-6">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -607,10 +580,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -643,10 +613,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -679,10 +646,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -765,10 +729,7 @@ const Topnews = () => {
             <div className="col-md-6">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -798,10 +759,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -834,10 +792,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");
@@ -870,10 +825,7 @@ const Topnews = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                    href="#"
-                  >
+                  <a className="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top">
                     <img
                       onClick={() => {
                         navigate("/category/headlines/Premier League");

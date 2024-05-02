@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../css/SubComponentsCSS/TeamsDScoresSchedule.css";
+import { useNavigate } from "react-router-dom";
 
-function TeamDScoresSchedule({ teamName }) {
+function TeamDScoresSchedule({ teamName, title, handleTabClick }) {
   let scheduleScore = [
     {
       date: "Sunday, August 13, 2023",
@@ -311,6 +312,7 @@ function TeamDScoresSchedule({ teamName }) {
     },
   ];
 
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({
       offset: 200,
@@ -344,7 +346,14 @@ function TeamDScoresSchedule({ teamName }) {
               return (
                 <tr key={index}>
                   <td>{schedule.date}</td>
-                  <td>
+                  <td
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate(`/team/${title}/${schedule.opponentName}`);
+                      handleTabClick("pills-home");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
                     {schedule.homeOrAway}{" "}
                     <img
                       src={schedule.opponentLogo}
@@ -411,7 +420,14 @@ function TeamDScoresSchedule({ teamName }) {
               return (
                 <tr key={index}>
                   <td>{schedule.date}</td>
-                  <td>
+                  <td
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      navigate(`/team/${title}/${schedule.opponentName}`);
+                      handleTabClick("pills-home");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
                     {schedule.homeOrAway}{" "}
                     <img
                       src={schedule.opponentLogo}
@@ -437,7 +453,16 @@ function TeamDScoresSchedule({ teamName }) {
         <div className="row">
           {stories.map((story, i) => {
             return (
-              <div data-aos="fade-up" className="col-12 col-lg-3 mt-3" key={i}>
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/category/headlines/Premier League");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                data-aos="fade-up"
+                className="col-12 col-lg-3 mt-3"
+                key={i}
+              >
                 <div>
                   <img
                     id="storiesPic"
